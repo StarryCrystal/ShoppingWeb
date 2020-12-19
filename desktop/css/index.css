@@ -16,7 +16,7 @@
 }
 .navbar-default .navbar-nav li a:hover{
 	color: #ff6700;
-	background: #ff;
+	background: #fff;
 }
 .navbar-default .navbar-collapse{
 	border: none;
@@ -150,6 +150,8 @@ a.thumbnail:hover{
 	padding-top: 20px;
 	z-index: 999;
 	position: relative;
+	width: 160px;
+    height: 180px;
 }
 .thumbnail-border h3.h4{
 	font-size: 14px;
@@ -170,6 +172,7 @@ a.thumbnail:hover{
 /*热评产品*/
 .buzz{
 	padding-top: 50px;
+	background-color: #F5F5F5;
 }
 .hover{
 	opacity: 0;
@@ -268,6 +271,7 @@ a.thumbnail:hover{
 /*限时抢购*/
 .buybuy{
 	padding-top: 50px;
+	background-color: #F5F5F5;
 }
 .buy{
 	padding-bottom: 20px;

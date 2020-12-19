@@ -1126,6 +1126,9 @@ img {
   max-width: 100%;
   height: auto;
 }
+.carousel-inner > .item >.imglunbo{
+  height: 419px;
+}
 .img-rounded {
   border-radius: 6px;
 }
@@ -1312,7 +1315,7 @@ mark,
   background-color: #fcf8e3;
 }
 .text-left {
-  text-align: left;
+  text-align: center;
 }
 .text-right {
   text-align: right;
@@ -1800,6 +1803,7 @@ pre code {
   }
   .col-sm-6 {
     width: 50%;
+    background-color: white;
   }
   .col-sm-5 {
     width: 41.66666667%;
@@ -5056,6 +5060,10 @@ a.badge:focus {
   -webkit-transition: border .2s ease-in-out;
        -o-transition: border .2s ease-in-out;
           transition: border .2s ease-in-out;
+  width: 19em; /*保证文字不会被半汉字截断,显示10个文字*/
+  overflow: hidden; /*超出长度的文字隐藏*/
+  text-overflow:ellipsis;/*文字隐藏以后添加省略号*/
+  white-space: nowrap; /*强制不换行*/
 }
 .thumbnail > img,
 .thumbnail a > img {
