@@ -1,0 +1,38 @@
+.am-menu {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	background: #f4f4f4;
+	text-align: center;
+	height: 54px;
+	overflow: hidden;
+	z-index: 98;
+	border-top: 1px solid #ddd;
+
+}
+a:active{
+	text-decoration: none;
+}
+.am-menu-column {
+	width: 25%;
+	float: left;
+	font-size:16px;
+	height: 54px;
+	/*margin-top:15px;*/
+}
+
+.index a span,
+.explore a span,
+.life a span,
+.my a span {
+	display: block;
+	color: #999;
+}
+
+.index-active a span,
+.explore-active a span,
+.life-active a span,
+.my-active a span {
+	display: block;
+	color: #32b4e5;
+}

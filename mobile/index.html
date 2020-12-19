@@ -1,17 +1,16 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <meta charset="UTF-8">
     <!-- 屏幕宽度 && 放大比例 && minimal-ui Safari 网页加载时隐藏地址栏与导航栏-->
     <meta name="viewport" content="width=device-width,initial-scale=1,minimum-
 	scale=1,maximum-scale=1,user-scalable=0,minimal-ui">
     <!-- safari私有meta标签，允许全屏模式浏览 -->
-    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta content="yes" name="apple-mobile-web-app-capable"/>
     <!-- ios系统的私有标签，它指定在web app状态下，ios设备中顶端的状态条的颜色 -->
-    <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+    <meta content="black" name="apple-mobile-web-app-status-bar-style"/>
     <!-- 设备浏览网页时对数字不启用电话功能 -->
-    <meta content="telephone=no,email=no" name="format-detectPion" />
+    <meta content="telephone=no,email=no" name="format-detectPion"/>
     <title>小米商城</title>
     <link rel="stylesheet" href="css/common.css">
     <!-- 自适应样式单 -->
@@ -19,375 +18,426 @@
     <!-- 加载前动画样式 -->
     <link rel="stylesheet" href="css/loadiPng.css">
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/footer-nav.css">
     <!-- 移动端滑动&轮播框架 -->
     <script src="js/ready.js"></script>
     <script src="js/swipe.js"></script>
     <script type="text/javascript">
         /* loading ready */
-        document.ready(function() {
+        document.ready(function () {
             document.getElementById("loading").style.display = "none";
         });
     </script>
 </head>
-
 <body>
-    <!-- loading -->
-    <div id="loading" style="height:100%;">
-        <div class="spinner">
-            <div class="spinner-container container1">
-                <div class="circle1"></div>
-                <div class="circle2"></div>
-                <div class="circle3"></div>
-                <div class="circle4"></div>
-            </div>
-            <div class="spinner-container container2">
-                <div class="circle1"></div>
-                <div class="circle2"></div>
-                <div class="circle3"></div>
-                <div class="circle4"></div>
-            </div>
-            <div class="spinner-container container3">
-                <div class="circle1"></div>
-                <div class="circle2"></div>
-                <div class="circle3"></div>
-                <div class="circle4"></div>
-            </div>
+<!-- loading -->
+<div id="loading" style="height:100%;">
+    <div class="spinner">
+        <div class="spinner-container container1">
+            <div class="circle1"></div>
+            <div class="circle2"></div>
+            <div class="circle3"></div>
+            <div class="circle4"></div>
+        </div>
+        <div class="spinner-container container2">
+            <div class="circle1"></div>
+            <div class="circle2"></div>
+            <div class="circle3"></div>
+            <div class="circle4"></div>
+        </div>
+        <div class="spinner-container container3">
+            <div class="circle1"></div>
+            <div class="circle2"></div>
+            <div class="circle3"></div>
+            <div class="circle4"></div>
         </div>
     </div>
+</div>
 
-    <!-- all content  -->
-    <div class="wrapper" id="content">
-        <!-- header start -->
-        <div class="header">
-            <!-- 绝对定位的logo -->
-            <div class="logo">
-                <a href="/" title="小米商城" class="home">
-                    <span><img src="images/logo.png" alt="" style="width: 30px"></span>
-                </a>
+<!-- all content  -->
+<div class="wrapper" id="content">
+    <!-- header start -->
+    <div class="header">
+        <!-- 绝对定位的logo -->
+        <div class="logo">
+            <a href="/" title="小米商城" class="home">
+                <span><img src="images/logo.png" alt="" style="width: 30px"></span>
+            </a>
+        </div>
+        <!-- 占据高度DIV -->
+        <div class="tit"></div>
+        <!-- 绝对定位的右侧个人中心 && 购物车-->
+        <div class="right">
+            <ul>
+                <li class="user">
+                    <a href="user.html" title="个人中心">
+                        <span class="icon icon-gerenzhongxin"></span>
+                    </a>
+                </li>
+                <li class="cart">
+                    <a href="cart.html" title="购物车">
+                        <span class="icon icon-gouwuche"></span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- header end -->
+
+    <!-- banner start -->
+    <div id="slider" class="slider card card-nomb" style="visibility: visiable;">
+        <div class="swipe-wrap">
+            <div data-index="0">
+                <div>
+                    <span class="imgurl"><img src="images/banner1.jpg"></span>
+                </div>
             </div>
-            <!-- 占据高度DIV -->
-            <div class="tit"></div>
-            <!-- 绝对定位的右侧个人中心 && 购物车-->
-            <div class="right">
-                <ul>
-                    <li class="user">
-                        <a href="user.html" title="个人中心">
-                            <span class="icon icon-gerenzhongxin"></span>
-                        </a>
-                    </li>
-                    <li class="cart">
-                        <a href="cart.html" title="购物车">
-                            <span class="icon icon-gouwuche"></span>
-                        </a>
-                    </li>
-                </ul>
+
+            <div data-index="1">
+                <div>
+                    <span class="imgurl"><img src="images/banner2.jpg"></span>
+                </div>
             </div>
         </div>
-        <!-- header end -->
 
-        <!-- banner start -->
-        <div id="slider" class="slider card card-nomb" style="visibility: visiable;">
+        <div class="swipe-nav" id="bottomNav">
+            <span class="on">&nbsp;</span>
+            <span class="">&nbsp;</span>
+        </div>
+    </div>
+    <!-- banner end -->
+
+    <!-- menu start -->
+    <div class="nav-wrap nav-index">
+        <div id="slider_nav" class="swipe" style="visibility: visiable;">
             <div class="swipe-wrap">
+
                 <div data-index="0">
-                    <div>
-                        <span class="imgurl"><img src="images/banner1.jpg"></span>
-                    </div>
+                    <ul>
+                        <li><a href="category.html"><span class="icon icon-quanbushangpin"></span><span class="t"><span>全部商品</span></span></a>
+                        </li>
+                        <li><a href="search.html"><span class="icon icon-sousuo"></span><span class="t"><span>搜索</span></span></a>
+                        </li>
+                        <li><a href="#"><span class="icon icon-shequ"></span><span
+                                class="t"><span>小米社区</span></span></a>
+                        </li>
+                        <li><a href="download.html" class="red"><span
+                                class="icon icon-kehuduan"></span><span class="t"><span>客户端</span></span></a></li>
+                    </ul>
                 </div>
 
                 <div data-index="1">
-                    <div>
-                        <span class="imgurl"><img src="images/banner2.jpg"></span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="swipe-nav" id="bottomNav">
-                <span class="on">&nbsp;</span>
-                <span class="">&nbsp;</span>
-            </div>
-        </div>
-        <!-- banner end -->
-
-        <!-- menu start -->
-        <div class="nav-wrap nav-index">
-            <div id="slider_nav" class="swipe" style="visibility: visiable;">
-                <div class="swipe-wrap">
-
-                    <div data-index="0">
-                        <ul>
-                            <li><a href="category.html"><span class="icon icon-quanbushangpin"></span><span class="t"><span>全部商品</span></span></a>
-                            </li>
-                            <li><a href="search.html"><span class="icon icon-sousuo"></span><span class="t"><span>搜索</span></span></a>
-                            </li>
-                            <li><a href="#"><span class="icon icon-shequ"></span><span
-                                class="t"><span>小米社区</span></span></a>
-                            </li>
-                            <li><a href="download.html" class="red"><span
-                                class="icon icon-kehuduan"></span><span class="t"><span>客户端</span></span></a></li>
-                        </ul>
-                    </div>
-
-                    <div data-index="1">
-                        <ul>
-                            <li><a href="#"><span class="icon icon-heyueji"></span><span
+                    <ul>
+                        <li><a href="#"><span class="icon icon-heyueji"></span><span
                                 class="t"><span>合约机</span></span></a></li>
-                            <li><a href="#"><span class="icon icon-fcode"></span><span
+                        <li><a href="#"><span class="icon icon-fcode"></span><span
                                 class="t"><span>F码频道</span></span></a></li>
-                            <li><a href="#"><span
+                        <li><a href="#"><span
                                 class="icon icon-huafeichongzhi"></span><span class="t"><span>话费充值</span></span></a>
-                            </li>
-                        </ul>
-                    </div>
-
+                        </li>
+                    </ul>
                 </div>
+
             </div>
         </div>
-        <!-- menu end -->
+    </div>
+    <!-- menu end -->
 
-        <!-- title start -->
-        <div class="title"><span>现货购买</span></div>
-        <!-- title end -->
+    <!-- title start -->
+    <div class="title"><span>现货购买</span></div>
+    <!-- title end -->
 
-        <!-- part one start -->
-        <div class="card show_big">
-            <div class="col2">
-                <div class="row2 mg-bor-right">
+    <!-- part one start -->
+    <div class="card show_big">
+        <div class="col2">
+            <div class="row2 mg-bor-right">
+                <a class="img" href="#"><span class="imgurl"><img
+                        src="http://i3.mifile.cn/a4/T1FRZ_BQWT1RXrhCrK.jpg"></span></a>
+            </div>
+            <div class="rows">
+                <div class="row1">
                     <a class="img" href="#"><span class="imgurl"><img
-                        src="images/k30.webp"></span></a>
+                            src="http://i3.mifile.cn/a4/T1hoKvB5xv1RXrhCrK.jpg"></span></a>
                 </div>
-                <div class="rows">
-                    <div class="row1">
-                        <a class="img" href="#"><span class="imgurl"><img
-                            src="images/watch.webp"></span></a>
-                    </div>
-                    <div class="row1 mg-bor-no-left mg-bor-top">
-                        <a class="img" href="#"><span class="imgurl"><img
-                            src="images/tv.webp"></span></a>
-                    </div>
+                <div class="row1 mg-bor-no-left mg-bor-top">
+                    <a class="img" href="#"><span class="imgurl"><img
+                            src="http://i3.mifile.cn/a4/T17lLvBXDv1RXrhCrK.jpg"></span></a>
                 </div>
             </div>
         </div>
-        <!-- part one end -->
+    </div>
+    <!-- part one end -->
 
-        <!-- part two start -->
-        <div class="card show_big show_big2">
-            <div>
-                <div class="col2">
-                    <div class="row1 mg-bor-right"><a class="img" href="#"><span class="imgurl"><img
-                        src="images/xiamiNote.jpg"></span></a></div>
-                    <div class="row1 mg-bor-right"><a class="img" href="#"><span
-                        class="imgurl"><img src="images/redmi2.jpg"></span></a></div>
-                </div>
-                <div class="col2">
-                    <div class="row1 mg-bor-right"><a class="img" href="#"><span class="imgurl"><img
-                        src="images/redmi2A.jpg"></span></a></div>
-                    <div class="row1 mg-bor-right"><a class="img" href="#"><span
-                        class="imgurl"><img src="images/redminote.jpg"></span></a></div>
-                </div>
-                <div class="col2">
-                    <div class="row1 mg-bor-right"><a class="img" href="#"><span class="imgurl"><img
-                        src="images/mipad.jpg"></span></a></div>
-                    <div class="row1 mg-bor-right"><a href="#"><span
-                        class="imgurl"><img src="images/miTV.jpg"></span></a></div>
-                </div>
-                <div class="col2">
-                    <div class="row1 mg-bor-right"><a class="img" href="#"><span class="imgurl"><img
-                        src="images/miTV2.jpg"></span></a></div>
-                    <div class="row1 mg-bor-right"><a class="img" href="#"><span
-                        class="imgurl"><img src="images/miTV3.jpg"></span></a></div>
-                </div>
+    <!-- part two start -->
+    <div class="card show_big show_big2">
+        <div>
+            <div class="col2">
+                <div class="row1 mg-bor-right"><a class="img" href="#"><span class="imgurl"><img
+                        src="http://i3.mifile.cn/a4/T14RK_BQbT1RXrhCrK.jpg"></span></a></div>
+                <div class="row1 mg-bor-right"><a
+                        class="img" href="http://s1.mi.com/m/product/hongmi2/index.html?0706"
+                ><span
+                        class="imgurl"><img src="http://i3.mifile.cn/a4/T1FLLTBXDv1RXrhCrK.jpg"></span></a></div>
+            </div>
+            <div class="col2">
+                <div class="row1 mg-bor-right"><a class="img" href="#"><span class="imgurl"><img
+                        src="http://i3.mifile.cn/a4/T1srLTBCxv1RXrhCrK.jpg"></span></a></div>
+                <div class="row1 mg-bor-right"><a
+                        class="img" href="http://s1.mi.com/m/product/note4gds/index.html?1327"
+
+                ><span
+                        class="imgurl"><img src="http://i3.mifile.cn/a4/T14YWvBsJT1RXrhCrK.jpg"></span></a></div>
+            </div>
+            <div class="col2">
+                <div class="row1 mg-bor-right"><a class="img" href="#"><span class="imgurl"><img
+                        src="http://i3.mifile.cn/a4/T1NMZ_BKKT1RXrhCrK.jpg"></span></a></div>
+                <div class="row1 mg-bor-right"><a
+                        href="http://s1.mi.com/m/product/mitv40/index.html"
+
+                ><span
+                        class="imgurl"><img src="http://i3.mifile.cn/a4/T1Mx_TBbDT1RXrhCrK.jpg"></span></a></div>
+            </div>
+            <div class="col2">
+                <div class="row1 mg-bor-right"><a class="img" href="#"><span class="imgurl"><img
+                        src="http://i3.mifile.cn/a4/T1eNK_BgLT1RXrhCrK.jpg"></span></a></div>
+                <div class="row1 mg-bor-right"><a
+                        class="img" href="http://s1.mi.com/m/product/mitv55/index.html?0816"
+
+                ><span
+                        class="imgurl"><img src="http://i3.mifile.cn/a4/T10pK_BQAT1RXrhCrK.jpg"></span></a></div>
             </div>
         </div>
-        <!-- part two end -->
+    </div>
+    <!-- part two end -->
 
-        <!-- list one start -->
-        <div class="list">
-            <div class="head"><span>智能硬件</span></div>
-            <div class="list-cell">
-                <div class="row">
-                    <div class="cell"><a href="#"><span
-                        class="imgurl"><img src="images/yj1.jpg"></span><span
+    <!-- list one start -->
+    <div class="list">
+        <div class="head"><span>智能硬件</span></div>
+        <div class="list-cell">
+            <div class="row">
+                <div class="cell"><a href="#"
+                ><span
+                        class="imgurl"><img src="http://i3.mifile.cn/a4/T10mC_BTxT1RXrhCrK.jpg"></span><span
                         class="p"><span>全新小米路由器</span></span><span class="p"><span>699元起</span> <del></del></span></a>
-                    </div>
-                    <div class="cell">
-                        <a href="#"><span
-                            class="imgurl"><img src="images/yj2.jpg"></span><span
+                </div>
+                <div class="cell">
+                    <a href="#"
+                    ><span
+                            class="imgurl"><img src="http://i1.mifile.cn/a1/T1b5WvBbLT1RXrhCrK!300x300.jpg"></span><span
                             class="p"><span>小米智能家庭套装</span></span><span class="p"><span>199元</span> <del></del></span></a>
-                    </div>
                 </div>
-                <div class="row">
-                    <div class="cell">
-                        <a href="#"><span
-                            class="imgurl"><img src="images/yj3.jpg"></span><span
+            </div>
+            <div class="row">
+                <div class="cell">
+                    <a href="#"
+                    ><span
+                            class="imgurl"><img src="http://i3.mifile.cn/a4/T1YxbvBQ_T1RXrhCrK.jpg"></span><span
                             class="p"><span>小米空气净化器 包邮</span></span><span class="p"><span>899元</span> <del></del></span></a>
-                    </div>
-                    <div class="cell">
-                        <a href="#"><span
-                            class="imgurl"><img src="images/yj4.jpg"></span><span
+                </div>
+                <div class="cell">
+                    <a href="#"
+                    ><span
+                            class="imgurl"><img src="http://i3.mifile.cn/a4/T1x9h_BTdT1RXrhCrK.jpg"></span><span
                             class="p"><span>小米路由器mini</span></span><span class="p"><span>129元</span> <del></del></span></a>
-                    </div>
                 </div>
-                <div class="row">
-                    <div class="cell">
-                        <a href="#"><span
-                            class="imgurl"><img src="images/yj5.jpg"></span><span
+            </div>
+            <div class="row">
+                <div class="cell">
+                    <a href="#"
+                    ><span
+                            class="imgurl"><img src="http://i1.mifile.cn/a1/T1PxJvBCAT1RXrhCrK!300x300.jpg"></span><span
                             class="p"><span>小米智能插座</span></span><span class="p"><span>59元</span> <del></del></span></a>
-                    </div>
-                    <div class="cell">
-                        <a href="#"><span
-                            class="imgurl"><img src="images/yj6.jpg"></span><span
+                </div>
+                <div class="cell">
+                    <a href="#"
+                    ><span
+                            class="imgurl"><img src="http://i1.mifile.cn/a1/T1o3Z_BKET1RXrhCrK!300x300.jpg"></span><span
                             class="p"><span>小蚁智能摄像机 夜视版</span></span><span class="p"><span>149元</span> <del></del></span></a>
-                    </div>
                 </div>
-                <div class="row">
-                    <div class="cell">
-                        <a href="#"><span
-                            class="imgurl"><img src="images/yj7.jpg"></span><span
+            </div>
+            <div class="row">
+                <div class="cell">
+                    <a href="#"
+                    ><span
+                            class="imgurl"><img src="http://i3.mifile.cn/a4/T1ATY_BvLT1RXrhCrK.jpg"></span><span
                             class="p"><span>小米体重秤</span></span><span class="p"><span>99元</span> <del></del></span></a>
-                    </div>
-                    <div class="cell">
-                        <a href="#"><span
-                            class="imgurl"><img src="images/yj8.jpg"></span><span
-                            class="p"><span>小蚁运动相机</span></span><span class="p"><span>399元</span> <del></del></span></a>
-                    </div>
                 </div>
-                <!-- <div class="row" style="display: none;">
-                    <div class="cell">
-                        <a href="#"><span
-                            class="imgurl"><img src="images/yj1.jpg"></span><span
+                <div class="cell">
+                    <a href="#"
+                    ><span
+                            class="imgurl"><img src="http://i3.mifile.cn/a4/T1DwE_B_DT1RXrhCrK.jpg"></span><span
+                            class="p"><span>小蚁运动相机</span></span><span class="p"><span>399元</span> <del></del></span></a>
+                </div>
+            </div>
+            <div class="row" style="display: none;">
+                <div class="cell">
+                    <a href="#"
+                    ><span
+                            class="imgurl"><img src="http://i1.mifile.cn/a1/T1.rCvBjWT1RXrhCrK!300x300.jpg"></span><span
                             class="p"><span>小米路由器青春版</span></span><span class="p"><span>79元</span> <del></del></span></a>
-                    </div>
-                </div> -->
+                </div>
             </div>
         </div>
-        <!-- list one end -->
+    </div>
+    <!-- list one end -->
 
-        <!-- list two start -->
-        <div class="list">
-            <div class="head"><span>热卖推荐</span></div>
-            <div class="list-cell">
-                <div class="row">
-                    <div class="cell">
-                        <a href="#"><span
-                            class="imgurl"><img src="images/rm1.jpg"></span><span
+    <!-- list two start -->
+    <div class="list">
+        <div class="head"><span>热卖推荐</span></div>
+        <div class="list-cell">
+            <div class="row">
+                <div class="cell">
+                    <a href="#"
+                    ><span
+                            class="imgurl"><img src="http://i3.mifile.cn/a4/T1gwb_BT_T1RXrhCrK.jpg"></span><span
                             class="p"><span>小米盒子mini版</span></span><span class="p"><span>199元</span> <del></del></span></a>
-                    </div>
-                    <div class="cell">
-                        <a><span
-                            class="imgurl"><img src="images/rm2.jpg"></span><span
+                </div>
+                <div class="cell">
+                    <a
+                    ><span
+                            class="imgurl"><img src="http://i1.mifile.cn/a1/T1UBCvBbWT1RXrhCrK!300x300.jpg"></span><span
                             class="p"><span>小蚁运动相机浮水杆</span></span><span class="p"><span>39元</span> <del></del></span></a>
-                    </div>
                 </div>
-                <div class="row">
-                    <div class="cell">
-                        <a href="#"><span
-                            class="imgurl"><img src="images/rm3.jpg"></span><span
+            </div>
+            <div class="row">
+                <div class="cell">
+                    <a href="#"
+                    ><span
+                            class="imgurl"><img src="http://i1.mifile.cn/a1/T190DvB4dv1RXrhCrK!300x300.jpg"></span><span
                             class="p"><span>小米蓝牙耳机 黑色</span></span><span class="p"><span>79元</span> <del></del></span></a>
-                    </div>
-                    <div class="cell">
-                        <a><span
-                            class="imgurl"><img src="images/rm4.jpg"></span><span
+                </div>
+                <div class="cell">
+                    <a
+                    ><span
+                            class="imgurl"><img src="http://i1.mifile.cn/a1/T1omEQB4dT1RXrhCrK!300x300.jpg"></span><span
                             class="p"><span>小米随身风扇</span></span><span class="p"><span>19.9元</span> <del></del></span></a>
-                    </div>
                 </div>
-                <div class="row">
-                    <div class="cell">
-                        <a href="#"><span
-                            class="imgurl"><img src="images/rm5.jpg"></span><span
+            </div>
+            <div class="row">
+                <div class="cell">
+                    <a href="#"
+                    ><span
+                            class="imgurl"><img src="http://i1.mifile.cn/a1/T1jcEgB4AT1RXrhCrK!300x300.jpg"></span><span
                             class="p"><span>小米插线板</span></span><span class="p"><span>49元</span> <del></del></span></a>
-                    </div>
-                    <div class="cell">
-                        <a href="#"><span
-                            class="imgurl"><img src="images/rm6.jpg"></span><span
+                </div>
+                <div class="cell">
+                    <a href="#"
+                    ><span
+                            class="imgurl"><img src="http://i3.mifile.cn/a4/T1f.CvByDv1RXrhCrK.jpg"></span><span
                             class="p"><span>小米移动电源</span></span><span class="p"><span>49元起</span> <del></del></span></a>
-                    </div>
                 </div>
-                <div class="row">
-                    <div class="cell">
-                        <a href="#"><span
+            </div>
+            <div class="row">
+                <div class="cell">
+                    <a href="#"
+                    ><span
                             class="imgurl"><img
-                            src="images/rm7.jpg"></span><span
+                            src="http://i1.mifile.cn/a1/T1fXETByJT1RXrhCrK.jpg?width=300&amp;height=300"></span><span
                             class="p"><span>小米随身WIFI</span></span><span class="p"><span>19.9元</span> <del></del></span></a>
-                    </div>
-                    <div class="cell">
-                        <a href="#"><span
-                            class="imgurl"><img src="images/rm8.jpg"></span><span
-                            class="p"><span>小米活塞耳机</span></span><span class="p"><span>29元起</span> <del></del></span></a>
-                    </div>
                 </div>
-                <div class="row">
-                    <div class="cell">
-                        <a><span
-                            class="imgurl"><img src="images/rm9.jpg"></span><span
+                <div class="cell">
+                    <a href="#"
+                    ><span
+                            class="imgurl"><img src="http://i3.mifile.cn/a4/T1f6K_BTLT1RXrhCrK.jpg"></span><span
+                            class="p"><span>小米活塞耳机</span></span><span class="p"><span>29元起</span> <del></del></span></a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="cell">
+                    <a
+                    ><span
+                            class="imgurl"><img src="http://i1.mifile.cn/a1/T1gCJgB_dT1RXrhCrK!300x300.jpg"></span><span
                             class="p"><span>小钢炮蓝牙音箱</span></span><span class="p"><span>129元</span> <del></del></span></a>
-                    </div>
-                    <div class="cell">
-                        <a><span
-                            class="imgurl"><img src="images/rm10.jpg"></span><span
+                </div>
+                <div class="cell">
+                    <a
+                    ><span
+                            class="imgurl"><img src="http://i1.mifile.cn/a1/T19OV_BgKT1RXrhCrK!300x300.jpg"></span><span
                             class="p"><span>小米水质TDS检测笔</span></span><span class="p"><span>39元</span> <del></del></span>
                     </a>
-                    </div>
                 </div>
-                <!-- <div class="row" style="display: none;">
-                    <div class="cell">
-                        <a><span
-                            class="imgurl"><img src="images/rm10.jpg"></span><span
+            </div>
+            <div class="row" style="display: none;">
+                <div class="cell">
+                    <a
+                    ><span
+                            class="imgurl"><img src="http://i1.mifile.cn/a1/T1A.A_BKYT1RXrhCrK!300x300.jpg"></span><span
                             class="p"><span>小米方盒子蓝牙音箱</span></span><span class="p"><span>99元</span> <del></del></span></a>
-                    </div>
-                </div> -->
+                </div>
             </div>
         </div>
-        <!-- list two end -->
+    </div>
+    <!-- list two end -->
 
-        <!-- more start -->
-        <div class="col1 more">
-            <a href="#">
-                <span>查看更多配件&nbsp;&gt;</span>
-            </a>
+    <!-- more start -->
+    <div class="col1 more">
+        <a href="#">
+            <span>查看更多配件&nbsp;&gt;</span>
+        </a>
+    </div>
+    <!-- more end -->
+
+    <!-- footer start -->
+    <div class="footer">
+        <div class="tip">
+            <a href="#" class="goDesktop"><span>切换到电脑版</span></a>
         </div>
-        <!-- more end -->
-
-        <!-- footer start -->
-        <div class="footer">
-            <div class="tip">
-                <a href="#" class="goDesktop"><span>切换到电脑版</span></a>
-            </div>
-            <div class="links">
-                <a href="#"><span
+        <div class="links">
+            <a href="#"><span
                     class="linksBtn">立即下载</span>
                 <p><strong>小米商城客户端</strong><span>与米粉交朋友</span></p></a>
-            </div>
         </div>
-        <!-- footer end -->
-
-        <script type="text/javascript">
-            var bottom = document.getElementById("bottomNav").getElementsByTagName("span");
-            // 轮播&滑动事件
-            var slider = Swipe(document.getElementById('slider_nav'), {
-                continuous: true, //无限循环的图片切换效果
-                disableScroll: true, //阻止由于触摸而滚动屏幕
-                stopPropagation: false, //停止滑动事件
-            });
-
-            var sliderBanner = Swipe(document.getElementById('slider'), {
-                auto: 2500,
-                continuous: true,
-                disableScroll: false,
-                stopPropagation: false,
-                callback: function(index) {
-                    if (index % 2) {
-                        bottom[0].className = "";
-                        bottom[1].className = "on";
-                    } else {
-                        bottom[0].className = "on";
-                        bottom[1].className = "";
-                    }
-                }, //回调函数，切换时触发
-            });
-        </script>
     </div>
-    <!--all footer-nav-->
+    <!-- footer end -->
 
+    <script type="text/javascript">
+        var bottom = document.getElementById("bottomNav").getElementsByTagName("span");
+        // 轮播&滑动事件
+        var slider = Swipe(document.getElementById('slider_nav'), {
+            continuous: true,  //无限循环的图片切换效果
+            disableScroll: true,  //阻止由于触摸而滚动屏幕
+            stopPropagation: false,  //停止滑动事件
+        });
+
+        var sliderBanner = Swipe(document.getElementById('slider'), {
+            auto: 2500,
+            continuous: true,
+            disableScroll: false,
+            stopPropagation: false,
+            callback: function (index) {
+                if (index % 2) {
+                    bottom[0].className = "";
+                    bottom[1].className = "on";
+                } else {
+                    bottom[0].className = "on";
+                    bottom[1].className = "";
+                }
+            },  //回调函数，切换时触发
+        });
+    </script>
+</div>
+<!--all footer-nav-->
+<footer class="am-menu am-cf">
+    <div class="am-menu-column footer-index" id="index">
+        <a href="index.html">
+            <span class="iconfont">&#xe6b3;</span>
+        </a>
+    </div>
+    <div class="am-menu-column footer-explore" id="explore">
+        <a href="#">
+            <span class="iconfont">&#xe6b3;</span>
+        </a>
+    </div>
+    <div class="am-menu-column footer-life" id="life">
+        <a href="#">
+            <span class="iconfont">&#xe6b3;</span>
+        </a>
+    </div>
+    <div class="am-menu-column footer-my" id="my">
+        <a href="user.html">
+            <span class="iconfont">&#xe6b3;</span>
+        </a>
+    </div>
+</footer>
 </body>
-
 </html>

@@ -32,6 +32,7 @@ li, img, label, input{
 	font-family:iconfont;
 	src:url(../fonts/iconfont1.eot?9owfml);
 	src:url(../fonts/iconfont1.eot?#iefix9owfml) format("embedded-opentype"),url(../fonts/iconfont2.woff?9owfml) format("woff"),url(../fonts/iconfont3.ttf?9owfml) format("truetype"),url(../fonts/iconfont4.svg?9owfml#icomoon) format("svg");
+	src:url(../fonts/iconfont5.eot?#iefix9owfml) format("embedded-opentype"),url(../fonts/iconfont6.woff?9owfml) format("woff"),url(../fonts/iconfont7.ttf?9owfml) format("truetype"),url(../fonts/iconfont8.svg?9owfml#icomoon) format("svg");
 	font-weight:400;
 	font-style:normal
 }
