@@ -150,6 +150,8 @@ a.thumbnail:hover{
 	padding-top: 20px;
 	z-index: 999;
 	position: relative;
+	width: 160px;
+    height: 180px;
 }
 .thumbnail-border h3.h4{
 	font-size: 14px;

@@ -1129,10 +1129,6 @@ img {
 .carousel-inner > .item >.imglunbo{
   height: 419px;
 }
-.container > .col-sm-12 > .col-sm-3 > .webp{
-  width: 160px;
-  height: 180px;
-}
 .img-rounded {
   border-radius: 6px;
 }
