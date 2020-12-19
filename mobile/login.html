@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>酒查查帐号 - 登录</title>
+<title>小米帐号 - 登录</title>
 <meta content="yes" name="apple-mobile-web-app-capable"/>
 <!-- ios系统的私有标签，它指定在web app状态下，ios设备中顶端的状态条的颜色 -->
 <meta content="black" name="apple-mobile-web-app-status-bar-style" />
@@ -22,11 +22,11 @@
         </a>
       </div>
 
-      <h1 class="nl-login-title" id="custom_display_256"><span id="message_LOGIN_TITLE">一个帐号，玩转所有酒查查服务！</span></h1>
+      <h1 class="nl-login-title" id="custom_display_256"><span id="message_LOGIN_TITLE">一个帐号，玩转所有小米服务！</span></h1>
       <h2 class="nl-login-title lsrp-appname display-custom-hide" id="lsrp_appName"></h2>
 
       <div id="custom_display_2">
-        <p class="nl-login-intro" id="message_LOGIN_LINKS"> <a href="http://www.xiaomi.com/" target="_blank">酒查查手机</a>，<a href="http://www.xiaomi.com/index.php" target="_blank">酒查查网</a>，<a href="http://www.miui.com/" target="_blank">MIUI米柚</a>，<a href="http://www.duokan.com/" target="_blank">多看阅读</a>，<a href="http://www.miliao.com/" target="_blank">米聊</a> </p>
+        <p class="nl-login-intro" id="message_LOGIN_LINKS"> <a href="http://www.xiaomi.com/" target="_blank">小米手机</a>，<a href="http://www.xiaomi.com/index.php" target="_blank">小米网</a>，<a href="http://www.miui.com/" target="_blank">MIUI米柚</a>，<a href="http://www.duokan.com/" target="_blank">多看阅读</a>，<a href="http://www.miliao.com/" target="_blank">米聊</a> </p>
       </div>
 
       <div class="nl-phone-tip">
@@ -42,8 +42,8 @@
               <div class="enter-area display-custom-hide" id="revalidate_user"> <p class="revalidate-user-name" id="revalidate_user_name"></p> 
               </div>
               <div class="enter-area" id="enter_user">
-                <input type="text" class="enter-item first-enter-item" data-rule="(^[\w.\-]+@(?:[A-Za-z0-9]+(?:-[A-Za-z0-9]+)*\.)+[A-Za-z]{2,6}$)|(^1\d{10}$)|(^\d{3,}$)|(^\++\d{2,}$)" id="miniLogin_username" autocomplete="off" placeholder="邮箱/手机号码/酒查查帐号">
-                <i class="placeholder hide" id="message_INPUT_IDENTITY">邮箱/手机号码/酒查查帐号</i>
+                <input type="text" class="enter-item first-enter-item" data-rule="(^[\w.\-]+@(?:[A-Za-z0-9]+(?:-[A-Za-z0-9]+)*\.)+[A-Za-z]{2,6}$)|(^1\d{10}$)|(^\d{3,}$)|(^\++\d{2,}$)" id="miniLogin_username" autocomplete="off" placeholder="邮箱/手机号码/小米帐号">
+                <i class="placeholder hide" id="message_INPUT_IDENTITY">邮箱/手机号码/小米帐号</i>
                 <span class="error-tip"><em class="error-ico"></em><span class="error-msg"></span></span>
               </div>
               <div class="enter-area" style="z-index:20;">
@@ -87,7 +87,7 @@
 
             </div>
 
-            <span id="custom_display_128"> <a href="https://account.xiaomi.com/pass/register?callback=http%3A%2F%2Fm.mi.com%2Fmshopapi%2Fv1%2Fauthorize%2Fsso_callback%3Ffollowup%3Dhttp%253A%252F%252Fm.mi.com%252Findex.html%2523ac%253Daccount%2526op%253Dindex%26sign%3DYjJhY2VjZWEwZDYzOTNhNmZhOTRjYmRmMDVlN2ZlZTJhZDFhOTViOA%2C%2C&sid=mi_eshopm&_snsdefault=qq" class="button" id="message_REGISTER">注册酒查查帐号</a> </span> 
+            <span id="custom_display_128"> <a href="https://account.xiaomi.com/pass/register?callback=http%3A%2F%2Fm.mi.com%2Fmshopapi%2Fv1%2Fauthorize%2Fsso_callback%3Ffollowup%3Dhttp%253A%252F%252Fm.mi.com%252Findex.html%2523ac%253Daccount%2526op%253Dindex%26sign%3DYjJhY2VjZWEwZDYzOTNhNmZhOTRjYmRmMDVlN2ZlZTJhZDFhOTViOA%2C%2C&sid=mi_eshopm&_snsdefault=qq" class="button" id="message_REGISTER">注册小米帐号</a> </span>
             <span id="custom_display_8"> <a href="https://account.xiaomi.com/pass/sns/login/auth?appid=222161937813280&callback=http%3A%2F%2Fm.mi.com%2Fmshopapi%2Fv1%2Fauthorize%2Fsso_callback%3Ffollowup%3Dhttp%253A%252F%252Fm.mi.com%252Findex.html%2523ac%253Daccount%2526op%253Dindex%26sign%3DYjJhY2VjZWEwZDYzOTNhNmZhOTRjYmRmMDVlN2ZlZTJhZDFhOTViOA%2C%2C&sid=mi_eshopm" id="facebook_login_button" class="button facebook_area"> <i class="iconfacebook"></i>Facebook登录 </a> </span>
 
             <a style="display:none" id="redirectLink" href="" target="_top"></a>
@@ -107,7 +107,7 @@
       <div class="nl-f-nav" id="nl_f_nav">
         <span id="custom_display_4"> <a href="javascript:void(0);" onclick="change_lang(&#39;zh_CN&#39;); return false;" class="zh-cn">简体</a>| <a href="javascript:void(0);" onclick="change_lang(&#39;zh_TW&#39;); return false;" class="zh-tw">繁体</a>| <a href="javascript:void(0);" onclick="change_lang(&#39;en&#39;); return false;" class="zh-en">English</a> </span> <span id="custom_display_32"> <span class="n_common_line">|</span> <span id="message_FAQLIST"><a href="http://static.account.xiaomi.com/html/faq/faqList.html" target="_blank">常见问题</a></span> </span>
       </div>
-      <p class="nl-f-copyright" id="message_COPYRIGHT">酒查查公司版权所有-京ICP备10046444-京公网安备1101080212535-京ICP证110507号</p>
+      <p class="nl-f-copyright" id="message_COPYRIGHT">小米公司版权所有-京ICP备10046444-京公网安备1101080212535-京ICP证110507号</p>
     </div>
     <div id="modal-mask" class="modal-mask display-custom-hide"> </div>
     <div class="modal-container display-custom-hide" id="qrlogin-container">
