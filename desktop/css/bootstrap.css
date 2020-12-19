@@ -1124,11 +1124,11 @@ img {
 .carousel-inner > .item > a > img {
   display: block;
   max-width: 100%;
-  height: auto;
-}
-.carousel-inner > .item >.imglunbo{
   height: 419px;
 }
+/*.carousel-inner > .item >.imglunbo{*/
+/*  height: 419px;*/
+/*}*/
 .img-rounded {
   border-radius: 6px;
 }
@@ -4538,6 +4538,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     float: left !important;
   }
   .navbar-right {
+    width: 713px;
     float: right !important;
     margin-right: -15px;
   }
