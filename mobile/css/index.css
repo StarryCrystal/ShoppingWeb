@@ -484,7 +484,7 @@
 
 .footer .tip {
     text-align: center;
-    padding: 2.3em 0;
+    padding: 1.3em 0;
 }
 
 .footer .tip a {
@@ -506,13 +506,11 @@
     display: block;
     color: #666;
     margin: 0 2.5em;
-    background: url(../images/logo.png) 0 50% no-repeat;
     -webkit-background-size: 3em 3em;
     -moz-background-size: 3em 3em;
     -ms-background-size: 3em 3em;
     -o-background-size: 3em 3em;
     background-size: 3em 3em;
-    padding-left: 3.5em;
     overflow: hidden;
 }
 
