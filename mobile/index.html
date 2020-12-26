@@ -28,7 +28,14 @@
         document.ready(function () {
             document.getElementById("loading").style.display = "none";
         });
-
+        /* Top AD  */
+        $(function () {
+            $('.ad').animate({marginTop: 0}, 2000, function () {
+                setTimeout(function () {
+                    $('.ad').animate({marginTop: -66}, 2000)
+                }, 3000);
+            });
+        });
     </script>
 </head>
 <body>
@@ -55,7 +62,8 @@
         </div>
     </div>
 </div>
-
+<!--top ad-->
+<div class="ad"><img src="images/ad.jpg" alt="无图片" style="width: 100%"></div>
 <!-- all content  -->
 <div class="wrapper" id="content">
     <!-- header start -->
