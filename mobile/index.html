@@ -23,12 +23,19 @@
     <script src="js/ready.js"></script>
     <script src="js/swipe.js"></script>
     <script src="js/jquery-3.5.1.js"></script>
-    <script type="text/javascript">
+    <script type="text/javascript" >
         /* loading ready  */
         document.ready(function () {
             document.getElementById("loading").style.display = "none";
         });
-
+        /* Top AD  */
+        $(function () {
+            $('.ad').animate({marginTop: 0}, 2000, function () {
+                setTimeout(function () {
+                    $('.ad').animate({marginTop: -66}, 2000)
+                }, 3000);
+            });
+        });
     </script>
 </head>
 <body>
@@ -55,14 +62,15 @@
         </div>
     </div>
 </div>
-
+<!--top ad-->
+<div class="ad"><img src="images/ad.jpg" alt="" style="width: 100%"></div>
 <!-- all content  -->
 <div class="wrapper" id="content">
     <!-- header start -->
     <div class="header">
         <!-- 绝对定位的logo -->
         <div class="logo">
-            <a href="/" title="小米商城" class="home">
+            <a href="/" title="小米商城 " class="home">
                 <span><img src="images/logo.png" alt="" style="width: 30px"></span>
             </a>
         </div>
