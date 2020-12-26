@@ -1124,11 +1124,11 @@ img {
 .carousel-inner > .item > a > img {
   display: block;
   max-width: 100%;
+  height: auto;
+}
+.carousel-inner > .item >.imglunbo{
   height: 419px;
 }
-/*.carousel-inner > .item >.imglunbo{*/
-/*  height: 419px;*/
-/*}*/
 .img-rounded {
   border-radius: 6px;
 }
@@ -1793,7 +1793,7 @@ pre code {
     width: 83.33333333%;
   }
   .col-sm-9 {
-    width: 75%;
+    width: 100%;
   }
   .col-sm-8 {
     width: 66.66666667%;
@@ -6808,3 +6808,19 @@ button.close {
   }
 }
 /*# sourceMappingURL=bootstrap.css.map */
+.nav-category{
+  position: relative;
+  float: left;
+  width: 20px;
+  /*padding-right: 5px;*/
+}
+.nav-category .link-category{
+  display: block;
+  padding: 26px 0 38px;
+  text-align: right;
+  color: #333;
+  visibility: hidden;
+}
+
+
+
