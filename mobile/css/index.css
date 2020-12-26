@@ -643,7 +643,7 @@
     border-bottom: 2px solid rgba(237,91,0,0);
 }
 .foldpanel {
-    width: 250px;
+    width: 100%;
     border: 0px solid #ccc;
     border-bottom: none;
     font-family: Arial, Helvetica, sans-serif;
@@ -664,7 +664,7 @@
     font-size: 13px;
     font-weight: bold;
     padding-left: 20px;
-    border-bottom: 1px solid #f2f2f2;
+    color: rgb(237, 91, 0);
 }
 .foldpanel a {
     display: block;
