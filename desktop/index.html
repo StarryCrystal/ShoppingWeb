@@ -1,572 +1,582 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-	    <meta name="viewport" content="width=device-width, initial-scale=1">
-		<title></title>
-		<link href="css/bootstrap.css" rel="stylesheet">
-		<link rel="stylesheet" type="text/css" href="css/index.css"/>
-		<script src="js/jquery.1.11.3.min.js" type="text/javascript" charset="utf-8"></script>
-	   	<script src="js/bootstrap.js" type="text/javascript" charset="utf-8"></script>
-	    <script src="js/bootstrap.min.js" type="text/javascript" charset="utf-8" ></script>
-	</head>
-	<body>
-		<nav class="navbar navbar-default" id="navbar-top">
-			<div class="container">
-				<div class="container-fluid">
-				    <div class="navbar-header">
-				        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-					        <span class="sr-only">Toggle navigation</span>
-					        <span class="icon-bar"></span>
-					        <span class="icon-bar"></span>
-					        <span class="icon-bar"></span>
-				        </button>
-				        <a href="#" class="navbar-logo"><img src="img/mi.logo.png"/></a>
-				    </div>
-				    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-				        <ul class="nav navbar-nav navbar-right clearfix">
-							<li id="left_nav" class="nav-category">
-								<a href="#" class="link-category">
-									<span class="text">全部商品分类</span>
-								</a>
-								<div class="site-category" style="display: none">
-									<ul id="left_navList" class="site-category-list clearfix">
-										<li class="category-item">
-											<a href="#" class="title">
-												手机 电话卡
-												<em class="iconfont-arrow-right-big">
-												</em>
-											</a>
-											<div></div>
-										</li>
-										<li class="category-item">
-											<a href="#" class="title">
-												电视 盒子
-												<em class="iconfont-arrow-right-big">
-												</em>
-											</a>
-											<div></div>
-										</li>
-										<li class="category-item">
-											<a href="#" class="title">
-												笔记本 显示器
-												<em class="iconfont-arrow-right-big">
-												</em>
-											</a>
-											<div></div>
-										</li>
-										<li class="category-item">
-											<a href="#" class="title">
-												家电 插线板
-												<em class="iconfont-arrow-right-big">
-												</em>
-											</a>
-											<div></div>
-										</li>
-										<li class="category-item">
-											<a href="#" class="title">
-												出行 穿戴
-												<em class="iconfont-arrow-right-big">
-												</em>
-											</a>
-											<div></div>
-										</li>
-										<li class="category-item">
-											<a href="#" class="title">
-												智能 路由器
-												<em class="iconfont-arrow-right-big">
-												</em>
-											</a>
-											<div></div>
-										</li>
-										<li class="category-item">
-											<a href="#" class="title">
-												电源 配件
-												<em class="iconfont-arrow-right-big">
-												</em>
-											</a>
-											<div></div>
-										</li>
-									</ul>
-								</div>
-							</li>
-					        <li><a href="#">小米手机</a></li>
-					 		<li><a href="#">红米</a></li>
-					        <li><a href="#">平板</a></li>
-					        <li><a href="#">电视·盒子</a></li>
-					 		<li><a href="#">路由器</a></li>
-					        <li><a href="#">智能硬件</a></li>
-					        <li><a href="#">服务</a></li>
-					        <li><a href="#">社区</a></li>
-				        </ul>
-				    </div>
-		  		</div>
-			</div>
-		</nav>
-		<!--轮播图-->
-		<section>
-			<div class="container">
-				<div class="col-sm-12">
-					<div class="row">
-						<!--<div class="col-sm-3">-->
-							<!--<div class="list-group">-->
-								<!--<font class="list-group-item text-center" id="list-border">商品分类</font>-->
-								<!--<a href="#" class="list-group-item">手机 平板 电话卡<span class="glyphicon glyphicon-menu-right gl-right"></span></a>-->
-								<!--<a href="#" class="list-group-item">电视 盒子<span class="glyphicon glyphicon-menu-right gl-right"></span></a>-->
-								<!--<a href="#" class="list-group-item">路由器 智能硬件<span class="glyphicon glyphicon-menu-right gl-right"></span></a>-->
-								<!--<a href="#" class="list-group-item">移动电源 插线板<span class="glyphicon glyphicon-menu-right gl-right"></span></a>-->
-								<!--<a href="#" class="list-group-item">耳机 音箱<span class="glyphicon glyphicon-menu-right gl-right"></span></a>-->
-								<!--<a href="#" class="list-group-item">电池 存储卡<span class="glyphicon glyphicon-menu-right gl-right"></span></a>-->
-								<!--<a href="#" class="list-group-item">保护套 后盖<span class="glyphicon glyphicon-menu-right gl-right"></span></a>-->
-							<!--</div>-->
-						<!--</div>-->
-						<div class="col-sm-9">
-							<div id="carousel-example-generic9" class="carousel slide" data-ride="carousel">
-							  <!-- Indicators -->
-							  <ol class="carousel-indicators">
-							    <li data-target="#carousel-example-generic9" data-slide-to="0" class="active"></li>
-							    <li data-target="#carousel-example-generic9" data-slide-to="1"></li>
-							    <li data-target="#carousel-example-generic9" data-slide-to="2"></li>
-							    <li data-target="#carousel-example-generic9" data-slide-to="3"></li>
-							  </ol>
-							
-							  <!-- Wrapper for slides -->
-							  <div class="carousel-inner" role="listbox">
-							    <div class="item active">
-							      <img src="img/lunbo1.jpg" alt="..." class="imglunbo">
-							      <div class="carousel-caption">
-							        ...
-							      </div>
-							    </div>
-							    <div class="item">
-							      <img src="img/lunbo2.webp" alt="..." class="imglunbo">
-							      <div class="carousel-caption">
-							        ...
-							      </div>
-							    </div>
-							    <div class="item">
-							      <img src="img/lunbo3.webp" alt="..." class="imglunbo">
-							      <div class="carousel-caption">
-							        ...
-							      </div>
-							    </div>
-							    <div class="item">
-							      <img src="img/8.webp" alt="..." class="imglunbo">
-							      <div class="carousel-caption">
-							        ...
-							      </div>
-							    </div>
-							  </div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!--中部图片-->
-		<section>
-			<div class="container">
-				<div class="col-sm-12">
-					<div class="row">
-						<div class="col-sm-3">
-							<a href="#" class="thumbnail">
-						      <img src="img/T11.jpg" alt="...">
-						    </a>
-						</div>
-						<div class="col-sm-3">
-						    <a href="#" class="thumbnail">
-						      <img src="img/T12.jpg" alt="...">
-						    </a>
-						</div>
-						<div class="col-sm-3">
-						    <a href="#" class="thumbnail">
-						      <img src="img/T13.jpg" alt="...">
-						    </a>
-						</div>
-						<div class="col-sm-3">
-						    <a href="#" class="thumbnail">
-						      <img src="img/T14.jpg" alt="...">
-						    </a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!--智能硬件-->
-		<section class="hardware">
-			<div class="container">
-				<div class="col-sm-12">
-					<div class="row row-content">
-						<div class="col-sm-12">
-							<h3 class="thumbnail-h3">智能硬件</h3>
-						</div>
-						<div class="col-sm-12">
-							<div class="col-sm-3">
-								<div class="thumbnail thumbnail-border">
-									<img src="img/1.webp" alt="...">
-								    <div class="caption">
-									    <h3 class="text-center h4">Pro 15.6 2020款 i7 16G 1TB MX350 2G 100% sRGB 深空灰</h3>
-									    <p class="text-center p">从核心到视野，再次突破强大</p>
-									    <p class="text-center p-color">6799元</p>
-								    </div>
-							    </div>
-							</div>
-							<div class="col-sm-3">
-								<div class="thumbnail thumbnail-border">
-								    <img src="img/2.webp" alt="...">
-								    <div class="caption">
-									    <h3 class="text-center h4">小米手表 标准版 典雅黑</h3>
-									    <p class="text-center p"> 能打电话、能下载APP，才是真正的智能手表</p>
-									    <p class="text-center p-color">1199元</p>
-								    </div>
-							    </div>
-							</div>
-							<div class="col-sm-3">
-								<div class="thumbnail thumbnail-border">
-								    <img src="img/3.webp" alt="...">
-								    <div class="caption">
-									    <h3 class="text-center h4">RedmiBook 14 增强版 i7/8G/512G 银色</h3>
-									    <p class="text-center p">十代酷睿更强劲</p>
-									    <p class="text-center p-color">4999元</p>
-								    </div>
-							    </div>
-							</div>
-							<div class="col-sm-3">
-								<div class="thumbnail thumbnail-border">
-								    <img src="img/4.webp" alt="...">
-								    <div class="caption">
-									    <h3 class="text-center h4">米家两门冰箱 160L 银色</h3>
-									    <p class="text-center p">小巧能装，速冻养鲜</p>
-									    <p class="text-center p-color">998元</p>
-								    </div>
-							    </div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!--热评产品-->
-		<section class="buzz">
-			<div class="container">
-				<div class="col-sm-12">
-					<div class="row">
-						<div class="col-sm-12">
-							<h3>热评产品</h3>
-						</div>
-						<div class="col-sm-12">
-							<div class="col-sm-3">
-								<div class="thumbnail thumbnail-border">
-									<img src="img/Hod1.webp" alt="...">
-								    <div class="caption hover">
-									    <h3 class="text-left h4">屏幕清晰，视频流畅，不卡顿，质量也好</h3>
-									    <p class="text-center p">来自于 167953031 的评价</p>
-									    <p class="text-center p-color">小米全面屏电视E32C | 899元</p>
-								    </div>
-							    </div>
-							</div>
-							<div class="col-sm-3">
-								<div class="thumbnail thumbnail-border">
-								    <img src="img/Hod2.jpg" alt="...">
-								    <div class="caption hover">
-									    <h3 class="text-left h4">温度调节够快，最赞的是静音</h3>
-									    <p class="text-center p">来自于 欧阳新兰 的评价</p>
-									    <p class="text-center p-color">米家空调 | 1699元</p>
-								    </div>
-							    </div>
-							</div>
-							<div class="col-sm-3">
-								<div class="thumbnail thumbnail-border">
-								    <img src="img/Hod3.webp" alt="...">
-								    <div class="caption hover">
-									    <h3 class="text-left h4">智能洗烘，省心省力，谁用谁知道</h3>
-									    <p class="text-center p">来自于 谁抢了我的小侨 的评价</p>
-									    <p class="text-center p-color">米家互联网洗烘一体机 10kg | 2999元</p>
-								    </div>
-							    </div>
-							</div>
-							<div class="col-sm-3">
-								<div class="thumbnail thumbnail-border">
-								    <img src="img/Hod4.webp" alt="...">
-								    <div class="caption hover">
-									    <h3 class="text-left h4">买给父母的，他们也觉得很方便</h3>
-									    <p class="text-center p">来自于 650622246 的评价</p>
-									    <p class="text-center p-color">Redmi全自动波轮洗衣机1A 8kg | 899元</p>
-								    </div>
-							    </div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!--内容-->
-		<section class="content-fixed">
-			<div class="container">
-				<div class="col-sm-12">
-					<div class="row row-content">
-						<div class="col-sm-12">
-							<h3 class="content-h3">内容</h3>
-						</div>
-						<div class="col-sm-12">
-							<div class="col-sm-3">
-								<div id="carousel-example-generic31" class="carousel slide" data-ride="carousel">
-									<div class="carousel-inner" role="listbox">
-									    <div class="item active">
-									      <img src="img/201511050947.png" alt="...">
-									    </div>
-									    <div class="item">
-									      <img src="img/201511050948.png" alt="...">
-									    </div>
-									    <div class="item">
-									      <img src="img/201511050949.png" alt="...">
-									    </div>
-									    <div class="item">
-									      <img src="img/201511050950.png" alt="...">
-									    </div>
-									</div>
-								</div>
-							</div>
-							<div class="col-sm-3">
-								<div id="carousel-example-generic32" class="carousel slide" data-ride="carousel">
-									<div class="carousel-inner" role="listbox">
-									    <div class="item active">
-									      <img src="img/20151107204521.png" alt="...">
-									    </div>
-									    <div class="item">
-									      <img src="img/20151107204550.png" alt="...">
-									    </div>
-									    <div class="item">
-									      <img src="img/20151107204620.png" alt="...">
-									    </div>
-									    <div class="item">
-									      <img src="img/20151107204640.png" alt="...">
-									    </div>
-									</div>
-								</div>
-							</div>
-							<div class="col-sm-3">
-								<div id="carousel-example-generic33" class="carousel slide" data-ride="carousel">
-									<div class="carousel-inner" role="listbox">
-									    <div class="item active">
-									      <img src="img/20151107205119.png" alt="...">
-									    </div>
-									    <div class="item">
-									      <img src="img/20151107205151.png" alt="...">
-									    </div>
-									    <div class="item">
-									      <img src="img/20151107205215.png" alt="...">
-									    </div>
-									    <div class="item">
-									      <img src="img/20151107205231.png" alt="..." class="content">
-									    </div>
-									</div>
-								</div>
-							</div>
-							<div class="col-sm-3">
-								<div id="carousel-example-generic34" class="carousel slide" data-ride="carousel">
-									<div class="carousel-inner" role="listbox">
-									    <div class="item active">
-									      <img src="img/20151107205507.png" alt="...">
-									    </div>
-									    <div class="item">
-									      <img src="img/20151107205526.png" alt="...">
-									    </div>
-									    <div class="item">
-									      <img src="img/20151107205546.png" alt="...">
-									    </div>
-									    <div class="item">
-									      <img src="img/20151107205611.png" alt="...">
-									    </div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!--限时抢购-->
-		<section class="buybuy">
-			<div class="container">
-				<div class="col-sm-12">
-					<div class="row row-content">
-						<div class="col-sm-12">
-							<h3 class="buy">限时抢购</h3>
-						</div>
-						<div class="col-sm-12 buy-col">
-							<div class="col-sm-6 buy-hover">
-								<div class="col-sm-6 buy-left">
-									<img src="img/Re2.webp"/>
-								</div>
-								<div class="col-sm-6 buy-left">
-									<h4 class="buy-h4">小米10 至尊版</h4>
-									<p class="buy-p">120X 变焦/120W秒充/120Hz屏幕</p>
-									<p class="price"><span class="buy-span">5299</span>元起</p>
-									<p class="nowbuy"><a href="">立即购买</a></p>
-								</div>
-							</div>
-							<div class="col-sm-6 buy-hover">
-								<div class="col-sm-6 buy-right">
-									<img src="img/Re1.webp"/>
-								</div>
-								<div class="col-sm-6 buy-right">
-									<h4 class="buy-h4">腾讯黑鲨3S</h4>
-									<p class="buy-p">骁龙865处理器，120Hz刷新率</p>
-									<p class="price"><span class="buy-span">3999</span>元起</p>
-									<p class="nowbuy"><a href="">立即购买</a></p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!--周边商城-->
-		<section class="circum">
-			<div class="container">
-				<div class="col-sm-12">
-					<div class="row row-content">
-						<div class="col-lg-7sm-12">
-							<h3 class="buy">周边商城</h3>
-						</div>
-						<div class="col-lg-7sm-12">
-							<div class="col-sm-3">
-								<div class="thumbnail thumbnail-border circum-hover">
-								    <img src="img/Zhoubian1.jpg" alt="...">
-								    <div class="caption">
-									    <h3 class="text-center h4">贝医生巴氏牙刷 四色装</h3>
-									    <p class="text-center p-color">39.9元</p>
-									    <p class="text-center p">3.7万人评价</p>
-								    </div>
-								    <div class="col-sm-12 hiddenover">
-								    	<p>很好用，不掉毛</p>
-								    	<p class="hiddenover-first text-center">来自于 15288871870 的评价 </p>
-							    	</div>
-							    </div>
-							    
-							</div>
-							<div class="col-sm-3">
-								<div class="thumbnail thumbnail-border circum-hover">
-								    <img src="img/Zhoubian2.webp" alt="...">
-								    <div class="caption">
-									    <h3 class="text-center h4">米家迷你保温杯</h3>
-									    <p class="text-center p-color">49元</p>
-									    <p class="text-center p">2684人评价</p>
-								    </div>
-								    <div class="col-sm-12 hiddenover">
-								    	<p>质量很好，保温效果很不错!</p>
-								    	<p class="hiddenover-first text-center">来自于 追风骚年 的评价 </p>
-							    	</div>
-							    </div>
-							</div>
-							<div class="col-sm-3">
-								<div class="thumbnail thumbnail-border circum-hover">
-								    <img src="img/Zhoubian3.webp" alt="...">
-								    <div class="caption">
-									    <h3 class="text-center h4">米家运动鞋4</h3>
-									    <p class="text-center p-color">199元</p>
-									    <p class="text-center p">3864人评价</p>
-								    </div>
-								    <div class="col-sm-12 hiddenover">
-								    	<p>质量很不错，穿上很轻盈，软和也热和。</p>
-								    	<p class="hiddenover-first text-center">来自于 小猪去哪二了 的评价 </p>
-							    	</div>
-							    </div>
-							</div>
-							<div class="col-sm-3">
-								<div class="thumbnail thumbnail-border circum-hover">
-								    <img src="img/Zhoubian4.webp" alt="...">
-								    <div class="caption">
-									    <h3 class="text-center h4">8H乳胶床垫2</h3>
-									    <p class="text-center p-color">599元</p>
-									    <p class="text-center p">1.1万人评价</p>
-								    </div>
-								    <div class="col-sm-12 hiddenover">
-								    	<p>助眠效果不错，我很喜欢</p>
-								    	<p class="hiddenover-first text-center">来自于 圣诞节 的评价 </p>
-							    	</div>
-							    </div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!--页脚信息-->
-		<footer class="footer">
-			<div class="container">
-				<div class="col-sm-12">
-					<div class="row row-content">
-						<div class="col-sm-12 footer-border">
-							<div class="col-sm-3 footer-padding">
-								<img src="img/iconfont-gongju (1).png" class="footer-img"/>
-								<span class="footer-font">一小时快修服务</span>
-							</div>
-							<div class="col-sm-3 footer-padding">
-								<img src="img/iconfont-7tian (1).png" class="footer-img"/>
-								<span class="footer-font">7天无理由退货</span>
-							</div>
-							<div class="col-sm-3 footer-padding">
-								<img src="img/iconfont-15tian (1).png" class="footer-img"/>
-								<span class="footer-font">15天免费换货</span>
-							</div>
-							<div class="col-sm-3 footer-padding last">
-								<img src="img/iconfont-ditu.png" class="footer-img"/>
-								<span class="footer-font">520余家售后点</span>
-							</div>
-						</div>
-						<div class="col-sm-12">
-							<div class="col-sm-9">
-								<div class="col-sm-12">
-									<div class="col-sm-3 footer-p">
-										<p class="p-footer">帮助中心</p>
-										<ul class="list-group footer-ul">
-										  <li class="list-group-item list-item">购物指南</li>
-										  <li class="list-group-item">支付方式</li>
-										  <li class="list-group-item">配送方式</li>
-										</ul>
-									</div>
-									<div class="col-sm-3 footer-p">
-										<p class="p-footer">服务支持</p>
-										<ul class="list-group footer-ul">
-										  <li class="list-group-item list-item">售后政策</li>
-										  <li class="list-group-item">自助服务</li>
-										  <li class="list-group-item">相关下载</li>
-										</ul>
-									</div>
-									<div class="col-sm-3 footer-p">
-										<p class="p-footer">关于小米</p>
-										<ul class="list-group footer-ul">
-										  <li class="list-group-item list-item">了解小米</li>
-										  <li class="list-group-item">加入小米</li>
-										  <li class="list-group-item">联系我们</li>
-										</ul>
-									</div>
-									<div class="col-sm-3 footer-p">
-										<p class="p-footer">关注我们</p>
-										<ul class="list-group footer-ul">
-										  <li class="list-group-item list-item">新浪微博</li>
-										  <li class="list-group-item">小米部落</li>
-										  <li class="list-group-item">官方微信</li>
-										</ul>
-									</div>
-								</div>
-							</div>
-							<div class="col-sm-3 footer-right">
-								<div class="footer-div">
-									<h3 class="footer-h3">400-100-5678</h3>
-									<p class="one">周一至周日 8:00-18:00 <br>（仅收市话费）</p>
-									<p class="two">24小时在线客服</p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</footer>
-		<!--<footer>
-		</footer>-->
-	</body>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/index.css"/>
+    <script src="js/jquery.1.11.3.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/bootstrap.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+<nav class="navbar navbar-default" id="navbar-top">
+    <div class="container">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="#" class="navbar-logo"><img src="img/mi.logo.png"/></a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right clearfix">
+                    <li id="left_nav" class="nav-category">
+                        <a href="#" class="link-category">
+                            <span class="text">全部商品分类</span>
+                        </a>
+                        <div class="site-category" style="display: block">
+                            <ul id="left_navList" class="site-category-list clearfix">
+                                <li class="category-item">
+                                    <a href="#" class="title">
+                                        手机 电话卡
+                                        <em class="iconfont-arrow-right-big"></em>
+                                    </a>
+                                    <div class="children clearfix children-col-4">
+                                        <ul class="children-list children-list-col children-list-col-1">
+                                            <li>
+                                                <a></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="category-item">
+                                    <a href="#" class="title">
+                                        电视 盒子
+                                        <em class="iconfont-arrow-right-big">
+                                        </em>
+                                    </a>
+                                    <div></div>
+                                </li>
+                                <li class="category-item">
+                                    <a href="#" class="title">
+                                        笔记本 显示器
+                                        <em class="iconfont-arrow-right-big">
+                                        </em>
+                                    </a>
+                                    <div></div>
+                                </li>
+                                <li class="category-item">
+                                    <a href="#" class="title">
+                                        家电 插线板
+                                        <em class="iconfont-arrow-right-big">
+                                        </em>
+                                    </a>
+                                    <div></div>
+                                </li>
+                                <li class="category-item">
+                                    <a href="#" class="title">
+                                        出行 穿戴
+                                        <em class="iconfont-arrow-right-big">
+                                        </em>
+                                    </a>
+                                    <div></div>
+                                </li>
+                                <li class="category-item">
+                                    <a href="#" class="title">
+                                        智能 路由器
+                                        <em class="iconfont-arrow-right-big">
+                                        </em>
+                                    </a>
+                                    <div></div>
+                                </li>
+                                <li class="category-item">
+                                    <a href="#" class="title">
+                                        电源 配件
+                                        <em class="iconfont-arrow-right-big">
+                                        </em>
+                                    </a>
+                                    <div></div>
+                                </li>
+                                <li class="category-item">
+                                    <a href="#" class="title">
+                                        健康 儿童
+                                        <em class="iconfont-arrow-right-big">
+                                        </em>
+                                    </a>
+                                    <div></div>
+                                </li>
+                                <li class="category-item">
+                                    <a href="#" class="title">
+                                        耳机 音箱
+                                        <em class="iconfont-arrow-right-big">
+                                        </em>
+                                    </a>
+                                    <div></div>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="#">小米手机</a></li>
+                    <li><a href="#">红米</a></li>
+                    <li><a href="#">平板</a></li>
+                    <li><a href="#">电视·盒子</a></li>
+                    <li><a href="#">路由器</a></li>
+                    <li><a href="#">智能硬件</a></li>
+                    <li><a href="#">服务</a></li>
+                    <li><a href="#">社区</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
+<!--轮播图-->
+<section>
+    <div class="container">
+        <div class="col-sm-12">
+            <div class="row">
+                <div class="col-sm-9">
+                    <div id="carousel-example-generic9" class="carousel slide" data-ride="carousel">
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators">
+                            <li data-target="#carousel-example-generic9" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel-example-generic9" data-slide-to="1"></li>
+                            <li data-target="#carousel-example-generic9" data-slide-to="2"></li>
+                            <li data-target="#carousel-example-generic9" data-slide-to="3"></li>
+                        </ol>
+
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner" role="listbox">
+                            <div class="item active">
+                                <img src="img/lunbo.jpg" alt="..." class="imglunbo">
+                                <div class="carousel-caption">
+                                    ...
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="img/lunbo2.webp" alt="..." class="imglunbo">
+                                <div class="carousel-caption">
+                                    ...
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="img/lunbo3.webp" alt="..." class="imglunbo">
+                                <div class="carousel-caption">
+                                    ...
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="img/8.webp" alt="..." class="imglunbo">
+                                <div class="carousel-caption">
+                                    ...
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--中部图片-->
+<section>
+    <div class="container">
+        <div class="col-sm-12">
+            <div class="row">
+                <div class="col-sm-3">
+                    <a href="#" class="thumbnail">
+                        <img src="img/T11.jpg" alt="...">
+                    </a>
+                </div>
+                <div class="col-sm-3">
+                    <a href="#" class="thumbnail">
+                        <img src="img/T12.jpg" alt="...">
+                    </a>
+                </div>
+                <div class="col-sm-3">
+                    <a href="#" class="thumbnail">
+                        <img src="img/T13.jpg" alt="...">
+                    </a>
+                </div>
+                <div class="col-sm-3">
+                    <a href="#" class="thumbnail">
+                        <img src="img/T14.jpg" alt="...">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--智能硬件-->
+<section class="hardware">
+    <div class="container">
+        <div class="col-sm-12">
+            <div class="row row-content">
+                <div class="col-sm-12">
+                    <h3 class="thumbnail-h3">智能硬件</h3>
+                </div>
+                <div class="col-sm-12">
+                    <div class="col-sm-3">
+                        <div class="thumbnail thumbnail-border">
+                            <img src="img/1.webp" alt="...">
+                            <div class="caption">
+                                <h3 class="text-center h4">Pro 15.6 2020款 i7 16G 1TB MX350 2G 100% sRGB 深空灰</h3>
+                                <p class="text-center p">从核心到视野，再次突破强大</p>
+                                <p class="text-center p-color">6799元</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="thumbnail thumbnail-border">
+                            <img src="img/2.webp" alt="...">
+                            <div class="caption">
+                                <h3 class="text-center h4">小米手表 标准版 典雅黑</h3>
+                                <p class="text-center p"> 能打电话、能下载APP，才是真正的智能手表</p>
+                                <p class="text-center p-color">1199元</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="thumbnail thumbnail-border">
+                            <img src="img/3.webp" alt="...">
+                            <div class="caption">
+                                <h3 class="text-center h4">RedmiBook 14 增强版 i7/8G/512G 银色</h3>
+                                <p class="text-center p">十代酷睿更强劲</p>
+                                <p class="text-center p-color">4999元</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="thumbnail thumbnail-border">
+                            <img src="img/4.webp" alt="...">
+                            <div class="caption">
+                                <h3 class="text-center h4">米家两门冰箱 160L 银色</h3>
+                                <p class="text-center p">小巧能装，速冻养鲜</p>
+                                <p class="text-center p-color">998元</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--热评产品-->
+<section class="buzz">
+    <div class="container">
+        <div class="col-sm-12">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h3>热评产品</h3>
+                </div>
+                <div class="col-sm-12">
+                    <div class="col-sm-3">
+                        <div class="thumbnail thumbnail-border">
+                            <img src="img/Hod1.webp" alt="...">
+                            <div class="caption hover">
+                                <h3 class="text-left h4">屏幕清晰，视频流畅，不卡顿，质量也好</h3>
+                                <p class="text-center p">来自于 167953031 的评价</p>
+                                <p class="text-center p-color">小米全面屏电视E32C | 899元</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="thumbnail thumbnail-border">
+                            <img src="img/Hod2.jpg" alt="...">
+                            <div class="caption hover">
+                                <h3 class="text-left h4">温度调节够快，最赞的是静音</h3>
+                                <p class="text-center p">来自于 欧阳新兰 的评价</p>
+                                <p class="text-center p-color">米家空调 | 1699元</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="thumbnail thumbnail-border">
+                            <img src="img/Hod3.webp" alt="...">
+                            <div class="caption hover">
+                                <h3 class="text-left h4">智能洗烘，省心省力，谁用谁知道</h3>
+                                <p class="text-center p">来自于 谁抢了我的小侨 的评价</p>
+                                <p class="text-center p-color">米家互联网洗烘一体机 10kg | 2999元</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="thumbnail thumbnail-border">
+                            <img src="img/Hod4.webp" alt="...">
+                            <div class="caption hover">
+                                <h3 class="text-left h4">买给父母的，他们也觉得很方便</h3>
+                                <p class="text-center p">来自于 650622246 的评价</p>
+                                <p class="text-center p-color">Redmi全自动波轮洗衣机1A 8kg | 899元</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--内容-->
+<section class="content-fixed">
+    <div class="container">
+        <div class="col-sm-12">
+            <div class="row row-content">
+                <div class="col-sm-12">
+                    <h3 class="content-h3">内容</h3>
+                </div>
+                <div class="col-sm-12">
+                    <div class="col-sm-3">
+                        <div id="carousel-example-generic31" class="carousel slide" data-ride="carousel">
+                            <div class="carousel-inner" role="listbox">
+                                <div class="item active">
+                                    <img src="img/201511050947.png" alt="...">
+                                </div>
+                                <div class="item">
+                                    <img src="img/201511050948.png" alt="...">
+                                </div>
+                                <div class="item">
+                                    <img src="img/201511050949.png" alt="...">
+                                </div>
+                                <div class="item">
+                                    <img src="img/201511050950.png" alt="...">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div id="carousel-example-generic32" class="carousel slide" data-ride="carousel">
+                            <div class="carousel-inner" role="listbox">
+                                <div class="item active">
+                                    <img src="img/20151107204521.png" alt="...">
+                                </div>
+                                <div class="item">
+                                    <img src="img/20151107204550.png" alt="...">
+                                </div>
+                                <div class="item">
+                                    <img src="img/20151107204620.png" alt="...">
+                                </div>
+                                <div class="item">
+                                    <img src="img/20151107204640.png" alt="...">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div id="carousel-example-generic33" class="carousel slide" data-ride="carousel">
+                            <div class="carousel-inner" role="listbox">
+                                <div class="item active">
+                                    <img src="img/20151107205119.png" alt="...">
+                                </div>
+                                <div class="item">
+                                    <img src="img/20151107205151.png" alt="...">
+                                </div>
+                                <div class="item">
+                                    <img src="img/20151107205215.png" alt="...">
+                                </div>
+                                <div class="item">
+                                    <img src="img/20151107205231.png" alt="..." class="content">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div id="carousel-example-generic34" class="carousel slide" data-ride="carousel">
+                            <div class="carousel-inner" role="listbox">
+                                <div class="item active">
+                                    <img src="img/20151107205507.png" alt="...">
+                                </div>
+                                <div class="item">
+                                    <img src="img/20151107205526.png" alt="...">
+                                </div>
+                                <div class="item">
+                                    <img src="img/20151107205546.png" alt="...">
+                                </div>
+                                <div class="item">
+                                    <img src="img/20151107205611.png" alt="...">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--限时抢购-->
+<section class="buybuy">
+    <div class="container">
+        <div class="col-sm-12">
+            <div class="row row-content">
+                <div class="col-sm-12">
+                    <h3 class="buy">限时抢购</h3>
+                </div>
+                <div class="col-sm-12 buy-col">
+                    <div class="col-sm-6 buy-hover">
+                        <div class="col-sm-6 buy-left">
+                            <img src="img/Re2.webp"/>
+                        </div>
+                        <div class="col-sm-6 buy-left">
+                            <h4 class="buy-h4">小米10 至尊版</h4>
+                            <p class="buy-p">120X 变焦/120W秒充/120Hz屏幕</p>
+                            <p class="price"><span class="buy-span">5299</span>元起</p>
+                            <p class="nowbuy"><a href="">立即购买</a></p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 buy-hover">
+                        <div class="col-sm-6 buy-right">
+                            <img src="img/Re1.webp"/>
+                        </div>
+                        <div class="col-sm-6 buy-right">
+                            <h4 class="buy-h4">腾讯黑鲨3S</h4>
+                            <p class="buy-p">骁龙865处理器，120Hz刷新率</p>
+                            <p class="price"><span class="buy-span">3999</span>元起</p>
+                            <p class="nowbuy"><a href="">立即购买</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--周边商城-->
+<section class="circum">
+    <div class="container">
+        <div class="col-sm-12">
+            <div class="row row-content">
+                <div class="col-lg-7sm-12">
+                    <h3 class="buy">周边商城</h3>
+                </div>
+                <div class="col-lg-7sm-12">
+                    <div class="col-sm-3">
+                        <div class="thumbnail thumbnail-border circum-hover">
+                            <img src="img/Zhoubian1.jpg" alt="...">
+                            <div class="caption">
+                                <h3 class="text-center h4">贝医生巴氏牙刷 四色装</h3>
+                                <p class="text-center p-color">39.9元</p>
+                                <p class="text-center p">3.7万人评价</p>
+                            </div>
+                            <div class="col-sm-12 hiddenover">
+                                <p>很好用，不掉毛</p>
+                                <p class="hiddenover-first text-center">来自于 15288871870 的评价 </p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="thumbnail thumbnail-border circum-hover">
+                            <img src="img/Zhoubian2.webp" alt="...">
+                            <div class="caption">
+                                <h3 class="text-center h4">米家迷你保温杯</h3>
+                                <p class="text-center p-color">49元</p>
+                                <p class="text-center p">2684人评价</p>
+                            </div>
+                            <div class="col-sm-12 hiddenover">
+                                <p>质量很好，保温效果很不错!</p>
+                                <p class="hiddenover-first text-center">来自于 追风骚年 的评价 </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="thumbnail thumbnail-border circum-hover">
+                            <img src="img/Zhoubian3.webp" alt="...">
+                            <div class="caption">
+                                <h3 class="text-center h4">米家运动鞋4</h3>
+                                <p class="text-center p-color">199元</p>
+                                <p class="text-center p">3864人评价</p>
+                            </div>
+                            <div class="col-sm-12 hiddenover">
+                                <p>质量很不错，穿上很轻盈，软和也热和。</p>
+                                <p class="hiddenover-first text-center">来自于 小猪去哪二了 的评价 </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="thumbnail thumbnail-border circum-hover">
+                            <img src="img/Zhoubian4.webp" alt="...">
+                            <div class="caption">
+                                <h3 class="text-center h4">8H乳胶床垫2</h3>
+                                <p class="text-center p-color">599元</p>
+                                <p class="text-center p">1.1万人评价</p>
+                            </div>
+                            <div class="col-sm-12 hiddenover">
+                                <p>助眠效果不错，我很喜欢</p>
+                                <p class="hiddenover-first text-center">来自于 圣诞节 的评价 </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--页脚信息-->
+<footer class="footer">
+    <div class="container">
+        <div class="col-sm-12">
+            <div class="row row-content">
+                <div class="col-sm-12 footer-border">
+                    <div class="col-sm-3 footer-padding">
+                        <img src="img/iconfont-gongju (1).png" class="footer-img"/>
+                        <span class="footer-font">一小时快修服务</span>
+                    </div>
+                    <div class="col-sm-3 footer-padding">
+                        <img src="img/iconfont-7tian (1).png" class="footer-img"/>
+                        <span class="footer-font">7天无理由退货</span>
+                    </div>
+                    <div class="col-sm-3 footer-padding">
+                        <img src="img/iconfont-15tian (1).png" class="footer-img"/>
+                        <span class="footer-font">15天免费换货</span>
+                    </div>
+                    <div class="col-sm-3 footer-padding last">
+                        <img src="img/iconfont-ditu.png" class="footer-img"/>
+                        <span class="footer-font">520余家售后点</span>
+                    </div>
+                </div>
+                <div class="col-sm-12">
+                    <div class="col-sm-9">
+                        <div class="col-sm-12">
+                            <div class="col-sm-3 footer-p">
+                                <p class="p-footer">帮助中心</p>
+                                <ul class="list-group footer-ul">
+                                    <li class="list-group-item list-item">购物指南</li>
+                                    <li class="list-group-item">支付方式</li>
+                                    <li class="list-group-item">配送方式</li>
+                                </ul>
+                            </div>
+                            <div class="col-sm-3 footer-p">
+                                <p class="p-footer">服务支持</p>
+                                <ul class="list-group footer-ul">
+                                    <li class="list-group-item list-item">售后政策</li>
+                                    <li class="list-group-item">自助服务</li>
+                                    <li class="list-group-item">相关下载</li>
+                                </ul>
+                            </div>
+                            <div class="col-sm-3 footer-p">
+                                <p class="p-footer">关于小米</p>
+                                <ul class="list-group footer-ul">
+                                    <li class="list-group-item list-item">了解小米</li>
+                                    <li class="list-group-item">加入小米</li>
+                                    <li class="list-group-item">联系我们</li>
+                                </ul>
+                            </div>
+                            <div class="col-sm-3 footer-p">
+                                <p class="p-footer">关注我们</p>
+                                <ul class="list-group footer-ul">
+                                    <li class="list-group-item list-item">新浪微博</li>
+                                    <li class="list-group-item">小米部落</li>
+                                    <li class="list-group-item">官方微信</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 footer-right">
+                        <div class="footer-div">
+                            <h3 class="footer-h3">400-100-5678</h3>
+                            <p class="one">周一至周日 8:00-18:00 <br>（仅收市话费）</p>
+                            <p class="two">24小时在线客服</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!--<footer>
+</footer>-->
+</body>
 </html>
