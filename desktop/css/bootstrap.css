@@ -29,7 +29,10 @@ section,
 summary {
     display: block;
 }
-
+.lunbo,.center{
+    display: block;
+    margin-bottom: 20px;
+}
 audio,
 canvas,
 progress,
@@ -5174,7 +5177,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .navbar {
     position: relative;
     min-height: 50px;
-    margin-bottom: 20px;
+    margin-bottom: 2px;
     border: 1px solid transparent;
 }
 
@@ -6175,7 +6178,7 @@ a.badge:focus {
 .thumbnail {
     display: block;
     padding: 4px;
-    margin-bottom: 20px;
+    /*margin-bottom: 20px;*/
     line-height: 1.42857143;
     background-color: #fff;
     border: 1px solid #ddd;
@@ -6183,7 +6186,7 @@ a.badge:focus {
     -webkit-transition: border .2s ease-in-out;
     -o-transition: border .2s ease-in-out;
     transition: border .2s ease-in-out;
-    width: 19em; /*保证文字不会被半汉字截断,显示10个文字*/
+    /*width: 19em; !*保证文字不会被半汉字截断,显示10个文字*!*/
     overflow: hidden; /*超出长度的文字隐藏*/
     text-overflow: ellipsis; /*文字隐藏以后添加省略号*/
     white-space: nowrap; /*强制不换行*/
@@ -8269,7 +8272,7 @@ button.close {
 }
 .site-category{
     position: absolute;
-    top: 84px;
+    top: 66px;
     left: -397px;
     z-index: 21;
     width: 234px;
@@ -8300,6 +8303,9 @@ button.close {
 .site-category-list .title:hover{
     text-decoration: none;
 }
+.site-category-list .title:hover .children{
+    display: block;
+}
 .site-category-list .title em[class*=iconfont]{
     position: absolute;
     top: 12px;
@@ -8324,5 +8330,76 @@ button.close {
     height: 10px;
     -webkit-transform: rotate(-45deg);
 }
+.site-category-list .children-col-4{
+    width: 886px;
+}
+.site-category-list .children{
+    display: none;
+    position: absolute;
+    left: 234px;
+    top: 0px;
+    z-index: 24;
+    height: 420px;
+    border: 1px solid #e0e0e0;
+    border-left: 0;
+    background: #fff;
+    box-shadow: 0 8px 16px rgba(0,0,0,.18);
+}
+.site-category-list .children-col-4 .children-list-col{
+    width: 290px;
+    margint:-1px 2px 0 0;
+    /*border: 1px solid #e3e3e3;*/
+    /*box-shadow: 0 8px 16px rgba(0,0,0,.18);*/
+}
+.site-category-list .children-col-4 .children-list-col-1,
+.site-category-list .children-col-4 .children-list-col-2,
+.site-category-list .children-col-4 .children-list-col-3{
+    float: left;
+}
+.site-category-list .children-list-col{
+    float: left;
+}
+.site-category-list .children-list{
+    height: 417px;
+    margin: 0;
+    padding: 2px 0;
+    list-style-type: none;
+}
+.site-category-list .children-list li{
+    position: relative;
+    float: left;
+    width: 254px;
+    height: 67px;
+}
+.site-category-list .children-list .link{
+    display: block;
+    padding: 18px 20px;
+    line-height: 40px;
+    color: #333;
+    transition: color .2s;
+    text-decoration: none;
+}
+.site-category-list .children-list .thumb{
+    float: left;
+    margin-right: 12px;
+    vertical-align: middle;
+}
+.site-category-list .children-list .text{
+    float: left;
+    width: 162px;
+    line-height: 40px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.category-item:hover div{
+    display: block;
+}
+
+
+
+
+
+
 
 
