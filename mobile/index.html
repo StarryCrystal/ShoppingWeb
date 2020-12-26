@@ -37,12 +37,12 @@
                 }, 3000);
             });
         });
-        $(function() {
+        $(function () {
             $('dl#my-foldpanel').foldpanel({
-                init:false,     	 //是否开启初始化功能,默认关闭
+                init: false,     	 //是否开启初始化功能,默认关闭
                 init_index: 0, // 传的数字代表初始化展开的索引，0就是第一个
                 time: 400, // panel展开动画时间, 默认为 100ms
-                dbclose: false // 在此点击关闭, 默认为 true
+                dbclose: true // 在此点击关闭, 默认为 true
             });
         })
     </script>
@@ -104,15 +104,15 @@
     </div>
     <!--header nav-->
     <dl class="foldpanel" id="my-foldpanel">
-        <dt>菜单</dt>
+        <dt>菜单-二级菜单演示(点击)</dt>
         <dd>
             <a>手机</a>
             <a>笔记本</a>
             <a>智能设备</a>
         </dd>
+        <img src="images/rollup.png" alt="" style="position: fixed;top: 56px;right: 13px;height: 33px;">
     </dl>
     <!-- header end -->
-
     <!-- banner start -->
     <div id="slider" class="slider card card-nomb" style="visibility: visiable;">
         <div class="swipe-wrap">
