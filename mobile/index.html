@@ -23,7 +23,8 @@
     <script src="js/ready.js"></script>
     <script src="js/swipe.js"></script>
     <script src="js/jquery-3.5.1.js"></script>
-    <script type="text/javascript" >
+    <script src="js/myFoldpanel.js"></script>
+    <script type="text/javascript">
         /* loading ready  */
         document.ready(function () {
             document.getElementById("loading").style.display = "none";
@@ -36,6 +37,14 @@
                 }, 3000);
             });
         });
+        $(function() {
+            $('dl#my-foldpanel').foldpanel({
+                init:false,     	 //是否开启初始化功能,默认关闭
+                init_index: 0, // 传的数字代表初始化展开的索引，0就是第一个
+                time: 400, // panel展开动画时间, 默认为 100ms
+                dbclose: false // 在此点击关闭, 默认为 true
+            });
+        })
     </script>
 </head>
 <body>
@@ -62,6 +71,7 @@
         </div>
     </div>
 </div>
+
 <!--top ad-->
 <div class="ad"><img src="images/ad.jpg" alt="" style="width: 100%"></div>
 <!-- all content  -->
@@ -70,7 +80,7 @@
     <div class="header">
         <!-- 绝对定位的logo -->
         <div class="logo">
-            <a href="/" title="小米商城 " class="home">
+            <a href="/" title="小米商城" class="home">
                 <span><img src="images/logo.png" alt="" style="width: 30px"></span>
             </a>
         </div>
@@ -92,6 +102,15 @@
             </ul>
         </div>
     </div>
+    <!--header nav-->
+    <dl class="foldpanel" id="my-foldpanel">
+        <dt>菜单</dt>
+        <dd>
+            <a>手机</a>
+            <a>笔记本</a>
+            <a>智能设备</a>
+        </dd>
+    </dl>
     <!-- header end -->
 
     <!-- banner start -->
@@ -154,41 +173,7 @@
             src="//cdn.cnbj1.fds.api.mi-img.com/mi-mall/eb4cbd9dabf2c2aef15e43f5bcab5cb9.jpg?f=webp&amp;w=216&amp;h=228&amp;bg=FFFFFF"
             lazy="loaded"><!----></a><!----></div>
     <!--    icon—menu end-->
-    <!-- menu start -->
-    <div class="nav-wrap nav-index">
-        <div id="slider_nav" class="swipe" style="visibility: visiable;">
-            <div class="swipe-wrap">
 
-                <div data-index="0">
-                    <ul>
-                        <li><a href="category.html"><span class="icon icon-quanbushangpin"></span><span class="t"><span>全部商品</span></span></a>
-                        </li>
-                        <li><a href="search.html"><span class="icon icon-sousuo"></span><span class="t"><span>搜索</span></span></a>
-                        </li>
-                        <li><a href="#"><span class="icon icon-shequ"></span><span
-                                class="t"><span>小米社区</span></span></a>
-                        </li>
-                        <li><a href="download.html" class="red"><span
-                                class="icon icon-kehuduan"></span><span class="t"><span>客户端</span></span></a></li>
-                    </ul>
-                </div>
-
-                <div data-index="1">
-                    <ul>
-                        <li><a href="#"><span class="icon icon-heyueji"></span><span
-                                class="t"><span>合约机</span></span></a></li>
-                        <li><a href="#"><span class="icon icon-fcode"></span><span
-                                class="t"><span>F码频道</span></span></a></li>
-                        <li><a href="#"><span
-                                class="icon icon-huafeichongzhi"></span><span class="t"><span>话费充值</span></span></a>
-                        </li>
-                    </ul>
-                </div>
-
-            </div>
-        </div>
-    </div>
-    <!-- menu end -->
 
     <!-- title start -->
     <div class="title"><span>现货购买</span></div>
@@ -415,7 +400,41 @@
         </div>
     </div>
     <!-- list two end -->
+    <!-- menu start -->
+    <div class="nav-wrap nav-index">
+        <div id="slider_nav" class="swipe" style="visibility: visiable;">
+            <div class="swipe-wrap">
 
+                <div data-index="0">
+                    <ul>
+                        <li><a href="category.html"><span class="icon icon-quanbushangpin"></span><span class="t"><span>全部商品</span></span></a>
+                        </li>
+                        <li><a href="search.html"><span class="icon icon-sousuo"></span><span class="t"><span>搜索</span></span></a>
+                        </li>
+                        <li><a href="#"><span class="icon icon-shequ"></span><span
+                                class="t"><span>小米社区</span></span></a>
+                        </li>
+                        <li><a href="download.html" class="red"><span
+                                class="icon icon-kehuduan"></span><span class="t"><span>客户端</span></span></a></li>
+                    </ul>
+                </div>
+
+                <div data-index="1">
+                    <ul>
+                        <li><a href="#"><span class="icon icon-heyueji"></span><span
+                                class="t"><span>合约机</span></span></a></li>
+                        <li><a href="#"><span class="icon icon-fcode"></span><span
+                                class="t"><span>F码频道</span></span></a></li>
+                        <li><a href="#"><span
+                                class="icon icon-huafeichongzhi"></span><span class="t"><span>话费充值</span></span></a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- menu end -->
     <!-- more start -->
     <div class="col1 more">
         <a href="#">
