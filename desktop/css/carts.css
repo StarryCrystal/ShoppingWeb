@@ -421,10 +421,11 @@ a:hover{
 .site-mini-header .header-logo .logo {
     position: relative;
     display: block;
-    width: 48px;
-    height: 48px;
+    width: 55px;
+    height: 55px;
     overflow: hidden;
     background-color: #ff6700;
+    background-image: url("../img/mi.logo.png");
 }
 .ir {
     display: block;
