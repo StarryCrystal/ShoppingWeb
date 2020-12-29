@@ -12,606 +12,944 @@
     <script src="js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
 </head>
 <body>
-<nav class="navbar navbar-default" id="navbar-top">
+<div class="site-topbar">
     <div class="container">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-                        data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a href="#" class="navbar-logo"><img src="img/mi.logo.png"/></a>
+        <div class="topbar-nav"><a rel="nofollow" href="//www.mi.com/index.html" stat_exposure="true">小米商城</a> <span
+                class="sep">|</span> <a rel="nofollow" href="//www.miui.com/" target="_blank"
+                                        stat_exposure="true">MIUI</a> <span class="sep">|</span> <a rel="nofollow"
+                                                                                                    href="//iot.mi.com"
+                                                                                                    target="_blank"
+                                                                                                    stat_exposure="true">IoT</a>
+            <span class="sep">|</span> <a rel="nofollow" href="//i.mi.com/" target="_blank" stat_exposure="true">云服务</a>
+            <span class="sep">|</span> <a rel="nofollow" href="//airstar.com/home" target="_blank" stat_exposure="true">天星数科</a>
+            <span class="sep">|</span> <a rel="nofollow" href="//youpin.mi.com/" target="_blank"
+                                          stat_exposure="true">有品</a> <span class="sep">|</span> <a rel="nofollow"
+                                                                                                    href="//xiaoai.mi.com/"
+                                                                                                    target="_blank"
+                                                                                                    stat_exposure="true">小爱开放平台</a>
+            <span class="sep">|</span> <a rel="nofollow" href="//qiye.mi.com/" target="_blank"
+                                          stat_exposure="true">企业团购</a> <span class="sep">|</span> <a rel="nofollow"
+                                                                                                      href="//www.mi.com/aptitude/list/?id=41"
+                                                                                                      target="_blank"
+                                                                                                      stat_exposure="true">资质证照</a>
+            <span class="sep">|</span> <a rel="nofollow" href="//www.mi.com/aptitude/list/" target="_blank"
+                                          stat_exposure="true">协议规则</a> <span class="sep">|</span> <a rel="nofollow"
+                                                                                                      href="//www.mi.com/appdownload/"
+                                                                                                      target="_blank"
+                                                                                                      id="J_siteDownloadApp"
+                                                                                                      class="topbar-download"
+                                                                                                      stat_exposure="true">
+                下载app
+                <span class="appcode"><img src="//i1.mifile.cn/f/i/17/appdownload/download.png?1" alt="小米商城" width="90"
+                                           height="90">
+        小米商城APP
+    </span></a> <span class="sep">|</span> <a rel="nofollow" href="https://xiaomishare.mi.com/?from=micom"
+                                              target="_blank" stat_exposure="true">智能生活</a> <span class="sep">|</span>
+            <a rel="nofollow" href="javascript:;" class="J_siteGlobalRegion" stat_exposure="true">Select Location</a>
+        </div>
+        <div id="J_miniCartTrigger" class="topbar-cart"><a rel="nofollow" id="J_miniCartBtn"
+                                                           href="//www.mi.com/buy/cart" class="cart-mini"
+                                                           stat_exposure="true"><em class="iconfont-cart"></em><em
+                class="iconfont-cart-full hide"></em>购物车<span class="cart-mini-num J_cartNum">（0）</span></a>
+            <div id="J_miniCartMenu" class="cart-menu ">
+                <div class="menu-content">
+                    <div class="loading">
+                        <div class="loader"></div>
+                    </div>
+                    <ul id="J_miniCartList" class="cart-list hide"></ul>
+                    <div id="J_miniCartListTotal" class="cart-total clearfix hide"></div>
+                    <div class="msg msg-error hide"></div>
+                    <div class="msg msg-empty hide">购物车中还没有商品，赶紧选购吧！</div>
+                </div>
             </div>
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right clearfix">
-                    <li id="left_nav" class="nav-category">
-                        <a href="#" class="link-category">
-                            <span class="text">全部商品分类</span>
+        </div>
+        <div id="J_siteUserInfo" class="topbar-info"><a rel="nofollow" href="javascript:void(0);" data-agreement="true"
+                                                        data-login="true" class="link"
+                                                        data-href="//order.mi.com/site/login?redirectUrl=https://www.mi.com/buy/detail?product_id=8041"
+                                                        stat_exposure="true">登录</a> <span class="sep">|</span> <a
+                rel="nofollow" href="javascript:void(0);" data-agreement="true" data-register="true" class="link"
+                data-href="//account.xiaomi.com/pass/register" stat_exposure="true">注册</a><span
+                class="sep">|</span><span class="message"><a rel="nofollow" href="javascript:void(0);"
+                                                             data-href="//www.mi.com/user/message"
+                                                             class="J_needAgreement" data-login="true"
+                                                             data-agreement="true" stat_exposure="true">消息通知<i
+                class="J_miMessageTotal"></i></a></span></div>
+    </div>
+    <div id="J_globalSiteLinks" style="display: none;"><a href="https://www.mi.com/hk/"
+                                                          data-log_code="31pchomeother000000#t=normal&amp;act=other&amp;page=home&amp;page_id=10530&amp;bid=3476930.1"
+                                                          rel="nofollow" data-settrack="true"
+                                                          onclick="_msq.push(['trackEvent','31pchomeother000000#t=normal&amp;act=other&amp;page=home&amp;page_id=10530&amp;bid=3476930.1','https://www.mi.com/hk/','0e5519feb6002210-218f55a2fd47e839','&quot;&quot;']);">繁体中文(HK)</a>
+        <a href="https://www.mi.com/tw/"
+           data-log_code="31pchomeother000001#t=normal&amp;act=other&amp;page=home&amp;page_id=10530&amp;bid=3476930.2"
+           rel="nofollow" data-settrack="true"
+           onclick="_msq.push(['trackEvent','31pchomeother000001#t=normal&amp;act=other&amp;page=home&amp;page_id=10530&amp;bid=3476930.2','https://www.mi.com/tw/','0e5519feb6002210-0149e8f1b4dc2353','&quot;&quot;']);">繁体中文(TW)</a>
+        <a href="https://www.mi.com/sg/"
+           data-log_code="31pchomeother000002#t=normal&amp;act=other&amp;page=home&amp;page_id=10530&amp;bid=3476930.3"
+           rel="nofollow" data-settrack="true"
+           onclick="_msq.push(['trackEvent','31pchomeother000002#t=normal&amp;act=other&amp;page=home&amp;page_id=10530&amp;bid=3476930.3','https://www.mi.com/sg/','0e5519feb6002210-4a477114e0c01c0b','&quot;&quot;']);">Singapore</a>
+        <a href="https://www.mi.com/my/"
+           data-log_code="31pchomeother000003#t=normal&amp;act=other&amp;page=home&amp;page_id=10530&amp;bid=3476930.4"
+           rel="nofollow" data-settrack="true"
+           onclick="_msq.push(['trackEvent','31pchomeother000003#t=normal&amp;act=other&amp;page=home&amp;page_id=10530&amp;bid=3476930.4','https://www.mi.com/my/','0e5519feb6002210-7a1d2b525c5a4f20','&quot;&quot;']);">Malaysia</a>
+        <a href="https://www.mi.com/ph/"
+           data-log_code="31pchomeother000004#t=normal&amp;act=other&amp;page=home&amp;page_id=10530&amp;bid=3476930.5"
+           rel="nofollow" data-settrack="true"
+           onclick="_msq.push(['trackEvent','31pchomeother000004#t=normal&amp;act=other&amp;page=home&amp;page_id=10530&amp;bid=3476930.5','https://www.mi.com/ph/','0e5519feb6002210-ffed6c0aa64f1e94','&quot;&quot;']);">Philippines</a>
+        <a href="https://www.mi.com/in/"
+           data-log_code="31pchomeother000005#t=normal&amp;act=other&amp;page=home&amp;page_id=10530&amp;bid=3476930.6"
+           rel="nofollow" data-settrack="true"
+           onclick="_msq.push(['trackEvent','31pchomeother000005#t=normal&amp;act=other&amp;page=home&amp;page_id=10530&amp;bid=3476930.6','https://www.mi.com/in/','0e5519feb6002210-0a2768f280ae3523','&quot;&quot;']);">India</a>
+        <a href="https://www.mi.com/id/"
+           data-log_code="31pchomeother000006#t=normal&amp;act=other&amp;page=home&amp;page_id=10530&amp;bid=3476930.7"
+           rel="nofollow" data-settrack="true"
+           onclick="_msq.push(['trackEvent','31pchomeother000006#t=normal&amp;act=other&amp;page=home&amp;page_id=10530&amp;bid=3476930.7','https://www.mi.com/id/','0e5519feb6002210-c5af39a2ef1b00b2','&quot;&quot;']);">Indonesia</a>
+        <a href="https://www.mi.com/global/"
+           data-log_code="31pchomeother000007#t=normal&amp;act=other&amp;page=home&amp;page_id=10530&amp;bid=3476930.8"
+           rel="nofollow" data-settrack="true"
+           onclick="_msq.push(['trackEvent','31pchomeother000007#t=normal&amp;act=other&amp;page=home&amp;page_id=10530&amp;bid=3476930.8','https://www.mi.com/global/','0e5519feb6002210-521502a6bdbf22be','&quot;&quot;']);">Global
+            Home</a> <a href="https://www.mi.com/mena/"
+                        data-log_code="31pchomeother000008#t=normal&amp;act=other&amp;page=home&amp;page_id=10530&amp;bid=3476930.9"
+                        rel="nofollow" data-settrack="true"
+                        onclick="_msq.push(['trackEvent','31pchomeother000008#t=normal&amp;act=other&amp;page=home&amp;page_id=10530&amp;bid=3476930.9','https://www.mi.com/mena/','0e5519feb6002210-506c11ce844a7eab','&quot;&quot;']);">MENA</a>
+        <a href="https://www.mi.com/pl/"
+           data-log_code="31pchomeother000009#t=normal&amp;act=other&amp;page=home&amp;page_id=10530&amp;bid=3476930.10"
+           rel="nofollow" data-settrack="true"
+           onclick="_msq.push(['trackEvent','31pchomeother000009#t=normal&amp;act=other&amp;page=home&amp;page_id=10530&amp;bid=3476930.10','https://www.mi.com/pl/','0e5519feb6002210-f3813b9ce52c234e','&quot;&quot;']);">Poland</a>
+        <a href="https://www.mi.com/ua/"
+           data-log_code="31pchomeother000010#t=normal&amp;act=other&amp;page=home&amp;page_id=10530&amp;bid=3476930.11"
+           rel="nofollow" data-settrack="true"
+           onclick="_msq.push(['trackEvent','31pchomeother000010#t=normal&amp;act=other&amp;page=home&amp;page_id=10530&amp;bid=3476930.11','https://www.mi.com/ua/','0e5519feb6002210-23851241c056ab8e','&quot;&quot;']);">Ukraine</a>
+        <a href="https://www.mi.com/ru/"
+           data-log_code="31pchomeother000011#t=normal&amp;act=other&amp;page=home&amp;page_id=10530&amp;bid=3476930.12"
+           rel="nofollow" data-settrack="true"
+           onclick="_msq.push(['trackEvent','31pchomeother000011#t=normal&amp;act=other&amp;page=home&amp;page_id=10530&amp;bid=3476930.12','https://www.mi.com/ru/','0e5519feb6002210-a945a61c5a744597','&quot;&quot;']);">Russia</a>
+        <a href="https://www.mi.com/vn/"
+           data-log_code="31pchomeother000012#t=normal&amp;act=other&amp;page=home&amp;page_id=10530&amp;bid=3476930.13"
+           rel="nofollow" data-settrack="true"
+           onclick="_msq.push(['trackEvent','31pchomeother000012#t=normal&amp;act=other&amp;page=home&amp;page_id=10530&amp;bid=3476930.13','https://www.mi.com/vn/','0e5519feb6002210-b89979ede8944ab7','&quot;&quot;']);">Vietnam</a>
+        <a href="https://www.mi.com/mx/"
+           data-log_code="31pchomeother000013#t=normal&amp;act=other&amp;page=home&amp;page_id=10530&amp;bid=3476930.14"
+           rel="nofollow" data-settrack="true"
+           onclick="_msq.push(['trackEvent','31pchomeother000013#t=normal&amp;act=other&amp;page=home&amp;page_id=10530&amp;bid=3476930.14','https://www.mi.com/mx/','0e5519feb6002210-803334e6cd0562f4','&quot;&quot;']);">Mexico</a>
+        <a href="https://www.mi.com/kr/"
+           data-log_code="31pchomeother000014#t=normal&amp;act=other&amp;page=home&amp;page_id=10530&amp;bid=3476930.15"
+           rel="nofollow" data-settrack="true"
+           onclick="_msq.push(['trackEvent','31pchomeother000014#t=normal&amp;act=other&amp;page=home&amp;page_id=10530&amp;bid=3476930.15','https://www.mi.com/kr/','0e5519feb6002210-7a438afa5a52b5a5','&quot;&quot;']);">Korea</a>
+        <a href="https://www.mi.com/eg/"
+           data-log_code="31pchomeother000015#t=normal&amp;act=other&amp;page=home&amp;page_id=10530&amp;bid=3476930.16"
+           rel="nofollow" data-settrack="true"
+           onclick="_msq.push(['trackEvent','31pchomeother000015#t=normal&amp;act=other&amp;page=home&amp;page_id=10530&amp;bid=3476930.16','https://www.mi.com/eg/','0e5519feb6002210-52be20319fffffcb','&quot;&quot;']);">Egypt</a>
+        <a href="https://www.mi.com/th/"
+           data-log_code="31pchomeother000016#t=normal&amp;act=other&amp;page=home&amp;page_id=10530&amp;bid=3476930.17"
+           rel="nofollow" data-settrack="true"
+           onclick="_msq.push(['trackEvent','31pchomeother000016#t=normal&amp;act=other&amp;page=home&amp;page_id=10530&amp;bid=3476930.17','https://www.mi.com/th/','0e5519feb6002210-a1ca8dad24ea6866','&quot;&quot;']);">Thailand</a>
+        <a href="https://www.mi.com/es/"
+           data-log_code="31pchomeother000017#t=normal&amp;act=other&amp;page=home&amp;page_id=10530&amp;bid=3476930.18"
+           rel="nofollow" data-settrack="true"
+           onclick="_msq.push(['trackEvent','31pchomeother000017#t=normal&amp;act=other&amp;page=home&amp;page_id=10530&amp;bid=3476930.18','https://www.mi.com/es/','0e5519feb6002210-c35a62d067e6de9d','&quot;&quot;']);">Spain</a>
+        <a href="https://www.mi.com/us/"
+           data-log_code="31pchomeother000018#t=normal&amp;act=other&amp;page=home&amp;page_id=10530&amp;bid=3476930.19"
+           rel="nofollow" data-settrack="true"
+           onclick="_msq.push(['trackEvent','31pchomeother000018#t=normal&amp;act=other&amp;page=home&amp;page_id=10530&amp;bid=3476930.19','https://www.mi.com/us/','0e5519feb6002210-203a45ac1a06a086','&quot;&quot;']);">United
+            States</a> <a href="https://www.mi.com/it/"
+                          data-log_code="31pchomeother000019#t=normal&amp;act=other&amp;page=home&amp;page_id=10530&amp;bid=3476930.20"
+                          rel="nofollow" data-settrack="true"
+                          onclick="_msq.push(['trackEvent','31pchomeother000019#t=normal&amp;act=other&amp;page=home&amp;page_id=10530&amp;bid=3476930.20','https://www.mi.com/it/','0e5519feb6002210-a3d85058d875cc8e','&quot;&quot;']);">Italy</a>
+        <a href="https://www.mi.com/fr/"
+           data-log_code="31pchomeother000020#t=normal&amp;act=other&amp;page=home&amp;page_id=10530&amp;bid=3476930.21"
+           rel="nofollow" data-settrack="true"
+           onclick="_msq.push(['trackEvent','31pchomeother000020#t=normal&amp;act=other&amp;page=home&amp;page_id=10530&amp;bid=3476930.21','https://www.mi.com/fr/','0e5519feb6002210-1eaa97ef6e44d1ce','&quot;&quot;']);">France</a>
+        <a href="https://www.mi.com/bd/"
+           data-log_code="31pchomeother000021#t=normal&amp;act=other&amp;page=home&amp;page_id=10530&amp;bid=3476930.22"
+           rel="nofollow" data-settrack="true"
+           onclick="_msq.push(['trackEvent','31pchomeother000021#t=normal&amp;act=other&amp;page=home&amp;page_id=10530&amp;bid=3476930.22','https://www.mi.com/bd/','0e5519feb6002210-2257d4b076d2784e','&quot;&quot;']);">Bangladesh</a>
+        <a href="https://www.mi.com/uk/"
+           data-log_code="31pchomeother000022#t=normal&amp;act=other&amp;page=home&amp;page_id=10530&amp;bid=3476930.23"
+           rel="nofollow" data-settrack="true"
+           onclick="_msq.push(['trackEvent','31pchomeother000022#t=normal&amp;act=other&amp;page=home&amp;page_id=10530&amp;bid=3476930.23','https://www.mi.com/uk/','0e5519feb6002210-1bc8799dc964fb2a','&quot;&quot;']);">United
+            Kingdom</a> <a href="https://www.mi.com/cl/"
+                           data-log_code="31pchomeother000023#t=normal&amp;act=other&amp;page=home&amp;page_id=10530&amp;bid=3476930.24"
+                           rel="nofollow" data-settrack="true"
+                           onclick="_msq.push(['trackEvent','31pchomeother000023#t=normal&amp;act=other&amp;page=home&amp;page_id=10530&amp;bid=3476930.24','https://www.mi.com/cl/','0e5519feb6002210-ffde4ede4fb3f4f1','&quot;&quot;']);">Chile</a>
+        <a href="https://www.mi.com/np/"
+           data-log_code="31pchomeother000024#t=normal&amp;act=other&amp;page=home&amp;page_id=10530&amp;bid=3476930.25"
+           rel="nofollow" data-settrack="true"
+           onclick="_msq.push(['trackEvent','31pchomeother000024#t=normal&amp;act=other&amp;page=home&amp;page_id=10530&amp;bid=3476930.25','https://www.mi.com/np/','0e5519feb6002210-1f1d0bf053eead91','&quot;&quot;']);">Nepal</a>
+        <a href="https://www.mi.com/lk/"
+           data-log_code="31pchomeother000025#t=normal&amp;act=other&amp;page=home&amp;page_id=10530&amp;bid=3476930.26"
+           rel="nofollow" data-settrack="true"
+           onclick="_msq.push(['trackEvent','31pchomeother000025#t=normal&amp;act=other&amp;page=home&amp;page_id=10530&amp;bid=3476930.26','https://www.mi.com/lk/','0e5519feb6002210-7d9f9c8339c4b1bb','&quot;&quot;']);">Sri
+            Lanka</a> <a href="https://www.mi.com/tr/"
+                         data-log_code="31pchomeother000026#t=normal&amp;act=other&amp;page=home&amp;page_id=10530&amp;bid=3476930.27"
+                         rel="nofollow" data-settrack="true"
+                         onclick="_msq.push(['trackEvent','31pchomeother000026#t=normal&amp;act=other&amp;page=home&amp;page_id=10530&amp;bid=3476930.27','https://www.mi.com/tr/','0e5519feb6002210-e86bbbf3c2e2961b','&quot;&quot;']);">Turkey</a>
+        <a href="https://www.mi.com/nl/"
+           data-log_code="31pchomeother000027#t=normal&amp;act=other&amp;page=home&amp;page_id=10530&amp;bid=3476930.28"
+           rel="nofollow" data-settrack="true"
+           onclick="_msq.push(['trackEvent','31pchomeother000027#t=normal&amp;act=other&amp;page=home&amp;page_id=10530&amp;bid=3476930.28','https://www.mi.com/nl/','0e5519feb6002210-7f74b50a70a80e21','&quot;&quot;']);">Netherlands</a>
+        <a href="https://www.mi.com/br/"
+           data-log_code="31pchomeother000028#t=normal&amp;act=other&amp;page=home&amp;page_id=10530&amp;bid=3476930.29"
+           rel="nofollow" data-settrack="true"
+           onclick="_msq.push(['trackEvent','31pchomeother000028#t=normal&amp;act=other&amp;page=home&amp;page_id=10530&amp;bid=3476930.29','https://www.mi.com/br/','0e5519feb6002210-ef9ed40ed610bb6d','&quot;&quot;']);">Brazil</a>
+        <a href="https://www.mi.com/jp/"
+           data-log_code="31pchomeother000029#t=normal&amp;act=other&amp;page=home&amp;page_id=10530&amp;bid=3476930.30"
+           rel="nofollow" data-settrack="true"
+           onclick="_msq.push(['trackEvent','31pchomeother000029#t=normal&amp;act=other&amp;page=home&amp;page_id=10530&amp;bid=3476930.30','https://www.mi.com/jp/','0e5519feb6002210-a0a5534d64c6711d','&quot;&quot;']);">Japan</a>
+        <a href="https://www.mi.com/de/"
+           data-log_code="31pchomeother000030#t=normal&amp;act=other&amp;page=home&amp;page_id=10530&amp;bid=3476930.31"
+           rel="nofollow" data-settrack="true"
+           onclick="_msq.push(['trackEvent','31pchomeother000030#t=normal&amp;act=other&amp;page=home&amp;page_id=10530&amp;bid=3476930.31','https://www.mi.com/de/','0e5519feb6002210-3f89b938635a29dc','&quot;&quot;']);">Germany</a>
+        <a href="https://www.mi.com/se/"
+           data-log_code="31pchomeother000031#t=normal&amp;act=other&amp;page=home&amp;page_id=10530&amp;bid=3476930.32"
+           rel="nofollow" data-settrack="true"
+           onclick="_msq.push(['trackEvent','31pchomeother000031#t=normal&amp;act=other&amp;page=home&amp;page_id=10530&amp;bid=3476930.32','https://www.mi.com/se/','0e5519feb6002210-281990704af3fc09','&quot;&quot;']);">Sweden</a>
+    </div>
+</div>
+<div class="main-body">
+    <nav class="navbar navbar-default" id="navbar-top">
+        <div class="container">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                            data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a href="#" class="navbar-logo"><img src="img/mi.logo.png"/></a>
+                </div>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right clearfix">
+                        <li id="left_nav" class="nav-category">
+                            <a href="#" class="link-category">
+                                <span class="text">全部商品分类</span>
+                            </a>
+                            <div class="site-category" style="display: block">
+                                <ul id="left_navList" class="site-category-list clearfix">
+                                    <li class="category-item">
+                                        <a href="#" class="title">
+                                            手机 电话卡
+                                            <em class="iconfont-arrow-right-big"></em>
+                                        </a>
+                                        <div class="children clearfix children-col-4">
+                                            <ul class="children-list children-list-col children-list-col-1">
+                                                <li>
+                                                    <a href="#" class="link clearfix">
+                                                        <img src="img/children-list1-1.png" width="40px" height="40px"
+                                                             class="thumb">
+                                                        <span class="text">小米10 至尊纪念版</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="link clearfix">
+                                                        <img src="img/children-list1-2.png" width="40px" height="40px"
+                                                             class="thumb">
+                                                        <span class="text">小米10</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="link clearfix">
+                                                        <img src="img/children-list1-3.png" width="40px" height="40px"
+                                                             class="thumb">
+                                                        <span class="text">小米10 青春版</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="link clearfix">
+                                                        <img src="img/children-list1-4.png" width="40px" height="40px"
+                                                             class="thumb">
+                                                        <span class="text">Redmi K30S 至尊纪念版</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="link clearfix">
+                                                        <img src="img/children-list1-5.png" width="40px" height="40px"
+                                                             class="thumb">
+                                                        <span class="text">Redmi K30 至尊纪念版</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="link clearfix">
+                                                        <img src="img/children-list1-6.png" width="40px" height="40px"
+                                                             class="thumb">
+                                                        <span class="text">Redmi K30 Pro 变焦版</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                            <ul class="children-list children-list-col children-list-col-2">
+                                                <li>
+                                                    <a href="#" class="link clearfix">
+                                                        <img src="img/children-list1-1.png" width="40px" height="40px"
+                                                             class="thumb">
+                                                        <span class="text">小米10 至尊纪念版</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="link clearfix">
+                                                        <img src="img/children-list1-2.png" width="40px" height="40px"
+                                                             class="thumb">
+                                                        <span class="text">小米10</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="link clearfix">
+                                                        <img src="img/children-list1-3.png" width="40px" height="40px"
+                                                             class="thumb">
+                                                        <span class="text">小米10 青春版</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="link clearfix">
+                                                        <img src="img/children-list1-4.png" width="40px" height="40px"
+                                                             class="thumb">
+                                                        <span class="text">Redmi K30S 至尊纪念版</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="link clearfix">
+                                                        <img src="img/children-list1-5.png" width="40px" height="40px"
+                                                             class="thumb">
+                                                        <span class="text">Redmi K30 至尊纪念版</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="link clearfix">
+                                                        <img src="img/children-list1-6.png" width="40px" height="40px"
+                                                             class="thumb">
+                                                        <span class="text">Redmi K30 Pro 变焦版</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                            <ul class="children-list children-list-col children-list-col-3">
+                                                <li>
+                                                    <a href="#" class="link clearfix">
+                                                        <img src="img/children-list1-1.png" width="40px" height="40px"
+                                                             class="thumb">
+                                                        <span class="text">小米10 至尊纪念版</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="link clearfix">
+                                                        <img src="img/children-list1-2.png" width="40px" height="40px"
+                                                             class="thumb">
+                                                        <span class="text">小米10</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="link clearfix">
+                                                        <img src="img/children-list1-3.png" width="40px" height="40px"
+                                                             class="thumb">
+                                                        <span class="text">小米10 青春版</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="link clearfix">
+                                                        <img src="img/children-list1-4.png" width="40px" height="40px"
+                                                             class="thumb">
+                                                        <span class="text">Redmi K30S 至尊纪念版</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="link clearfix">
+                                                        <img src="img/children-list1-5.png" width="40px" height="40px"
+                                                             class="thumb">
+                                                        <span class="text">Redmi K30 至尊纪念版</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="link clearfix">
+                                                        <img src="img/children-list1-6.png" width="40px" height="40px"
+                                                             class="thumb">
+                                                        <span class="text">Redmi K30 Pro 变焦版</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="category-item">
+                                        <a href="#" class="title">
+                                            电视 盒子
+                                            <em class="iconfont-arrow-right-big">
+                                            </em>
+                                        </a>
+                                        <div class="children clearfix children-col-4">
+                                            <ul class="children-list children-list-col children-list-col-1">
+                                                <li>
+                                                    <a href="#" class="link clearfix">
+                                                        <img src="img/children-list1-1.png" width="40px" height="40px"
+                                                             class="thumb">
+                                                        <span class="text">小米10 至尊纪念版</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="link clearfix">
+                                                        <img src="img/children-list1-2.png" width="40px" height="40px"
+                                                             class="thumb">
+                                                        <span class="text">小米10</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="link clearfix">
+                                                        <img src="img/children-list1-3.png" width="40px" height="40px"
+                                                             class="thumb">
+                                                        <span class="text">小米10 青春版</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="link clearfix">
+                                                        <img src="img/children-list1-4.png" width="40px" height="40px"
+                                                             class="thumb">
+                                                        <span class="text">Redmi K30S 至尊纪念版</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="link clearfix">
+                                                        <img src="img/children-list1-5.png" width="40px" height="40px"
+                                                             class="thumb">
+                                                        <span class="text">Redmi K30 至尊纪念版</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="link clearfix">
+                                                        <img src="img/children-list1-6.png" width="40px" height="40px"
+                                                             class="thumb">
+                                                        <span class="text">Redmi K30 Pro 变焦版</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                            <ul class="children-list children-list-col children-list-col-2">
+                                                <li>
+                                                    <a href="#" class="link clearfix">
+                                                        <img src="img/children-list1-1.png" width="40px" height="40px"
+                                                             class="thumb">
+                                                        <span class="text">小米10 至尊纪念版</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="link clearfix">
+                                                        <img src="img/children-list1-2.png" width="40px" height="40px"
+                                                             class="thumb">
+                                                        <span class="text">小米10</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="link clearfix">
+                                                        <img src="img/children-list1-3.png" width="40px" height="40px"
+                                                             class="thumb">
+                                                        <span class="text">小米10 青春版</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="link clearfix">
+                                                        <img src="img/children-list1-4.png" width="40px" height="40px"
+                                                             class="thumb">
+                                                        <span class="text">Redmi K30S 至尊纪念版</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="link clearfix">
+                                                        <img src="img/children-list1-5.png" width="40px" height="40px"
+                                                             class="thumb">
+                                                        <span class="text">Redmi K30 至尊纪念版</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="link clearfix">
+                                                        <img src="img/children-list1-6.png" width="40px" height="40px"
+                                                             class="thumb">
+                                                        <span class="text">Redmi K30 Pro 变焦版</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                            <ul class="children-list children-list-col children-list-col-3">
+                                                <li>
+                                                    <a href="#" class="link clearfix">
+                                                        <img src="img/children-list1-1.png" width="40px" height="40px"
+                                                             class="thumb">
+                                                        <span class="text">小米10 至尊纪念版</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="link clearfix">
+                                                        <img src="img/children-list1-2.png" width="40px" height="40px"
+                                                             class="thumb">
+                                                        <span class="text">小米10</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="link clearfix">
+                                                        <img src="img/children-list1-3.png" width="40px" height="40px"
+                                                             class="thumb">
+                                                        <span class="text">小米10 青春版</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="link clearfix">
+                                                        <img src="img/children-list1-4.png" width="40px" height="40px"
+                                                             class="thumb">
+                                                        <span class="text">Redmi K30S 至尊纪念版</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="link clearfix">
+                                                        <img src="img/children-list1-5.png" width="40px" height="40px"
+                                                             class="thumb">
+                                                        <span class="text">Redmi K30 至尊纪念版</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="link clearfix">
+                                                        <img src="img/children-list1-6.png" width="40px" height="40px"
+                                                             class="thumb">
+                                                        <span class="text">Redmi K30 Pro 变焦版</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="category-item">
+                                        <a href="#" class="title">
+                                            笔记本 显示器
+                                            <em class="iconfont-arrow-right-big">
+                                            </em>
+                                        </a>
+                                        <div></div>
+                                    </li>
+                                    <li class="category-item">
+                                        <a href="#" class="title">
+                                            家电 插线板
+                                            <em class="iconfont-arrow-right-big">
+                                            </em>
+                                        </a>
+                                        <div></div>
+                                    </li>
+                                    <li class="category-item">
+                                        <a href="#" class="title">
+                                            出行 穿戴
+                                            <em class="iconfont-arrow-right-big">
+                                            </em>
+                                        </a>
+                                        <div></div>
+                                    </li>
+                                    <li class="category-item">
+                                        <a href="#" class="title">
+                                            智能 路由器
+                                            <em class="iconfont-arrow-right-big">
+                                            </em>
+                                        </a>
+                                        <div></div>
+                                    </li>
+                                    <li class="category-item">
+                                        <a href="#" class="title">
+                                            电源 配件
+                                            <em class="iconfont-arrow-right-big">
+                                            </em>
+                                        </a>
+                                        <div></div>
+                                    </li>
+                                    <li class="category-item">
+                                        <a href="#" class="title">
+                                            健康 儿童
+                                            <em class="iconfont-arrow-right-big">
+                                            </em>
+                                        </a>
+                                        <div></div>
+                                    </li>
+                                    <li class="category-item">
+                                        <a href="#" class="title">
+                                            耳机 音箱
+                                            <em class="iconfont-arrow-right-big">
+                                            </em>
+                                        </a>
+                                        <div></div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="#">小米手机</a></li>
+                        <li><a href="#">红米</a></li>
+                        <li><a href="#">平板</a></li>
+                        <li><a href="#">电视·盒子</a></li>
+                        <li><a href="#">路由器</a></li>
+                        <li><a href="#">智能硬件</a></li>
+                        <li><a href="#">服务</a></li>
+                        <li><a href="#">社区</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!--轮播图-->
+    <section class="lunbo">
+        <div class="container">
+            <div class="col-sm-12">
+                <div class="row">
+                    <div class="col-sm-9">
+                        <div id="carousel-example-generic9" class="carousel slide" data-ride="carousel">
+                            <!-- Indicators -->
+                            <ol class="carousel-indicators">
+                                <li data-target="#carousel-example-generic9" data-slide-to="0" class="active"></li>
+                                <li data-target="#carousel-example-generic9" data-slide-to="1"></li>
+                                <li data-target="#carousel-example-generic9" data-slide-to="2"></li>
+                                <li data-target="#carousel-example-generic9" data-slide-to="3"></li>
+                            </ol>
+
+                            <!-- Wrapper for slides -->
+                            <div class="carousel-inner" role="listbox">
+                                <div class="item active">
+                                    <img src="img/lunbo.jpg" alt="..." class="imglunbo">
+                                    <div class="carousel-caption">
+                                        ...
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <img src="img/lunbo2.webp" alt="..." class="imglunbo">
+                                    <div class="carousel-caption">
+                                        ...
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <img src="img/lunbo3.webp" alt="..." class="imglunbo">
+                                    <div class="carousel-caption">
+                                        ...
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <img src="img/8.webp" alt="..." class="imglunbo">
+                                    <div class="carousel-caption">
+                                        ...
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--中部图片-->
+    <section class="center">
+        <div class="container">
+            <div class="col-sm-12">
+                <div class="row">
+                    <div class="col-sm-3">
+                        <a href="#" class="thumbnail">
+                            <img src="img/T11.jpg" alt="...">
                         </a>
-                        <div class="site-category" style="display: block">
-                            <ul id="left_navList" class="site-category-list clearfix">
-                                <li class="category-item">
-                                    <a href="#" class="title">
-                                        手机 电话卡
-                                        <em class="iconfont-arrow-right-big"></em>
-                                    </a>
-                                    <div class="children clearfix children-col-4">
-                                        <ul class="children-list children-list-col children-list-col-1">
-                                            <li>
-                                                <a href="#" class="link clearfix">
-                                                    <img src="img/children-list1-1.png" width="40px" height="40px" class="thumb">
-                                                    <span class="text">小米10 至尊纪念版</span>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#" class="link clearfix">
-                                                    <img src="img/children-list1-2.png" width="40px" height="40px" class="thumb">
-                                                    <span class="text">小米10</span>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#" class="link clearfix">
-                                                    <img src="img/children-list1-3.png" width="40px" height="40px" class="thumb">
-                                                    <span class="text">小米10 青春版</span>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#" class="link clearfix">
-                                                    <img src="img/children-list1-4.png" width="40px" height="40px" class="thumb">
-                                                    <span class="text">Redmi K30S 至尊纪念版</span>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#" class="link clearfix">
-                                                    <img src="img/children-list1-5.png" width="40px" height="40px" class="thumb">
-                                                    <span class="text">Redmi K30 至尊纪念版</span>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#" class="link clearfix">
-                                                    <img src="img/children-list1-6.png" width="40px" height="40px" class="thumb">
-                                                    <span class="text">Redmi K30 Pro 变焦版</span>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                        <ul class="children-list children-list-col children-list-col-2">
-                                            <li>
-                                                <a href="#" class="link clearfix">
-                                                    <img src="img/children-list1-1.png" width="40px" height="40px" class="thumb">
-                                                    <span class="text">小米10 至尊纪念版</span>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#" class="link clearfix">
-                                                    <img src="img/children-list1-2.png" width="40px" height="40px" class="thumb">
-                                                    <span class="text">小米10</span>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#" class="link clearfix">
-                                                    <img src="img/children-list1-3.png" width="40px" height="40px" class="thumb">
-                                                    <span class="text">小米10 青春版</span>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#" class="link clearfix">
-                                                    <img src="img/children-list1-4.png" width="40px" height="40px" class="thumb">
-                                                    <span class="text">Redmi K30S 至尊纪念版</span>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#" class="link clearfix">
-                                                    <img src="img/children-list1-5.png" width="40px" height="40px" class="thumb">
-                                                    <span class="text">Redmi K30 至尊纪念版</span>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#" class="link clearfix">
-                                                    <img src="img/children-list1-6.png" width="40px" height="40px" class="thumb">
-                                                    <span class="text">Redmi K30 Pro 变焦版</span>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                        <ul class="children-list children-list-col children-list-col-3">
-                                            <li>
-                                                <a href="#" class="link clearfix">
-                                                    <img src="img/children-list1-1.png" width="40px" height="40px" class="thumb">
-                                                    <span class="text">小米10 至尊纪念版</span>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#" class="link clearfix">
-                                                    <img src="img/children-list1-2.png" width="40px" height="40px" class="thumb">
-                                                    <span class="text">小米10</span>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#" class="link clearfix">
-                                                    <img src="img/children-list1-3.png" width="40px" height="40px" class="thumb">
-                                                    <span class="text">小米10 青春版</span>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#" class="link clearfix">
-                                                    <img src="img/children-list1-4.png" width="40px" height="40px" class="thumb">
-                                                    <span class="text">Redmi K30S 至尊纪念版</span>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#" class="link clearfix">
-                                                    <img src="img/children-list1-5.png" width="40px" height="40px" class="thumb">
-                                                    <span class="text">Redmi K30 至尊纪念版</span>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#" class="link clearfix">
-                                                    <img src="img/children-list1-6.png" width="40px" height="40px" class="thumb">
-                                                    <span class="text">Redmi K30 Pro 变焦版</span>
-                                                </a>
-                                            </li>
-                                        </ul>
+                    </div>
+                    <div class="col-sm-3">
+                        <a href="#" class="thumbnail">
+                            <img src="img/T12.jpg" alt="...">
+                        </a>
+                    </div>
+                    <div class="col-sm-3">
+                        <a href="#" class="thumbnail">
+                            <img src="img/T13.jpg" alt="...">
+                        </a>
+                    </div>
+                    <div class="col-sm-3">
+                        <a href="#" class="thumbnail">
+                            <img src="img/T14.jpg" alt="...">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--智能硬件-->
+    <section class="hardware">
+        <div class="container">
+            <div class="col-sm-12">
+                <div class="row row-content">
+                    <div class="col-sm-12">
+                        <h3 class="thumbnail-h3">智能硬件</h3>
+                    </div>
+                    <div class="col-sm-12">
+                        <div class="col-sm-3">
+                            <div class="thumbnail thumbnail-border">
+                                <img src="img/1.webp" alt="...">
+                                <div class="caption">
+                                    <h3 class="text-center h4">Pro 15.6 2020款 i7 16G 1TB MX350 2G 100% sRGB 深空灰</h3>
+                                    <p class="text-center p">从核心到视野，再次突破强大</p>
+                                    <p class="text-center p-color">6799元</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="thumbnail thumbnail-border">
+                                <img src="img/2.webp" alt="...">
+                                <div class="caption">
+                                    <h3 class="text-center h4">小米手表 标准版 典雅黑</h3>
+                                    <p class="text-center p"> 能打电话、能下载APP，才是真正的智能手表</p>
+                                    <p class="text-center p-color">1199元</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="thumbnail thumbnail-border">
+                                <img src="img/3.webp" alt="...">
+                                <div class="caption">
+                                    <h3 class="text-center h4">RedmiBook 14 增强版 i7/8G/512G 银色</h3>
+                                    <p class="text-center p">十代酷睿更强劲</p>
+                                    <p class="text-center p-color">4999元</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="thumbnail thumbnail-border">
+                                <img src="img/4.webp" alt="...">
+                                <div class="caption">
+                                    <h3 class="text-center h4">米家两门冰箱 160L 银色</h3>
+                                    <p class="text-center p">小巧能装，速冻养鲜</p>
+                                    <p class="text-center p-color">998元</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--热评产品-->
+    <section class="buzz">
+        <div class="container">
+            <div class="col-sm-12">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h3>热评产品</h3>
+                    </div>
+                    <div class="col-sm-12">
+                        <div class="col-sm-3">
+                            <div class="thumbnail thumbnail-border">
+                                <img src="img/Hod1.webp" alt="...">
+                                <div class="caption hover">
+                                    <h3 class="text-left h4">屏幕清晰，视频流畅，不卡顿，质量也好</h3>
+                                    <p class="text-center p">来自于 167953031 的评价</p>
+                                    <p class="text-center p-color">小米全面屏电视E32C | 899元</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="thumbnail thumbnail-border">
+                                <img src="img/Hod2.jpg" alt="...">
+                                <div class="caption hover">
+                                    <h3 class="text-left h4">温度调节够快，最赞的是静音</h3>
+                                    <p class="text-center p">来自于 欧阳新兰 的评价</p>
+                                    <p class="text-center p-color">米家空调 | 1699元</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="thumbnail thumbnail-border">
+                                <img src="img/Hod3.webp" alt="...">
+                                <div class="caption hover">
+                                    <h3 class="text-left h4">智能洗烘，省心省力，谁用谁知道</h3>
+                                    <p class="text-center p">来自于 谁抢了我的小侨 的评价</p>
+                                    <p class="text-center p-color">米家互联网洗烘一体机 10kg | 2999元</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="thumbnail thumbnail-border">
+                                <img src="img/Hod4.webp" alt="...">
+                                <div class="caption hover">
+                                    <h3 class="text-left h4">买给父母的，他们也觉得很方便</h3>
+                                    <p class="text-center p">来自于 650622246 的评价</p>
+                                    <p class="text-center p-color">Redmi全自动波轮洗衣机1A 8kg | 899元</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--内容-->
+    <section class="content-fixed">
+        <div class="container">
+            <div class="col-sm-12">
+                <div class="row row-content">
+                    <div class="col-sm-12">
+                        <h3 class="content-h3">内容</h3>
+                    </div>
+                    <div class="col-sm-12">
+                        <div class="col-sm-3">
+                            <div id="carousel-example-generic31" class="carousel slide" data-ride="carousel">
+                                <div class="carousel-inner" role="listbox">
+                                    <div class="item active">
+                                        <img src="img/201511050947.png" alt="...">
                                     </div>
-                                </li>
-                                <li class="category-item">
-                                    <a href="#" class="title">
-                                        电视 盒子
-                                        <em class="iconfont-arrow-right-big">
-                                        </em>
-                                    </a>
-                                    <div class="children clearfix children-col-4">
-                                        <ul class="children-list children-list-col children-list-col-1">
-                                            <li>
-                                                <a href="#" class="link clearfix">
-                                                    <img src="img/children-list1-1.png" width="40px" height="40px" class="thumb">
-                                                    <span class="text">小米10 至尊纪念版</span>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#" class="link clearfix">
-                                                    <img src="img/children-list1-2.png" width="40px" height="40px" class="thumb">
-                                                    <span class="text">小米10</span>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#" class="link clearfix">
-                                                    <img src="img/children-list1-3.png" width="40px" height="40px" class="thumb">
-                                                    <span class="text">小米10 青春版</span>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#" class="link clearfix">
-                                                    <img src="img/children-list1-4.png" width="40px" height="40px" class="thumb">
-                                                    <span class="text">Redmi K30S 至尊纪念版</span>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#" class="link clearfix">
-                                                    <img src="img/children-list1-5.png" width="40px" height="40px" class="thumb">
-                                                    <span class="text">Redmi K30 至尊纪念版</span>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#" class="link clearfix">
-                                                    <img src="img/children-list1-6.png" width="40px" height="40px" class="thumb">
-                                                    <span class="text">Redmi K30 Pro 变焦版</span>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                        <ul class="children-list children-list-col children-list-col-2">
-                                            <li>
-                                                <a href="#" class="link clearfix">
-                                                    <img src="img/children-list1-1.png" width="40px" height="40px" class="thumb">
-                                                    <span class="text">小米10 至尊纪念版</span>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#" class="link clearfix">
-                                                    <img src="img/children-list1-2.png" width="40px" height="40px" class="thumb">
-                                                    <span class="text">小米10</span>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#" class="link clearfix">
-                                                    <img src="img/children-list1-3.png" width="40px" height="40px" class="thumb">
-                                                    <span class="text">小米10 青春版</span>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#" class="link clearfix">
-                                                    <img src="img/children-list1-4.png" width="40px" height="40px" class="thumb">
-                                                    <span class="text">Redmi K30S 至尊纪念版</span>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#" class="link clearfix">
-                                                    <img src="img/children-list1-5.png" width="40px" height="40px" class="thumb">
-                                                    <span class="text">Redmi K30 至尊纪念版</span>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#" class="link clearfix">
-                                                    <img src="img/children-list1-6.png" width="40px" height="40px" class="thumb">
-                                                    <span class="text">Redmi K30 Pro 变焦版</span>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                        <ul class="children-list children-list-col children-list-col-3">
-                                            <li>
-                                                <a href="#" class="link clearfix">
-                                                    <img src="img/children-list1-1.png" width="40px" height="40px" class="thumb">
-                                                    <span class="text">小米10 至尊纪念版</span>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#" class="link clearfix">
-                                                    <img src="img/children-list1-2.png" width="40px" height="40px" class="thumb">
-                                                    <span class="text">小米10</span>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#" class="link clearfix">
-                                                    <img src="img/children-list1-3.png" width="40px" height="40px" class="thumb">
-                                                    <span class="text">小米10 青春版</span>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#" class="link clearfix">
-                                                    <img src="img/children-list1-4.png" width="40px" height="40px" class="thumb">
-                                                    <span class="text">Redmi K30S 至尊纪念版</span>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#" class="link clearfix">
-                                                    <img src="img/children-list1-5.png" width="40px" height="40px" class="thumb">
-                                                    <span class="text">Redmi K30 至尊纪念版</span>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#" class="link clearfix">
-                                                    <img src="img/children-list1-6.png" width="40px" height="40px" class="thumb">
-                                                    <span class="text">Redmi K30 Pro 变焦版</span>
-                                                </a>
-                                            </li>
-                                        </ul>
+                                    <div class="item">
+                                        <img src="img/201511050948.png" alt="...">
                                     </div>
-                                </li>
-                                <li class="category-item">
-                                    <a href="#" class="title">
-                                        笔记本 显示器
-                                        <em class="iconfont-arrow-right-big">
-                                        </em>
-                                    </a>
-                                    <div></div>
-                                </li>
-                                <li class="category-item">
-                                    <a href="#" class="title">
-                                        家电 插线板
-                                        <em class="iconfont-arrow-right-big">
-                                        </em>
-                                    </a>
-                                    <div></div>
-                                </li>
-                                <li class="category-item">
-                                    <a href="#" class="title">
-                                        出行 穿戴
-                                        <em class="iconfont-arrow-right-big">
-                                        </em>
-                                    </a>
-                                    <div></div>
-                                </li>
-                                <li class="category-item">
-                                    <a href="#" class="title">
-                                        智能 路由器
-                                        <em class="iconfont-arrow-right-big">
-                                        </em>
-                                    </a>
-                                    <div></div>
-                                </li>
-                                <li class="category-item">
-                                    <a href="#" class="title">
-                                        电源 配件
-                                        <em class="iconfont-arrow-right-big">
-                                        </em>
-                                    </a>
-                                    <div></div>
-                                </li>
-                                <li class="category-item">
-                                    <a href="#" class="title">
-                                        健康 儿童
-                                        <em class="iconfont-arrow-right-big">
-                                        </em>
-                                    </a>
-                                    <div></div>
-                                </li>
-                                <li class="category-item">
-                                    <a href="#" class="title">
-                                        耳机 音箱
-                                        <em class="iconfont-arrow-right-big">
-                                        </em>
-                                    </a>
-                                    <div></div>
-                                </li>
-                            </ul>
+                                    <div class="item">
+                                        <img src="img/201511050949.png" alt="...">
+                                    </div>
+                                    <div class="item">
+                                        <img src="img/201511050950.png" alt="...">
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                    </li>
-                    <li><a href="#">小米手机</a></li>
-                    <li><a href="#">红米</a></li>
-                    <li><a href="#">平板</a></li>
-                    <li><a href="#">电视·盒子</a></li>
-                    <li><a href="#">路由器</a></li>
-                    <li><a href="#">智能硬件</a></li>
-                    <li><a href="#">服务</a></li>
-                    <li><a href="#">社区</a></li>
-                </ul>
+                        <div class="col-sm-3">
+                            <div id="carousel-example-generic32" class="carousel slide" data-ride="carousel">
+                                <div class="carousel-inner" role="listbox">
+                                    <div class="item active">
+                                        <img src="img/20151107204521.png" alt="...">
+                                    </div>
+                                    <div class="item">
+                                        <img src="img/20151107204550.png" alt="...">
+                                    </div>
+                                    <div class="item">
+                                        <img src="img/20151107204620.png" alt="...">
+                                    </div>
+                                    <div class="item">
+                                        <img src="img/20151107204640.png" alt="...">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div id="carousel-example-generic33" class="carousel slide" data-ride="carousel">
+                                <div class="carousel-inner" role="listbox">
+                                    <div class="item active">
+                                        <img src="img/20151107205119.png" alt="...">
+                                    </div>
+                                    <div class="item">
+                                        <img src="img/20151107205151.png" alt="...">
+                                    </div>
+                                    <div class="item">
+                                        <img src="img/20151107205215.png" alt="...">
+                                    </div>
+                                    <div class="item">
+                                        <img src="img/20151107205231.png" alt="..." class="content">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div id="carousel-example-generic34" class="carousel slide" data-ride="carousel">
+                                <div class="carousel-inner" role="listbox">
+                                    <div class="item active">
+                                        <img src="img/20151107205507.png" alt="...">
+                                    </div>
+                                    <div class="item">
+                                        <img src="img/20151107205526.png" alt="...">
+                                    </div>
+                                    <div class="item">
+                                        <img src="img/20151107205546.png" alt="...">
+                                    </div>
+                                    <div class="item">
+                                        <img src="img/20151107205611.png" alt="...">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-</nav>
-<!--轮播图-->
-<section class="lunbo">
-    <div class="container">
-        <div class="col-sm-12">
-            <div class="row">
-                <div class="col-sm-9">
-                    <div id="carousel-example-generic9" class="carousel slide" data-ride="carousel">
-                        <!-- Indicators -->
-                        <ol class="carousel-indicators">
-                            <li data-target="#carousel-example-generic9" data-slide-to="0" class="active"></li>
-                            <li data-target="#carousel-example-generic9" data-slide-to="1"></li>
-                            <li data-target="#carousel-example-generic9" data-slide-to="2"></li>
-                            <li data-target="#carousel-example-generic9" data-slide-to="3"></li>
-                        </ol>
+    </section>
+    <!--限时抢购-->
+    <section class="buybuy">
+        <div class="container">
+            <div class="col-sm-12">
+                <div class="row row-content">
+                    <div class="col-sm-12">
+                        <h3 class="buy">限时抢购</h3>
+                    </div>
+                    <div class="col-sm-12 buy-col">
+                        <div class="col-sm-6 buy-hover">
+                            <div class="col-sm-6 buy-left">
+                                <img src="img/Re2.webp"/>
+                            </div>
+                            <div class="col-sm-6 buy-left">
+                                <h4 class="buy-h4">小米10 至尊版</h4>
+                                <p class="buy-p">120X 变焦/120W秒充/120Hz屏幕</p>
+                                <p class="price"><span class="buy-span">5299</span>元起</p>
+                                <p class="nowbuy"><a href="">立即购买</a></p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 buy-hover">
+                            <div class="col-sm-6 buy-right">
+                                <img src="img/Re1.webp"/>
+                            </div>
+                            <div class="col-sm-6 buy-right">
+                                <h4 class="buy-h4">腾讯黑鲨3S</h4>
+                                <p class="buy-p">骁龙865处理器，120Hz刷新率</p>
+                                <p class="price"><span class="buy-span">3999</span>元起</p>
+                                <p class="nowbuy"><a href="">立即购买</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--周边商城-->
+    <section class="circum">
+        <div class="container">
+            <div class="col-sm-12">
+                <div class="row row-content">
+                    <div class="col-lg-7sm-12">
+                        <h3 class="buy">周边商城</h3>
+                    </div>
+                    <div class="col-lg-7sm-12">
+                        <div class="col-sm-3">
+                            <div class="thumbnail thumbnail-border circum-hover">
+                                <img src="img/Zhoubian1.jpg" alt="...">
+                                <div class="caption">
+                                    <h3 class="text-center h4">贝医生巴氏牙刷 四色装</h3>
+                                    <p class="text-center p-color">39.9元</p>
+                                    <p class="text-center p">3.7万人评价</p>
+                                </div>
+                                <div class="col-sm-12 hiddenover">
+                                    <p>很好用，不掉毛</p>
+                                    <p class="hiddenover-first text-center">来自于 15288871870 的评价 </p>
+                                </div>
+                            </div>
 
-                        <!-- Wrapper for slides -->
-                        <div class="carousel-inner" role="listbox">
-                            <div class="item active">
-                                <img src="img/lunbo.jpg" alt="..." class="imglunbo">
-                                <div class="carousel-caption">
-                                    ...
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="thumbnail thumbnail-border circum-hover">
+                                <img src="img/Zhoubian2.webp" alt="...">
+                                <div class="caption">
+                                    <h3 class="text-center h4">米家迷你保温杯</h3>
+                                    <p class="text-center p-color">49元</p>
+                                    <p class="text-center p">2684人评价</p>
                                 </div>
-                            </div>
-                            <div class="item">
-                                <img src="img/lunbo2.webp" alt="..." class="imglunbo">
-                                <div class="carousel-caption">
-                                    ...
-                                </div>
-                            </div>
-                            <div class="item">
-                                <img src="img/lunbo3.webp" alt="..." class="imglunbo">
-                                <div class="carousel-caption">
-                                    ...
-                                </div>
-                            </div>
-                            <div class="item">
-                                <img src="img/8.webp" alt="..." class="imglunbo">
-                                <div class="carousel-caption">
-                                    ...
+                                <div class="col-sm-12 hiddenover">
+                                    <p>质量很好，保温效果很不错!</p>
+                                    <p class="hiddenover-first text-center">来自于 追风骚年 的评价 </p>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!--中部图片-->
-<section class="center">
-    <div class="container">
-        <div class="col-sm-12">
-            <div class="row">
-                <div class="col-sm-3">
-                    <a href="#" class="thumbnail">
-                        <img src="img/T11.jpg" alt="...">
-                    </a>
-                </div>
-                <div class="col-sm-3">
-                    <a href="#" class="thumbnail">
-                        <img src="img/T12.jpg" alt="...">
-                    </a>
-                </div>
-                <div class="col-sm-3">
-                    <a href="#" class="thumbnail">
-                        <img src="img/T13.jpg" alt="...">
-                    </a>
-                </div>
-                <div class="col-sm-3">
-                    <a href="#" class="thumbnail">
-                        <img src="img/T14.jpg" alt="...">
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!--智能硬件-->
-<section class="hardware">
-    <div class="container">
-        <div class="col-sm-12">
-            <div class="row row-content">
-                <div class="col-sm-12">
-                    <h3 class="thumbnail-h3">智能硬件</h3>
-                </div>
-                <div class="col-sm-12">
-                    <div class="col-sm-3">
-                        <div class="thumbnail thumbnail-border">
-                            <img src="img/1.webp" alt="...">
-                            <div class="caption">
-                                <h3 class="text-center h4">Pro 15.6 2020款 i7 16G 1TB MX350 2G 100% sRGB 深空灰</h3>
-                                <p class="text-center p">从核心到视野，再次突破强大</p>
-                                <p class="text-center p-color">6799元</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-3">
-                        <div class="thumbnail thumbnail-border">
-                            <img src="img/2.webp" alt="...">
-                            <div class="caption">
-                                <h3 class="text-center h4">小米手表 标准版 典雅黑</h3>
-                                <p class="text-center p"> 能打电话、能下载APP，才是真正的智能手表</p>
-                                <p class="text-center p-color">1199元</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-3">
-                        <div class="thumbnail thumbnail-border">
-                            <img src="img/3.webp" alt="...">
-                            <div class="caption">
-                                <h3 class="text-center h4">RedmiBook 14 增强版 i7/8G/512G 银色</h3>
-                                <p class="text-center p">十代酷睿更强劲</p>
-                                <p class="text-center p-color">4999元</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-3">
-                        <div class="thumbnail thumbnail-border">
-                            <img src="img/4.webp" alt="...">
-                            <div class="caption">
-                                <h3 class="text-center h4">米家两门冰箱 160L 银色</h3>
-                                <p class="text-center p">小巧能装，速冻养鲜</p>
-                                <p class="text-center p-color">998元</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!--热评产品-->
-<section class="buzz">
-    <div class="container">
-        <div class="col-sm-12">
-            <div class="row">
-                <div class="col-sm-12">
-                    <h3>热评产品</h3>
-                </div>
-                <div class="col-sm-12">
-                    <div class="col-sm-3">
-                        <div class="thumbnail thumbnail-border">
-                            <img src="img/Hod1.webp" alt="...">
-                            <div class="caption hover">
-                                <h3 class="text-left h4">屏幕清晰，视频流畅，不卡顿，质量也好</h3>
-                                <p class="text-center p">来自于 167953031 的评价</p>
-                                <p class="text-center p-color">小米全面屏电视E32C | 899元</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-3">
-                        <div class="thumbnail thumbnail-border">
-                            <img src="img/Hod2.jpg" alt="...">
-                            <div class="caption hover">
-                                <h3 class="text-left h4">温度调节够快，最赞的是静音</h3>
-                                <p class="text-center p">来自于 欧阳新兰 的评价</p>
-                                <p class="text-center p-color">米家空调 | 1699元</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-3">
-                        <div class="thumbnail thumbnail-border">
-                            <img src="img/Hod3.webp" alt="...">
-                            <div class="caption hover">
-                                <h3 class="text-left h4">智能洗烘，省心省力，谁用谁知道</h3>
-                                <p class="text-center p">来自于 谁抢了我的小侨 的评价</p>
-                                <p class="text-center p-color">米家互联网洗烘一体机 10kg | 2999元</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-3">
-                        <div class="thumbnail thumbnail-border">
-                            <img src="img/Hod4.webp" alt="...">
-                            <div class="caption hover">
-                                <h3 class="text-left h4">买给父母的，他们也觉得很方便</h3>
-                                <p class="text-center p">来自于 650622246 的评价</p>
-                                <p class="text-center p-color">Redmi全自动波轮洗衣机1A 8kg | 899元</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!--内容-->
-<section class="content-fixed">
-    <div class="container">
-        <div class="col-sm-12">
-            <div class="row row-content">
-                <div class="col-sm-12">
-                    <h3 class="content-h3">内容</h3>
-                </div>
-                <div class="col-sm-12">
-                    <div class="col-sm-3">
-                        <div id="carousel-example-generic31" class="carousel slide" data-ride="carousel">
-                            <div class="carousel-inner" role="listbox">
-                                <div class="item active">
-                                    <img src="img/201511050947.png" alt="...">
+                        <div class="col-sm-3">
+                            <div class="thumbnail thumbnail-border circum-hover">
+                                <img src="img/Zhoubian3.webp" alt="...">
+                                <div class="caption">
+                                    <h3 class="text-center h4">米家运动鞋4</h3>
+                                    <p class="text-center p-color">199元</p>
+                                    <p class="text-center p">3864人评价</p>
                                 </div>
-                                <div class="item">
-                                    <img src="img/201511050948.png" alt="...">
-                                </div>
-                                <div class="item">
-                                    <img src="img/201511050949.png" alt="...">
-                                </div>
-                                <div class="item">
-                                    <img src="img/201511050950.png" alt="...">
+                                <div class="col-sm-12 hiddenover">
+                                    <p>质量很不错，穿上很轻盈，软和也热和。</p>
+                                    <p class="hiddenover-first text-center">来自于 小猪去哪二了 的评价 </p>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-sm-3">
-                        <div id="carousel-example-generic32" class="carousel slide" data-ride="carousel">
-                            <div class="carousel-inner" role="listbox">
-                                <div class="item active">
-                                    <img src="img/20151107204521.png" alt="...">
+                        <div class="col-sm-3">
+                            <div class="thumbnail thumbnail-border circum-hover">
+                                <img src="img/Zhoubian4.webp" alt="...">
+                                <div class="caption">
+                                    <h3 class="text-center h4">8H乳胶床垫2</h3>
+                                    <p class="text-center p-color">599元</p>
+                                    <p class="text-center p">1.1万人评价</p>
                                 </div>
-                                <div class="item">
-                                    <img src="img/20151107204550.png" alt="...">
-                                </div>
-                                <div class="item">
-                                    <img src="img/20151107204620.png" alt="...">
-                                </div>
-                                <div class="item">
-                                    <img src="img/20151107204640.png" alt="...">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-3">
-                        <div id="carousel-example-generic33" class="carousel slide" data-ride="carousel">
-                            <div class="carousel-inner" role="listbox">
-                                <div class="item active">
-                                    <img src="img/20151107205119.png" alt="...">
-                                </div>
-                                <div class="item">
-                                    <img src="img/20151107205151.png" alt="...">
-                                </div>
-                                <div class="item">
-                                    <img src="img/20151107205215.png" alt="...">
-                                </div>
-                                <div class="item">
-                                    <img src="img/20151107205231.png" alt="..." class="content">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-3">
-                        <div id="carousel-example-generic34" class="carousel slide" data-ride="carousel">
-                            <div class="carousel-inner" role="listbox">
-                                <div class="item active">
-                                    <img src="img/20151107205507.png" alt="...">
-                                </div>
-                                <div class="item">
-                                    <img src="img/20151107205526.png" alt="...">
-                                </div>
-                                <div class="item">
-                                    <img src="img/20151107205546.png" alt="...">
-                                </div>
-                                <div class="item">
-                                    <img src="img/20151107205611.png" alt="...">
+                                <div class="col-sm-12 hiddenover">
+                                    <p>助眠效果不错，我很喜欢</p>
+                                    <p class="hiddenover-first text-center">来自于 圣诞节 的评价 </p>
                                 </div>
                             </div>
                         </div>
@@ -619,115 +957,9 @@
                 </div>
             </div>
         </div>
-    </div>
-</section>
-<!--限时抢购-->
-<section class="buybuy">
-    <div class="container">
-        <div class="col-sm-12">
-            <div class="row row-content">
-                <div class="col-sm-12">
-                    <h3 class="buy">限时抢购</h3>
-                </div>
-                <div class="col-sm-12 buy-col">
-                    <div class="col-sm-6 buy-hover">
-                        <div class="col-sm-6 buy-left">
-                            <img src="img/Re2.webp"/>
-                        </div>
-                        <div class="col-sm-6 buy-left">
-                            <h4 class="buy-h4">小米10 至尊版</h4>
-                            <p class="buy-p">120X 变焦/120W秒充/120Hz屏幕</p>
-                            <p class="price"><span class="buy-span">5299</span>元起</p>
-                            <p class="nowbuy"><a href="">立即购买</a></p>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 buy-hover">
-                        <div class="col-sm-6 buy-right">
-                            <img src="img/Re1.webp"/>
-                        </div>
-                        <div class="col-sm-6 buy-right">
-                            <h4 class="buy-h4">腾讯黑鲨3S</h4>
-                            <p class="buy-p">骁龙865处理器，120Hz刷新率</p>
-                            <p class="price"><span class="buy-span">3999</span>元起</p>
-                            <p class="nowbuy"><a href="">立即购买</a></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!--周边商城-->
-<section class="circum">
-    <div class="container">
-        <div class="col-sm-12">
-            <div class="row row-content">
-                <div class="col-lg-7sm-12">
-                    <h3 class="buy">周边商城</h3>
-                </div>
-                <div class="col-lg-7sm-12">
-                    <div class="col-sm-3">
-                        <div class="thumbnail thumbnail-border circum-hover">
-                            <img src="img/Zhoubian1.jpg" alt="...">
-                            <div class="caption">
-                                <h3 class="text-center h4">贝医生巴氏牙刷 四色装</h3>
-                                <p class="text-center p-color">39.9元</p>
-                                <p class="text-center p">3.7万人评价</p>
-                            </div>
-                            <div class="col-sm-12 hiddenover">
-                                <p>很好用，不掉毛</p>
-                                <p class="hiddenover-first text-center">来自于 15288871870 的评价 </p>
-                            </div>
-                        </div>
+    </section>
 
-                    </div>
-                    <div class="col-sm-3">
-                        <div class="thumbnail thumbnail-border circum-hover">
-                            <img src="img/Zhoubian2.webp" alt="...">
-                            <div class="caption">
-                                <h3 class="text-center h4">米家迷你保温杯</h3>
-                                <p class="text-center p-color">49元</p>
-                                <p class="text-center p">2684人评价</p>
-                            </div>
-                            <div class="col-sm-12 hiddenover">
-                                <p>质量很好，保温效果很不错!</p>
-                                <p class="hiddenover-first text-center">来自于 追风骚年 的评价 </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-3">
-                        <div class="thumbnail thumbnail-border circum-hover">
-                            <img src="img/Zhoubian3.webp" alt="...">
-                            <div class="caption">
-                                <h3 class="text-center h4">米家运动鞋4</h3>
-                                <p class="text-center p-color">199元</p>
-                                <p class="text-center p">3864人评价</p>
-                            </div>
-                            <div class="col-sm-12 hiddenover">
-                                <p>质量很不错，穿上很轻盈，软和也热和。</p>
-                                <p class="hiddenover-first text-center">来自于 小猪去哪二了 的评价 </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-3">
-                        <div class="thumbnail thumbnail-border circum-hover">
-                            <img src="img/Zhoubian4.webp" alt="...">
-                            <div class="caption">
-                                <h3 class="text-center h4">8H乳胶床垫2</h3>
-                                <p class="text-center p-color">599元</p>
-                                <p class="text-center p">1.1万人评价</p>
-                            </div>
-                            <div class="col-sm-12 hiddenover">
-                                <p>助眠效果不错，我很喜欢</p>
-                                <p class="hiddenover-first text-center">来自于 圣诞节 的评价 </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+</div>
 <!--页脚信息-->
 <footer class="footer">
     <div class="container">

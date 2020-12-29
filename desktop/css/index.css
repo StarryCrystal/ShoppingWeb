@@ -1,3 +1,12 @@
+/*顶部黑条样式*/
+.site-topbar {
+	position: relative;
+	z-index: 30;
+	height: 40px;
+	font-size: 12px;
+	color: #b0b0b0;
+	background: #333;
+}
 /*导航样式*/
 #navbar-top{
 	background: #fff;

@@ -8435,7 +8435,12 @@ button.close {
     background: #333333;
 }
 .site-topbar{
-    width: 1110px;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+.site-topbar .container {
+    width: 1226px;
     margin-right: auto;
     margin-left: auto;
 }
