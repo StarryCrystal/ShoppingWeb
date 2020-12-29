@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>小米商店-注册页面</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="小米商城" />
+    <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+    <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" media="all">
+    <link href="css/snow.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/Register-style.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="//fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+</head>
+<script src="js/jquery-3.5.1.js"></script>
+<script src="js/Reg.js"></script>
+<body>
+<div class="snow-container">
+    <div class="snow foreground"></div>
+    <div class="snow foreground layered"></div>
+    <div class="snow middleground"></div>
+    <div class="snow middleground layered"></div>
+    <div class="snow background"></div>
+    <div class="snow background layered"></div>
+</div>
+<div class="top-buttons-agileinfo">
+    <a href="Login.html"  class="active">去登录</a>
+    <a href="index.html"  class="active">回到首页</a>
+</div>
+<img src="img/logo.png" alt="">
+<h1>欢迎来到小米商城</h1>
+<div class="main-agileits">
+    <div class="form-w3-agile">
+        <h2 class="sub-agileits-w3layouts">注册</h2>
+        <form action="index.html" name="regform" method="post" onsubmit="return checkForm()">
+            <dl class="dl1">
+                <dd><input type="email" name="Email" placeholder="邮箱(参照样式:xxx@xxx.com)" required="" onblur="checkemail()" /></dd>
+                <dd id="erroremail" style="color: white;"></dd>
+            </dl>
+            <dl class="dl1">
+                <dd><input type="password" name="Password" placeholder="密码(必须是6-8位数字，字母或下划线)" required="" onblur="checkpass()"/></dd>
+                <dd id="errorpwd" style="color: white;"></dd>
+            </dl>
+            <dl class="dl1">
+                <dd><input type="password" name="C_Password" placeholder="确认密码" required="" onblur="checkpass2()"/></dd>
+                <dd id="errorpwd2" style="color: white;"></dd>
+            </dl>
+            <dl class="dl1">
+                <dd>
+                    <select id="selProvince" onchange="changeCity( )" style="width: 100%;">
+                        <option style="background-color: white;color: black;">选择省份</option>
+                    </select>
+
+                </dd>
+                <dd>
+                    <select id="selCity" style="width: 100%;">
+                        <option style="background-color: white; color: black;padding: 12px 14px;">选择城市</option>
+                    </select>
+                </dd>
+            </dl>
+            <div class="submit-w3l">
+                <input type="submit" value="提交" style="width: 45%;float: left;"/>
+                <input type="reset" value="重置" style="width: 45%;float: right;"/>
+            </div>
+        </form>
+    </div>
+</div>
+<div class="copyright w3-agile" style="width: 42%;margin: 0 auto;">
+    <br>
+    <p> 2020-前端期末大作品 仿小米商城 张俊德 舒小红 向阳</p>
+    <p> © 2020 XiaoMi ShoppingWeb . All rights reserved | Design by <a href="http://sighttp.qq.com/authd?IDKEY=0d1c6d7bc4f035539e0455538757ac15a78910c5ba7f1014" target="_blank">StarryCrystal,tyriktuki,laogezi</a></p>
+</div>
+</body>
+
+</html>
