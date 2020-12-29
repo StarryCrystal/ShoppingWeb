@@ -9,6 +9,20 @@
     <link rel="stylesheet" type="text/css" href="css/index.css"/>
     <script src="js/jquery.1.11.3.min.js" type="text/javascript" charset="utf-8"></script>
     <script src="js/bootstrap.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/jquery.min.js" type="text/javascript"></script>
+    <script src="js/floor.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        /*
+         totop  //返回顶部按钮
+         fixedevery   // 左侧固定导航的每一项
+         louceng  //模块的每一项
+         header   //头部
+         */
+        $(function(){
+            var obj = new floor('.totop','.fixedmeau>li','.louceng_box>.louceng','.header_box');
+            obj.init()
+        })
+    </script>
 </head>
 <body>
 <!--导航栏-->
@@ -846,7 +860,37 @@
         </div>
     </div>
 </footer>
-<!--<footer>
-</footer>-->
+<!--楼层效果-->
+<!--右侧固定导航栏-->
+<ul class="fixedmeau" style="display: block">
+    <li>
+        <i>1F</i>
+        <span>智能硬件</span>
+    </li>
+    <li>
+        <i>2F</i>
+        <span>热评产品</span>
+    </li>
+    <li>
+        <i>3F</i>
+        <span>内容</span>
+    </li>
+    <li>
+        <i>4F</i>
+        <span>限时抢购</span>
+    </li>
+    <li>
+        <i>5F</i>
+        <span>周边商城</span>
+    </li>
+    <li>
+        <i>6F</i>
+        <span>直达底部</span>
+    </li>
+</ul>
+<div class="totop" style="display: block">
+    <span>▲</span>
+    Top
+</div>
 </body>
 </html>
