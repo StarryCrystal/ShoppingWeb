@@ -399,3 +399,81 @@ a:hover{
     border: 1px solid #d9d9d9;
     color: #3c3c3c;
 }
+.site-mini-header {
+    font-size: 12px;
+    border-bottom: 2px solid #ff6700;
+    background: #fff;
+    color: #b0b0b0;
+    position: relative;
+    z-index: 20;
+    height: 100px;
+}
+.container {
+    width: 1226px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.site-mini-header .header-logo {
+    width: 93px;
+    margin-top: 26px;
+    float: left;
+}
+.site-mini-header .header-logo .logo {
+    position: relative;
+    display: block;
+    width: 48px;
+    height: 48px;
+    overflow: hidden;
+    background-color: #ff6700;
+}
+.ir {
+    display: block;
+    text-align: left;
+    text-indent: -9999em;
+    overflow: hidden;
+}
+a, a:hover {
+    text-decoration: none;
+}
+a {
+    color: #757575;
+}
+.site-mini-header {
+    font-size: 12px;
+    border-bottom: 2px solid #ff6700;
+    background: #fff;
+    color: #b0b0b0;
+    position: relative;
+    z-index: 20;
+    height: 100px;
+}
+.site-mini-header .has-more {
+    height: 48px;
+}
+.site-mini-header .header-title {
+    float: left;
+    margin-top: 26px;
+}
+.site-topbar .topbar-info {
+    position: relative;
+    float: right;
+    height: 40px;
+    line-height: 40px;
+}
+.site-mini-header .topbar-info {
+    position: relative;
+    float: right;
+    height: 40px;
+    line-height: 40px;
+    margin-top: 30px;
+}
+.site-topbar .topbar-info .link, .site-topbar .topbar-info .message, .site-topbar .topbar-info .sep, .site-topbar .topbar-info .user {
+    float: left;
+}
+.site-topbar .topbar-info .sep {
+    margin: 0;
+}
+.site-topbar .topbar-info .link {
+    padding: 0 5px;
+    text-align: center;
+}
