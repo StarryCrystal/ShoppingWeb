@@ -102,6 +102,7 @@
             display: flex;
             padding: 1.28rem .2rem 1.28rem .3rem;
             height: .88rem;
+            width: 100%;
         }
         
         .info-left {
@@ -125,7 +126,7 @@
         }
         .sz{
             margin-left: 7rem;
-            padding-top: 20px;
+            padding-top: 11px;
         }
         .songx{
             margin-left: 7.4rem;
@@ -151,7 +152,7 @@
         <div id="Cheader" style="">
             <div id="header" class="header_03">
                 <div class="back">
-                    <a href="http://m.mi.com/home/" class="arrow">首页</a>
+                    <a href="index.html" class="arrow">首页</a>
                 </div>
                 <div class="tit" style="">
                     <h3>商品详情</h3>
@@ -177,25 +178,28 @@
                 </div>
                 <div class="product_view">
                     <div class="box box_01">
-                        <div class="product_swipe">
+                        <div class="product_swipe" style="height: 45em;">
                             <!-- 单品介绍图片 -->
                             <div class="swipe" id="slider" style="visibility: visible;">
-                                <div class="swipe-wrap" style="width: 2160px;">
-                                    <div data-index="0" style="width: 720px; left: 0px; transition-duration: 0ms; transform: translate(0px, 0px) translateZ(0px);">
-                                        <a href="javascript:">
-                                            <img src="images/redk301.jpg" alt="小米商城"> </a>
+                                <div class="swipe-wrap">
+                                    <div data-index="0">
+                                        <div>
+                                            <span class="imgurl" style="height: 45em;"><img src="images/redk301.jpg" style="height: 45em;"></span>
+                                        </div>
                                     </div>
-                                    <div data-index="1" style="width: 720px; left: -720px; transition-duration: 0ms; transform: translate(720px, 0px) translateZ(0px);">
-                                        <a href="javascript:">
-                                            <img src="images/redk302.jpg" alt="小米商城"> </a>
-                                    </div>
-                                    <div data-index="2" style="width: 720px; left: -1440px; transition-duration: 0ms; transform: translate(720px, 0px) translateZ(0px);">
-                                        <a href="javascript:">
-                                            <img src="images/redk303.jpg" alt="小米商城"> </a>
+
+                                    <div data-index="1">
+                                        <div>
+                                            <span class="imgurl" style="height: 45em;"><img src="images/redk302.jpg" style="height: 45em;"></span>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="swipe-nav"><span class="on">&nbsp;</span> <span>&nbsp;</span> <span>&nbsp;</span>
+
+                                <div class="swipe-nav" id="bottomNav" style="margin-top: -15px;">
+                                    <span class="on">&nbsp;</span>
+                                    <span class="">&nbsp;</span>
                                 </div>
+                            </div>
                             </div>
                         </div>
                         <div class="product_info">
@@ -233,22 +237,22 @@
                             </div>
                         </div>
 
-                        <div data-v-ccdb1440="" class="section section-detail qing">
-                            <div data-v-ccdb1440="" class="classic-param-item" stat_exposure="true"><img data-v-ccdb1440="" class="picx" src="images/k301.png">
+                        <div data-v-ccdb1440="" class="section section-detail qing" style="margin-bottom: 10px;">
+                            <div data-v-ccdb1440="" class="classic-param-item" stat_exposure="true" style="margin-left: 25px;"><img data-v-ccdb1440="" class="picx" src="images/k301.png">
                                 <div data-v-ccdb1440="" class="classic-param-item-name fz-xs">CPU</div>
                                 <div data-v-ccdb1440="" class="classic-param-item-value fz-xxs">骁龙765G</div>
                             </div>
 
-                            <div data-v-ccdb1440="" class="classic-param-item" stat_exposure="true"><img data-v-ccdb1440="" class="picx" src="images/k302.png">
+                            <div data-v-ccdb1440="" class="classic-param-item" stat_exposure="true"><img data-v-ccdb1440="" class="picx" src="images/k302.png" style="margin-left: 10px;">
                                 <div data-v-ccdb1440="" class="classic-param-item-name fz-xs">四摄像头</div>
                                 <div data-v-ccdb1440="" class="classic-param-item-value fz-xxs">6400万像素</div>
                             </div>
 
                             <div data-v-ccdb1440="" class="classic-param-item cun" stat_exposure="true"><img data-v-ccdb1440="" class="picx" src="images/k303.png">
-                                <div data-v-ccdb1440="" class="classic-param-item-name fz-xs">超大屏</div>
+                                <div data-v-ccdb1440="" class="classic-param-item-name fz-xs" style="margin-left: 5px;">超大屏</div>
                                 <div data-v-ccdb1440="" class="classic-param-item-value fz-xxs">6.67英寸</div>
                             </div>
-                            <div data-v-ccdb1440="" stat_exposure="true"><img data-v-ccdb1440="" class="picx" src="images/k304.png">
+                            <div data-v-ccdb1440="" stat_exposure="true"><img data-v-ccdb1440="" class="picx" src="images/k304.png" style="margin-left: 10px;">
                                 <div data-v-ccdb1440="" class="classic-param-item-name fz-xs">屏幕分辨率</div>
                                 <div data-v-ccdb1440="" class="classic-param-item-value fz-xxs">2400×1080</div>
                             </div>
@@ -292,7 +296,7 @@
                                         </div>
                                     </div>
                                     <div data-v-ccdb1440="" class="product-section more padding-16-32 border-bottom-1px gray-back sevice-section">
-                                        <div data-v-ccdb1440="" class="ui-flex align-center justify-start J_linksign-customize service-policy-list">
+                                        <div data-v-ccdb1440="" class="ui-flex align-center justify-start J_linksign-customize service-policy-list" style="margin-top: 20px;margin-left: 50px;">
                                             <div data-v-ccdb1440="" class="flex service-policy-item" stat_exposure="true"><img data-v-ccdb1440="" src="images/gou.png"
                                                     class="mr1x img-icon"><span data-v-ccdb1440="" class="fsc1">小米自营</span></div>
                                             <div data-v-ccdb1440="" class="flex service-policy-item" stat_exposure="true"><img data-v-ccdb1440="" src="images/gou.png"
@@ -317,15 +321,6 @@
                             <a action="AddShoppingCartBtn" class="button active_button" href="javascript:">加入购物车</a></div>
                     </div>
                     <div class="box box_02 tab_html">
-                        <div class="tab_nav">
-                            <ul>
-                                <li><a href="javascript:" class="tab_head on" id="productViewBtn">图片详情</a>
-                                </li>
-                                <li><a href="javascript:" class="tab_head" id="commentViewBtn">评价晒单</a></li>
-                                <li><a href="javascript:" class="tab_head" id="attrViewBtn">参数及问题</a>
-                                </li>
-                            </ul>
-                        </div>
                         <div class="tab_product tab_item" id="productViewDiv">
                             <div class="product_main">
                                 <!-- 产品图片 -->
@@ -404,7 +399,7 @@
                 </div>
                 <div id="productViewWeixinTip" class="weixin_share_tip"></div>
                 <div id="footer" class="footer">
-                    <div class="tip"><a href="http://www.mi.com/?mobile" class="goDesktop"><span>切换到电脑版</span></a></div>
+                    <div class="tip"><a href="../desktop/index.html" class="goDesktop"><span>切换到电脑版</span></a></div>
                     <div class="links"><a href="http://p.www.xiaomi.com/m/huodong/page/2013/0922/index.html"><span
                     class="linksBtn">立即下载</span>
                 <p><strong>小米商城客户端</strong><span>与米粉交朋友</span></p></a></div>
@@ -438,5 +433,29 @@
             </div>
         </div>
     </body>
+<script type="text/javascript">
+    var bottom = document.getElementById("bottomNav").getElementsByTagName("span");
+    // 轮播&滑动事件
+    var slider = Swipe(document.getElementById('slider_nav'), {
+        continuous: true,  //无限循环的图片切换效果
+        disableScroll: true,  //阻止由于触摸而滚动屏幕
+        stopPropagation: false,  //停止滑动事件
+    });
 
+    var sliderBanner = Swipe(document.getElementById('slider'), {
+        auto: 2500,
+        continuous: true,
+        disableScroll: false,
+        stopPropagation: false,
+        callback: function (index) {
+            if (index % 2) {
+                bottom[0].className = "";
+                bottom[1].className = "on";
+            } else {
+                bottom[0].className = "on";
+                bottom[1].className = "";
+            }
+        },  //回调函数，切换时触发
+    });
+</script>
 </html>
