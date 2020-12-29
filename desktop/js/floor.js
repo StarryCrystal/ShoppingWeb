@@ -46,7 +46,7 @@ floor.prototype = {
     fixedeveryClick: function () {
         var that = this;
         $(that.fixedevery).click(function(){
-            var t = $(that.louceng).eq($(this).index()).offset().totop;
+            var t = $(that.louceng).eq($(this).index()).offset().top;
             $('body,html').animate({"scrollTop":t},500);
             $(this).addClass('active').siblings().removeClass('active');
         });
