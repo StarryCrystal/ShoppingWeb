@@ -1,276 +1,442 @@
 <!DOCTYPE html>
 <!-- saved from url=(0069)http://m.mi.com/index.html#ac=product&op=view&commodity_id=1152800035 -->
 <html>
+
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="author" content="xiaomi">
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <link rel="apple-touch-icon-precomposed" href="http://img01.mifile.cn/m/app/touch-icon.png">
     <link rel="shortcut icon" href="http://m.mi.com/favicon.ico" type="image/x-icon">
-    <meta name="description"
-          content="手版小米商城客户端可以随时随地参与预约抢购小米手机，轻松下单购买，实时查询订单信息掌握物流状态，小米商城app手机客户端还有新品信息通知推送功能，所有商品信息随身掌握。">
+    <meta name="description" content="手版小米商城客户端可以随时随地参与预约抢购小米手机，轻松下单购买，实时查询订单信息掌握物流状态，小米商城app手机客户端还有新品信息通知推送功能，所有商品信息随身掌握。">
     <meta name="keywords" content="小米商城,小米手机,小米商城下载,小米商城app">
     <link rel="stylesheet" type="text/css" href="css/order.css">
+    <script src="js/ready.js"></script>
+    <script src="js/swipe.js"></script>
+    <script src="js/jquery-3.5.1.js"></script>
+    <script src="js/myFoldpanel.js"></script>
     <title>小米商城-小米官网</title>
-    <style type="text/css">object, embed {
-        -webkit-animation-duration: .001s;
-        -webkit-animation-name: playerInserted;
-        -ms-animation-duration: .001s;
-        -ms-animation-name: playerInserted;
-        -o-animation-duration: .001s;
-        -o-animation-name: playerInserted;
-        animation-duration: .001s;
-        animation-name: playerInserted;
-    }
+    <style type="text/css">
+        object,
+        embed {
+            -webkit-animation-duration: .001s;
+            -webkit-animation-name: playerInserted;
+            -ms-animation-duration: .001s;
+            -ms-animation-name: playerInserted;
+            -o-animation-duration: .001s;
+            -o-animation-name: playerInserted;
+            animation-duration: .001s;
+            animation-name: playerInserted;
+        }
+        
+        @-webkit-keyframes playerInserted {
+            from {
+                opacity: 0.99;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        
+        @-ms-keyframes playerInserted {
+            from {
+                opacity: 0.99;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        
+        @-o-keyframes playerInserted {
+            from {
+                opacity: 0.99;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        
+        @keyframes playerInserted {
+            from {
+                opacity: 0.99;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        
+        .fz-xs {
+            margin-bottom: 10px;
+            margin-left: 10px;
+        }
+        
+        .classic-param-item {
+            float: left;
+        }
+        
+        .picx {
+            width: 40px;
+        }
+        
+        .classic-param-item {
+            margin-left: 42px;
+            /*padding-left: 30px;*/
+        }
+        
+        .cun {
+            margin-right: 50px;
+        }
+        
+        .qing {
+            padding-top: 15px;
+            border-top: solid 1px #8d9797;
+            margin: 0 auto;
+        }
+        
+        .rank-info {
+            background: url(images/k305.png) no-repeat;
+            background-size: 100% 100%;
+            display: flex;
+            padding: 1.28rem .2rem 1.28rem .3rem;
+            height: .88rem;
+        }
+        
+        .info-left {
+            background: url(images/k306.png) no-repeat;
+            margin-right: .24rem;
+            width: 5.25rem;
+            height: 1.31rem;
+            background-size: auto 100%;
+        }
+        .acts{
+            text-decoration: line-through;
+            color: black;
+        }
+        .title{
+            margin-right: .4rem;
+            float:left;
 
-    @-webkit-keyframes playerInserted {
-        from {
-            opacity: 0.99;
         }
-        to {
-            opacity: 1;
+        .song{
+            /*margin-left: -31px;*/
         }
-    }
+        .sz{
+            margin-left: 7rem;
+            padding-top: 20px;
+        }
+        .songx{
+            margin-left: 7.4rem;
+        }
+        .service-policy-item{
+            float: left;
+        }
+        .product_view .box_01 .product_addCart, .product_view .box_03 .product_addCart {
+            padding-top: 1.4rem;
+        }
+         .img-icon{
+            width: 24px;
+        }
+        .location-icon{
+            width: 24px;
+        }
+        .service-policy-item{
+            padding-right: 1.4rem;
+        }
+    </style>
 
-    @-ms-keyframes playerInserted {
-        from {
-            opacity: 0.99;
-        }
-        to {
-            opacity: 1;
-        }
-    }
-
-    @-o-keyframes playerInserted {
-        from {
-            opacity: 0.99;
-        }
-        to {
-            opacity: 1;
-        }
-    }
-
-    @keyframes playerInserted {
-        from {
-            opacity: 0.99;
-        }
-        to {
-            opacity: 1;
-        }
-    }</style>
-<body style="display: block; background: rgb(255, 255, 255);">
-<div id="Cheader" style="">
-    <div id="header" class="header_03">
-        <div class="back">
-            <a href="http://m.mi.com/home/"  class="arrow">首页</a>
-        </div>
-        <div class="tit" style="">
-            <h3>商品详情</h3>
-        </div>
-        <div class="nav">
-            <ul>
-                <li class="cart">
-                    <a href="http://m.mi.com/index.html#ac=shopping&op=index" >购物车</a>
-                    <span id="ShoppingCartNum" style="display:none"></span>
-                </li>
-            </ul>
-        </div>
-    </div>
-</div>
-<div id="wrapper" class="xm_app">
-    <div id="viewport" class="viewport" style="">
-        <div id="crumbs" class="crumbs" style="display: none;">
-            <ul>
-                <li><a href="http://m.mi.com/home/"><span>首页</span></a></li>
-                <li><a href="http://m.mi.com/index.html#ac=product&op=category">分类</a></li>
-                <li><a href="javascript:">商品详情</a></li>
-            </ul>
-        </div>
-        <div class="product_view">
-            <div class="box box_01">
-                <div class="product_swipe">                     <!-- 单品介绍图片 -->
-                    <div class="swipe" id="slider" style="visibility: visible;">
-                        <div class="swipe-wrap" style="width: 2160px;">
-                            <div data-index="0"
-                                 style="width: 720px; left: 0px; transition-duration: 0ms; transform: translate(0px, 0px) translateZ(0px);">
-                                <a href="javascript:">
-                                    <img src="images/T19OV_BgKT1RXrhCrK!720x720.jpg" alt="小米商城"> </a></div>
-                            <div data-index="1"
-                                 style="width: 720px; left: -720px; transition-duration: 0ms; transform: translate(720px, 0px) translateZ(0px);">
-                                <a href="javascript:">
-                                    <img src="images/T1Z0b_BgWv1RXrhCrK!720x720.jpg" alt="小米商城"> </a></div>
-                            <div data-index="2"
-                                 style="width: 720px; left: -1440px; transition-duration: 0ms; transform: translate(720px, 0px) translateZ(0px);">
-                                <a href="javascript:">
-                                    <img src="images/T1NKV_BvZT1RXrhCrK!720x720.jpg" alt="小米商城"> </a></div>
-                        </div>
-                        <div class="swipe-nav"><span class="on">&nbsp;</span> <span>&nbsp;</span> <span>&nbsp;</span>
-                        </div>
-                    </div>
+    <body style="display: block; background: rgb(255, 255, 255);">
+        <div id="Cheader" style="">
+            <div id="header" class="header_03">
+                <div class="back">
+                    <a href="http://m.mi.com/home/" class="arrow">首页</a>
                 </div>
-                <div class="product_info">
-                    <div class="info info_right"><h3 class="name">小米水质TDS检测笔</h3>
-                        <div class="right">
-                            <div id="favorite_add" class="favorite_add"><span>收藏</span></div>
-                            <div id="pro_share" class="share"><span>分享</span></div>
-                        </div>
-                    </div>
-                    <div class="price"> 39元</div>
-                    <div class="acts"></div>
-                    <div class="star comment_star">
-                        <div class="star_box">
-                            <div class="star_bar">
-                                <div style="width:100%" class="star_num"></div>
-                            </div>
-                        </div>
-                    </div>
+                <div class="tit" style="">
+                    <h3>商品详情</h3>
                 </div>
-                <div class="product_addCart">
-                    <div class="tip-success hide">
-                        <div class="inner">
-                            <div class="tip-txt"><span>商品已加入购物车</span></div>
-                            <div class="btns"><a href="http://m.mi.com/index.html#ac=shopping&op=index"
-                                                 class="btn"><span>前往购物车</span></a></div>
-                        </div>
-                    </div>
-                    <a action="AddShoppingCartBtn" class="button active_button" href="javascript:">加入购物车</a></div>
-            </div>
-            <div class="box box_02 tab_html">
-                <div class="tab_nav">
+                <div class="nav">
                     <ul>
-                        <li><a href="javascript:" class="tab_head on"  id="productViewBtn">图片详情</a>
-                        </li>
-                        <li><a href="javascript:" class="tab_head"
-                               id="commentViewBtn">评价晒单</a></li>
-                        <li><a href="javascript:" class="tab_head" id="attrViewBtn">参数及问题</a>
+                        <li class="cart">
+                            <a href="http://m.mi.com/index.html#ac=shopping&op=index">购物车</a>
+                            <span id="ShoppingCartNum" style="display:none"></span>
                         </li>
                     </ul>
                 </div>
-                <div class="tab_product tab_item" id="productViewDiv">
-                    <div class="product_main">                         <!-- 产品图片 -->
-                        <div class="product_images product_desc" id="ProductImages">
+            </div>
+        </div>
+        <div id="wrapper" class="xm_app">
+            <div id="viewport" class="viewport" style="">
+                <div id="crumbs" class="crumbs" style="display: none;">
+                    <ul>
+                        <li><a href="http://m.mi.com/home/"><span>首页</span></a></li>
+                        <li><a href="http://m.mi.com/index.html#ac=product&op=category">分类</a></li>
+                        <li><a href="javascript:">商品详情</a></li>
+                    </ul>
+                </div>
+                <div class="product_view">
+                    <div class="box box_01">
+                        <div class="product_swipe">
+                            <!-- 单品介绍图片 -->
+                            <div class="swipe" id="slider" style="visibility: visible;">
+                                <div class="swipe-wrap" style="width: 2160px;">
+                                    <div data-index="0" style="width: 720px; left: 0px; transition-duration: 0ms; transform: translate(0px, 0px) translateZ(0px);">
+                                        <a href="javascript:">
+                                            <img src="images/redk301.jpg" alt="小米商城"> </a>
+                                    </div>
+                                    <div data-index="1" style="width: 720px; left: -720px; transition-duration: 0ms; transform: translate(720px, 0px) translateZ(0px);">
+                                        <a href="javascript:">
+                                            <img src="images/redk302.jpg" alt="小米商城"> </a>
+                                    </div>
+                                    <div data-index="2" style="width: 720px; left: -1440px; transition-duration: 0ms; transform: translate(720px, 0px) translateZ(0px);">
+                                        <a href="javascript:">
+                                            <img src="images/redk303.jpg" alt="小米商城"> </a>
+                                    </div>
+                                </div>
+                                <div class="swipe-nav"><span class="on">&nbsp;</span> <span>&nbsp;</span> <span>&nbsp;</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product_info">
+                            <div class="info info_right">
+                                <h3 class="name">Redmi K30 5G</h3>
+                                <div class="right">
+                                    <div id="favorite_add" class="favorite_add"><span>收藏</span></div>
+                                    <div id="pro_share" class="share"><span>分享</span></div>
+                                </div>
+                            </div>
+                            <div class="price"> ￥1599 <span class="acts">￥2299</span></div>
+                            <div ></div>
+                            <div class="star comment_star">
+                                <div class="star_box">
+                                    <div class="star_bar">
+                                        <div style="width:100%" class="star_num"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--                        详情-->
+                        <div data-v-ccdb1440="" class="section section-detail">
+                            <div data-v-ccdb1440="" class="product_info_product_desc">
+                                <div data-v-ccdb1440="" class="overview overview-goods-brief">
+                                    <div data-v-ccdb1440="" class="goods-brief fz-xs">「6GB+128GB到手价仅1599元；购机赠价值798元双人定制体检卡；得2倍米金；+1元得200G云空间月卡」</div>
+                                </div>
+                                <div data-v-ccdb1440="" class="overview overview-sell-point">
+                                    <div data-v-ccdb1440="" class="sell_point_desc fz-xs">
+                                        </span><span>①【极限响应】120Hz流速屏，超快流畅刷新，开启阅读游戏新体验</span></div>
+                                    <div data-v-ccdb1440="" class="sell_point_desc fz-xs">
+                                        </span><span>②【旗舰工艺】旗舰AG工艺机身+双面康宁GG5保护玻璃</span></div>
+                                    <div data-v-ccdb1440="" class="sell_point_desc fz-xs">
+                                        </span><span>③【精准导航】5G双频GPS，双信号协同，精准定位不跑偏</span></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div data-v-ccdb1440="" class="section section-detail qing">
+                            <div data-v-ccdb1440="" class="classic-param-item" stat_exposure="true"><img data-v-ccdb1440="" class="picx" src="images/k301.png">
+                                <div data-v-ccdb1440="" class="classic-param-item-name fz-xs">CPU</div>
+                                <div data-v-ccdb1440="" class="classic-param-item-value fz-xxs">骁龙765G</div>
+                            </div>
+
+                            <div data-v-ccdb1440="" class="classic-param-item" stat_exposure="true"><img data-v-ccdb1440="" class="picx" src="images/k302.png">
+                                <div data-v-ccdb1440="" class="classic-param-item-name fz-xs">四摄像头</div>
+                                <div data-v-ccdb1440="" class="classic-param-item-value fz-xxs">6400万像素</div>
+                            </div>
+
+                            <div data-v-ccdb1440="" class="classic-param-item cun" stat_exposure="true"><img data-v-ccdb1440="" class="picx" src="images/k303.png">
+                                <div data-v-ccdb1440="" class="classic-param-item-name fz-xs">超大屏</div>
+                                <div data-v-ccdb1440="" class="classic-param-item-value fz-xxs">6.67英寸</div>
+                            </div>
+                            <div data-v-ccdb1440="" stat_exposure="true"><img data-v-ccdb1440="" class="picx" src="images/k304.png">
+                                <div data-v-ccdb1440="" class="classic-param-item-name fz-xs">屏幕分辨率</div>
+                                <div data-v-ccdb1440="" class="classic-param-item-value fz-xxs">2400×1080</div>
+                            </div>
+                        </div>
+
+                        <div data-v-ccdb1440="" class="section section-detail">
+                            <div data-v-65f6194c="" data-v-ccdb1440="" class="rank-info">
+                                <a data-v-65f6194c="" class="info-left" stat_exposure="true"></a>
+                                <a data-v-65f6194c="" class="info-right">
+                                    <div data-v-65f6194c="" class="right-text">【手机直降热销榜】第3名</div><i data-v-65f6194c="" class="right-icon"></i></a>
+                            </div>
+                        </div>
+
+                        <div data-v-ccdb1440="" class="section section-detail">
+                            <div data-v-ccdb1440="" class="product_info_choose_version">
+                                <div data-v-ccdb1440="" class="card-box">
+                                    <div data-v-ccdb1440="" class="product-section-box">
+                                        <div data-v-ccdb1440="" class="product-section more padding-26-0-0-32 choice">
+                                            <div data-v-ccdb1440="" class="ui-flex justify-start J_linksign-customize">
+                                                <div data-v-ccdb1440="" class="title fz-xs" stat_exposure="true">已选</div>
+                                                <div data-v-ccdb1440="" class="flex fz-xs" stat_exposure="true">
+                                                    <div data-v-ccdb1440="" class="info">
+                                                        <div data-v-ccdb1440="" class="display-flex sz">
+                                                            <div data-v-ccdb1440="" class="pro-name">Redmi K30 5G&nbsp;&nbsp;6GB+128GB 紫玉幻境&nbsp;&nbsp;x 1</div>
+                                                            <div data-v-ccdb1440=""> </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div data-v-ccdb1440="" class="product-section more padding-26-0-0-32">
+                                            <div data-v-ccdb1440="" class="ui-flex align-center justify-start J_linksign-customize">
+                                                <div data-v-ccdb1440="" class="title fz-xs song" stat_exposure="true">送至</div>
+                                                <div data-v-ccdb1440="" class="songx flex fz-xs" stat_exposure="true">
+                                                    <div data-v-ccdb1440="" class="info send display-flex"><img data-v-ccdb1440="" src="images/xiazai.png"
+                                                            class="location-icon"><span data-v-ccdb1440="" class="mr1x">北京市 东城区</span><span data-v-ccdb1440="" class="on"> 有现货</span></div>
+                                                    <div data-v-ccdb1440="" class="mt2x gray">24点前付款，预计12月31日送达</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div data-v-ccdb1440="" class="product-section more padding-16-32 border-bottom-1px gray-back sevice-section">
+                                        <div data-v-ccdb1440="" class="ui-flex align-center justify-start J_linksign-customize service-policy-list">
+                                            <div data-v-ccdb1440="" class="flex service-policy-item" stat_exposure="true"><img data-v-ccdb1440="" src="images/gou.png"
+                                                    class="mr1x img-icon"><span data-v-ccdb1440="" class="fsc1">小米自营</span></div>
+                                            <div data-v-ccdb1440="" class="flex service-policy-item" stat_exposure="true"><img data-v-ccdb1440="" src="images/gou.png"
+                                                    class="mr1x img-icon"><span data-v-ccdb1440="" class="fsc1">小米发货</span></div>
+                                            <div data-v-ccdb1440="" class="flex " stat_exposure="true"><img data-v-ccdb1440="" src="images/gou.png"
+                                                    class="mr1x img-icon"><span data-v-ccdb1440="" class="fsc1">7天无理由退货</span></div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div data-v-ccdb1440="" class="blank_line offset-top-1px" style="height: 0.2rem; background: rgb(246, 246, 246);"></div>
+                            </div>
+                        </div>
+
+                        <div class="product_addCart grt">
+                            <div class="tip-success hide">
+                                <div class="inner">
+                                    <div class="tip-txt"><span>商品已加入购物车</span></div>
+                                    <div class="btns"><a href="http://m.mi.com/index.html#ac=shopping&op=index" class="btn"><span>前往购物车</span></a></div>
+                                </div>
+                            </div>
+                            <a action="AddShoppingCartBtn" class="button active_button" href="javascript:">加入购物车</a></div>
+                    </div>
+                    <div class="box box_02 tab_html">
+                        <div class="tab_nav">
                             <ul>
-                                <li>
-                                    <div class="imgurl"><img src="images/TDSjiancebi_01!720x720.jpg"
-                                                             style="display: inline;"></div>
+                                <li><a href="javascript:" class="tab_head on" id="productViewBtn">图片详情</a>
                                 </li>
-                                <li>
-                                    <div class="imgurl"><img src="images/TDSjiancebi_02!720x720.jpg"
-                                                             style="display: inline;"></div>
-                                </li>
-                                <li>
-                                    <div class="imgurl"><img src="images/TDSjiancebi_03!720x720.jpg"
-                                                             style="display: inline;"></div>
-                                </li>
-                                <li>
-                                    <div class="imgurl"><img src="images/TDSjiancebi_04!720x720.jpg"
-                                                             style="display: inline;"></div>
-                                </li>
-                                <li>
-                                    <div class="imgurl"><img src="images/TDSjiancebi_05!720x720.jpg"
-                                                             style="display: inline;"></div>
-                                </li>
-                                <li>
-                                    <div class="imgurl"><img src="images/TDSjiancebi_06!720x720.jpg"
-                                                             style="display: inline;"></div>
-                                </li>
-                                <li>
-                                    <div class="imgurl"><img src="images/TDSjiancebi_07!720x720.jpg"
-                                                             style="display: inline;"></div>
-                                </li>
-                                <li>
-                                    <div class="imgurl"><img src="images/TDSbihaoshuigai!720x720.jpg"
-                                                             style="display: inline;"></div>
-                                </li>
-                                <li>
-                                    <div class="imgurl"><img src="images/TDSjiancebi_09!720x720.jpg"
-                                                             style="display: inline;"></div>
+                                <li><a href="javascript:" class="tab_head" id="commentViewBtn">评价晒单</a></li>
+                                <li><a href="javascript:" class="tab_head" id="attrViewBtn">参数及问题</a>
                                 </li>
                             </ul>
                         </div>
-                    </div>
-                </div>
-                <div class="tab_comment tab_item hide" id="commentViewDiv"></div>
-                <div class="tab_attrs tab_item hide" id="attrsViewDiv">
-                    <ul class="product_attrs">
-                        <li><span class="tit">颜色</span><span class="val">白色</span></li>
-                    </ul>
-                    <div class="product_question">
-                        <div class="head"><span>产品提问</span></div>
-                        <div class="que_list hide" id="questionList"></div>
-                    </div>
-                    <div class="product_question_send">
-                        <div class="text_inarea"><textarea id="question_textarea"
-                                                           placeholder="您的提问将会发给小米官方客服，购买过的用户也可以参与回答。"></textarea></div>
-                        <div class="btns"><a href="javascript:" class="btn j_question_submit"><span>提交问题</span></a>
+                        <div class="tab_product tab_item" id="productViewDiv">
+                            <div class="product_main">
+                                <!-- 产品图片 -->
+                                <div class="product_images product_desc" id="ProductImages">
+                                    <ul>
+                                        <li>
+                                            <div class="imgurl"><img src="images/rk301.jpg" style="display: inline;"></div>
+                                        </li>
+                                        <li>
+                                            <div class="imgurl"><img src="images/rk302.jpg" style="display: inline;"></div>
+                                        </li>
+                                        <li>
+                                            <div class="imgurl"><img src="images/rk303.jpg" style="display: inline;"></div>
+                                        </li>
+                                        <li>
+                                            <div class="imgurl"><img src="images/rk304.jpg" style="display: inline;"></div>
+                                        </li>
+                                        <li>
+                                            <div class="imgurl"><img src="images/rk305.jpg" style="display: inline;"></div>
+                                        </li>
+                                        <li>
+                                            <div class="imgurl"><img src="images/rk306.jpg" style="display: inline;"></div>
+                                        </li>
+                                        <li>
+                                            <div class="imgurl"><img src="images/rk307.jpg" style="display: inline;"></div>
+                                        </li>
+                                        <li>
+                                            <div class="imgurl"><img src="images/rk308.jpg" style="display: inline;"></div>
+                                        </li>
+                                        <li>
+                                            <div class="imgurl"><img src="images/rk309.jpg" style="display: inline;"></div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div class="product_info">
-                    <div class="info"><h3 class="name">小米水质TDS检测笔</h3></div>
-                    <div class="adapt"><p><span>39元</span><span>&nbsp;&nbsp;</span></p></div>
-                </div>
-                <input type="hidden" name="goods_id" id="goods_id" value="2152800032">
-                <div class="product_addCart">
-                    <div class="tip-success hide">
-                        <div class="inner">
-                            <div class="tip-txt"><span>商品已加入购物车</span></div>
-                            <div class="btns"><a href="http://m.mi.com/index.html#ac=shopping&op=index"
-                                                 class="btn"><span>前往购物车</span></a></div>
+                        <div class="tab_comment tab_item hide" id="commentViewDiv"></div>
+                        <div class="tab_attrs tab_item hide" id="attrsViewDiv">
+                            <ul class="product_attrs">
+                                <li><span class="tit">颜色</span><span class="val">白色</span></li>
+                            </ul>
+                            <div class="product_question">
+                                <div class="head"><span>产品提问</span></div>
+                                <div class="que_list hide" id="questionList"></div>
+                            </div>
+                            <div class="product_question_send">
+                                <div class="text_inarea"><textarea id="question_textarea" placeholder="您的提问将会发给小米官方客服，购买过的用户也可以参与回答。"></textarea></div>
+                                <div class="btns"><a href="javascript:" class="btn j_question_submit"><span>提交问题</span></a>
+                                </div>
+                            </div>
                         </div>
+                        <input type="hidden" name="goods_id" id="goods_id" value="2152800032">
+                        <div class="product_addCart">
+                            <div class="tip-success hide">
+                                <div class="inner">
+                                    <div class="tip-txt"><span>商品已加入购物车</span></div>
+                                    <div class="btns"><a href="http://m.mi.com/index.html#ac=shopping&op=index" class="btn"><span>前往购物车</span></a></div>
+                                </div>
+                            </div>
+                            <a action="AddShoppingCartBtn" class="button active_button" href="javascript:">加入购物车</a></div>
                     </div>
-                    <a action="AddShoppingCartBtn" class="button active_button" href="javascript:">加入购物车</a></div>
-            </div>
-            <div class="share_view hide">
-                <div class="share_view_inner">
-                    <div class="share_view_lay"><h3>分享到</h3>
-                        <ul>
-                            <li><a href="javascript:" class="WB" data-share="WB">新浪微博</a></li>
-                            <li><a href="javascript:" class="TWB" data-share="TWB">腾讯微博</a></li>
-                            <li><a href="javascript:" class="QZ" data-share="QZ">QQ空间</a></li>
-                        </ul>
-                        <div class="close"></div>
+                    <div class="share_view hide">
+                        <div class="share_view_inner">
+                            <div class="share_view_lay">
+                                <h3>分享到</h3>
+                                <ul>
+                                    <li><a href="javascript:" class="WB" data-share="WB">新浪微博</a></li>
+                                    <li><a href="javascript:" class="TWB" data-share="TWB">腾讯微博</a></li>
+                                    <li><a href="javascript:" class="QZ" data-share="QZ">QQ空间</a></li>
+                                </ul>
+                                <div class="close"></div>
+                            </div>
+                        </div>
+                        <div class="mask"></div>
                     </div>
                 </div>
-                <div class="mask"></div>
-            </div>
-        </div>
-        <div id="productViewWeixinTip" class="weixin_share_tip"></div>
-        <div id="footer" class="footer">
-            <div class="tip"><a href="http://www.mi.com/?mobile" class="goDesktop"><span>切换到电脑版</span></a></div>
-            <div class="links"><a href="http://p.www.xiaomi.com/m/huodong/page/2013/0922/index.html"><span
+                <div id="productViewWeixinTip" class="weixin_share_tip"></div>
+                <div id="footer" class="footer">
+                    <div class="tip"><a href="http://www.mi.com/?mobile" class="goDesktop"><span>切换到电脑版</span></a></div>
+                    <div class="links"><a href="http://p.www.xiaomi.com/m/huodong/page/2013/0922/index.html"><span
                     class="linksBtn">立即下载</span>
                 <p><strong>小米商城客户端</strong><span>与米粉交朋友</span></p></a></div>
-        </div>
-    </div>
-</div>
-<div id="maskLoad" class="maskLoad" style="display:none;"><span>正在加载...</span></div>
-<div id="mask" class="mask hide"></div>
-<div class="pop_panel hide" id="pop_panel">
-    <div class="content">
-        <div class="bd giftCard_view">
-            <div class="gfc5">
-                <div class="b b1">
-                    <p>提示</p>
-                </div>
-                <div class="b b2">
-                    <p id="content"></p>
                 </div>
             </div>
         </div>
-    </div>
-    <a href="javascript:" id="CloseMaskBtn" class="close" ><img src="images/close.png"></a>
-</div>
-<div id="popup" style="display:none"><p></p></div>
-<div class="loading_view" style="visibility:hidden">
-    <div class="loading_wrap">
-        <div class="loading_msg">正在加载 ...</div>
-        <a href="javascript:" class="close"><img src="images/loadingClose.png"></a>
-    </div>
-</div>
-</body>
+        <div id="maskLoad" class="maskLoad" style="display:none;"><span>正在加载...</span></div>
+        <div id="mask" class="mask hide"></div>
+        <div class="pop_panel hide" id="pop_panel">
+            <div class="content">
+                <div class="bd giftCard_view">
+                    <div class="gfc5">
+                        <div class="b b1">
+                            <p>提示</p>
+                        </div>
+                        <div class="b b2">
+                            <p id="content"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="javascript:" id="CloseMaskBtn" class="close"><img src="images/close.png"></a>
+        </div>
+        <div id="popup" style="display:none">
+            <p></p>
+        </div>
+        <div class="loading_view" style="visibility:hidden">
+            <div class="loading_wrap">
+                <div class="loading_msg">正在加载 ...</div>
+                <a href="javascript:" class="close"><img src="images/loadingClose.png"></a>
+            </div>
+        </div>
+    </body>
+
 </html>
