@@ -1,3 +1,12 @@
+/*顶部黑条样式*/
+.site-topbar {
+	position: relative;
+	z-index: 30;
+	height: 40px;
+	font-size: 12px;
+	color: #b0b0b0;
+	background: #333;
+}
 /*导航样式*/
 #navbar-top{
 	background: #fff;
@@ -20,6 +29,7 @@
 }
 .navbar-default .navbar-collapse{
 	border: none;
+	width: 900px;
 }
 /*菜单栏*/
 .list-group{
@@ -501,7 +511,16 @@ a.thumbnail:hover{
 
 .footer-right .footer-div{
 	margin: auto;
+	padding: 0;
 	border-left: 1px solid #E0E0E0;
+}
+.footer-left{
+	width: 80%;
+	float: left;
+}
+.footer-right{
+	width: 20%;
+	float: left;
 }
 .footer-right p.one{
 	font-size: 12px;
