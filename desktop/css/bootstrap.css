@@ -12,6 +12,7 @@ html {
 
 body {
     margin: 0;
+    /*padding: 0;*/
 }
 
 article,
@@ -1463,6 +1464,7 @@ img {
 
 .carousel-inner > .item > .imglunbo {
     height: 419px;
+    width: 100%;
 }
 
 .img-rounded {
@@ -8450,7 +8452,7 @@ button.close {
 }
 .ul-topbar-nav{
     width: 773px;
-    margin-left: -40px;
+    margin-left: -61px;
     margin-bottom: -10px;
 }
 .ul-topbar-nav li{
@@ -8492,7 +8494,7 @@ button.close {
     float: right;
     width: 120px;
     height: 40px;
-    margin-left: 15px;
+    margin-right: -15px;
     transition: all .2s;
     font-size: 12px;
 }
@@ -8629,3 +8631,108 @@ i{
     color: #fff;
 }
 
+.student{
+    width: 100%;
+    background: #F5F5F5;
+}
+.studentXX{
+    width: 1110px;
+    height: 100px;
+    margin: 0 auto;
+    /*border: 1px solid red;*/
+}
+.zjd,.xy,.sxh{
+    margin: 0;
+    padding: 0;
+    float: left;
+    width: 180px;
+    height: 60px;
+    padding-top: 10px;
+}
+.zjd,.xy,.sxh li{
+    list-style-type: none;
+    height: 26px;
+    line-height: 26px;
+}
+.zjd{
+    margin-left: 60px;
+}
+.xy{
+    margin-left: 250px;
+}
+.sxh{
+    float: right;
+}
+/* 倒计时 */
+.buy-hover{
+    width: 41%;
+}
+.se-kl {
+    width: 200px;
+    height: 251px;
+    background-color: #f1eded;
+    position: relative;
+    float: left;
+}
+.se-cn {
+    position: absolute;
+    top: 42px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 34px;
+    color: red;
+}
+.se-io {
+    width: 20px;
+    height: 33px;
+    position: absolute;
+    background-position: -32.5px 0;
+    background-size: 52.5px 40px;
+    left: 85px;
+    top: 126px;
+    display: block;
+}
+.se-info {
+    position: absolute;
+    top: 136px;
+    text-align: center;
+    width: 100%;
+    font-size: 16px;
+    color: red;
+}
+.se-count {
+    position: absolute;
+    top: 187px;
+    left: 30px;
+    height: 40px;
+}
+.se-day {
+    display: none;
+}
+.se-hour,
+.se-min,
+.se-sec {
+    position: relative;
+    background-color: #605751;
+    width: 40px;
+    height: 40px;
+    float: left;
+    text-align: center;
+    line-height: 40px;
+    margin-right: 11px;
+}
+.se-txt {
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+}
+.se-txt:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 1px;
+}
