@@ -39,7 +39,8 @@ body {
 	-o-background-size: cover;
 	-moz-background-size: cover;
 	-ms-background-size: cover;
-    background: url(../img/background-login-bg.jpg)no-repeat 0px 0px;
+    /*background: url(../img/background-login-bg.jpg)no-repeat 0px 0px;*/
+	background: #1a1e21;
 	text-align: center;
 }
 h1,h2,h3,h4,h5,h6{
