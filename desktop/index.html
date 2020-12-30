@@ -78,8 +78,8 @@
         <div class="topbar-info">
             <ul>
                 <li><a id="useremail" href="Login.html">登录</a></li>
-                <li><a href="Reg.html">注册</a></li>
-                <li><a>消息通知</a></li>
+                <li id="userreg"><a href="Reg.html" >注册</a></li>
+                <li id="userinfo"><a >消息通知</a></li>
             </ul>
         </div>
         <div class="topbar-cart">
@@ -911,8 +911,11 @@
         });
         var obj = new floor('.totop','.fixedmeau>li','.louceng_box>.louceng','.header_box');
         obj.init()
-        if (useremail!='undefined')
+        if (useremail!='undefined'){
             document.getElementById("useremail").innerHTML=useremail;
+            document.getElementById("userreg").innerHTML=null;
+            document.getElementById("userinfo").innerHTML=null;
+        }
     })
 </script>
 </body>

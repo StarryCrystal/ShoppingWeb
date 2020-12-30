@@ -8467,6 +8467,7 @@ button.close {
     float: left;
     width: 170px;
     margin-left: 65px;
+    height: 40px;
 }
 .topbar-info ul{
     height: 40px;
