@@ -74,8 +74,8 @@
         </div>
         <div class="topbar-info">
             <ul>
-                <li><a>登录</a></li>
-                <li><a>注册</a></li>
+                <li><a id="useremail" href="Login.html">登录</a></li>
+                <li><a href="Reg.html">注册</a></li>
                 <li><a>消息通知</a></li>
             </ul>
         </div>
@@ -899,9 +899,12 @@
      louceng  //模块的每一项
      header   //头部
      */
+    var useremail=decodeURIComponent(location.href.substr(location.href.indexOf('?')+1).split('&')[0].split('=')[1]);
     $(function(){
         var obj = new floor('.totop','.fixedmeau>li','.louceng_box>.louceng','.header_box');
         obj.init()
+        if (useremail!='undefined')
+            document.getElementById("useremail").innerHTML=useremail;
     })
 </script>
 </body>

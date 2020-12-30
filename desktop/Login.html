@@ -16,6 +16,12 @@
 </head>
 <script src="js/jquery-3.5.1.js"></script>
 <script src="js/Reg.js"></script>
+<script language="javascript" type="text/javascript">
+    function GetValue()
+    {
+        var email = document.getElementById("email").value;
+    }
+</script>
 <body>
 <div class="snow-container">
     <div class="snow foreground"></div>
@@ -34,9 +40,9 @@
 <div class="main-agileits">
     <div class="form-w3-agile" style="height: 325px;">
         <h2 class="sub-agileits-w3layouts">登录</h2>
-        <form action="index.html" name="regform" method="post" onsubmit="return checkForm()">
+        <form action="index.html" name="regform" method="get" onsubmit="return checkForm()">
             <dl class="dl1">
-                <dd><input type="email" name="Email" placeholder="邮箱(参照样式:xxx@xxx.com)" required="" onblur="checkemail()" /></dd>
+                <dd><input type="email" name="Email" id="email" placeholder="邮箱(参照样式:xxx@xxx.com)" required="" onblur="checkemail()" /></dd>
                 <dd id="erroremail" style="color: white;"></dd>
             </dl>
             <dl class="dl1">
